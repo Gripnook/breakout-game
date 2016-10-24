@@ -1,0 +1,53 @@
+--
+-- entity name: g31_BlockerGame
+--
+-- Copyright (C) 2016 g31
+-- Version 1.0
+-- Author: Andrei Purcarus Vlastimil Lacina
+-- Date: October 13th, 2016
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY g31_BlockerGame IS
+	PORT (
+		KEYS       : IN  STD_LOGIC_VECTOR(9 DOWNTO 0); -- Numerical Digits Only
+		SEGMENTS   : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+END g31_BlockerGame;
+
+ARCHITECTURE bdf_type OF g31_BlockerGame IS
+
+COMPONENT g31_Keyboard_Encoder
+	PORT(
+		KEYS       : IN  STD_LOGIC_VECTOR(63 DOWNTO 0);
+		ASCII_CODE : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+END COMPONENT;
+
+COMPONENT g31_7_Segment_Decoder
+	PORT(
+		ASCII_CODE : IN  STD_LOGIC_VECTOR(6 DOWNTO 0);
+		SEGMENTS   : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+END COMPONENT;
+
+SIGNAL KEYBOARD_KEYS : STD_LOGIC_VECTOR(63 DOWNTO 0);
+SIGNAL ASCII_CODE    : STD_LOGIC_VECTOR(6 DOWNTO 0);
+
+BEGIN
+	ENC : g31_Keyboard_Encoder
+		PORT MAP (
+			KEYS => KEYBOARD_KEYS,
+			ASCII_CODE => ASCII_CODE
+		);
+	DEC : g31_7_Segment_Decoder
+		PORT MAP (
+			ASCII_CODE => ASCII_CODE,
+			SEGMENTS => SEGMENTS
+		);
+	KEYBOARD_KEYS(63 DOWNTO 26) <= "00000000000000000000000000000000000000";
+	KEYBOARD_KEYS(25 DOWNTO 16) <= KEYS;
+	KEYBOARD_KEYS(15 DOWNTO 0)  <= "0000000000000000";
+END bdf_type;
+

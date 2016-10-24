@@ -1,0 +1,23 @@
+--
+-- entity name: g31_VGA
+--
+-- Copyright (C) 2016 g31
+-- Version 1.0
+-- Author: Andrei Purcarus Vlastimil Lacina
+-- Date: October 24th, 2016
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY g31_VGA IS
+	PORT (
+		
+	);
+END g31_VGA;
+
+ARCHITECTURE bdf_type OF g31_VGA IS
+
+BEGIN
+	
+END bdf_type;
+

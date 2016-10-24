@@ -1,0 +1,67 @@
+--
+-- entity name: g31_VGA
+--
+-- Copyright (C) 2016 g31
+-- Version 1.0
+-- Author: Andrei Purcarus Vlastimil Lacina
+-- Date: October 24th, 2016
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+LIBRARY lpm;
+USE lpm.lpm_components.all;
+
+ENTITY g31_VGA IS
+	PORT (
+		CLOCK    : IN  STD_LOGIC; -- 50MHz
+		RST      : IN  STD_LOGIC; -- reset
+		BLANKING : OUT STD_LOGIC; -- blank display when zero
+		ROW      : OUT UNSIGNED(9 DOWNTO 0); -- line 0 to 599
+		COLUMN   : OUT UNSIGNED(9 DOWNTO 0); -- column 0 to 799
+		HSYNC    : OUT STD_LOGIC; -- horizontal sync signal
+		VSYNC    : OUT STD_LOGIC -- vertical sync signal
+	);
+END g31_VGA;
+
+ARCHITECTURE bdf_type OF g31_VGA IS
+
+SIGNAL CLEAR_X, CLEAR_Y : STD_LOGIC;
+SIGNAL COUNT_X : STD_LOGIC_VECTOR(10 DOWNTO 0);
+SIGNAL COUNT_X_INT : INTEGER;
+SIGNAL COUNT_Y : STD_LOGIC_VECTOR(9 DOWNTO 0);
+SIGNAL COUNT_Y_INT : INTEGER;
+
+BEGIN
+	counter_X : lpm_counter
+		GENERIC MAP (LPM_WIDTH => 11)
+		PORT MAP (CLOCK => CLOCK, SCLR => CLEAR_X, Q => COUNT_X);
+	counter_Y : lpm_counter
+		GENERIC MAP (LPM_WIDTH => 10)
+		PORT MAP (CLOCK => CLEAR_X, SCLR => CLEAR_Y, Q => COUNT_Y);
+	
+	WITH COUNT_X SELECT
+		CLEAR_X <= '1' WHEN "10000010000",
+			'0' WHEN OTHERS;
+	WITH COUNT_Y SELECT
+		CLEAR_Y <= '1' WHEN "1010011010",
+			'0' WHEN OTHERS;
+	
+	COUNT_X_INT <= TO_INTEGER(UNSIGNED(COUNT_X));
+	COUNT_Y_INT <= TO_INTEGER(UNSIGNED(COUNT_Y));
+	
+	ROW <= TO_UNSIGNED(COUNT_Y_INT - 43, ROW'LENGTH) WHEN (COUNT_Y_INT >= 43 AND COUNT_Y_INT <= 642) ELSE
+		TO_UNSIGNED(599, ROW'LENGTH);
+	COLUMN <= TO_UNSIGNED(COUNT_X_INT - 176, COLUMN'LENGTH) WHEN (COUNT_X_INT >= 176 AND COUNT_X_INT <= 975) ELSE
+		TO_UNSIGNED(799, COLUMN'LENGTH);
+	
+	BLANKING <= '0' WHEN ((COUNT_Y_INT < 43 OR COUNT_Y_INT > 642) OR ((COUNT_X_INT < 176 OR COUNT_X_INT > 975))) ELSE
+		'1';
+	
+	HSYNC <= '0' WHEN (COUNT_X_INT < 120) ELSE
+		'1';
+	VSYNC <= '0' WHEN (COUNT_Y_INT < 6) ELSE
+		'1';
+	
+END bdf_type;
+

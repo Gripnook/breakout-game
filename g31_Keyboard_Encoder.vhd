@@ -1,0 +1,51 @@
+--
+-- entity name: g31_keyboard_encoder
+--
+-- Copyright (C) 2016 g31
+-- Version 1.0
+-- Author: Andrei Purcarus Vlastimil Lacina
+-- Date: October 6th, 2016
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY g31_Keyboard_Encoder IS
+	PORT (
+		KEYS       : IN  STD_LOGIC_VECTOR(63 DOWNTO 0);
+		ASCII_CODE : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+END g31_Keyboard_Encoder;
+
+ARCHITECTURE bdf_type OF g31_Keyboard_Encoder IS
+
+COMPONENT g31_64_6_Encoder
+	PORT(
+		INPUTS    : IN  STD_LOGIC_VECTOR(63 DOWNTO 0);
+		CODE      : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+		ERROR     : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+SIGNAL CODE  : STD_LOGIC_VECTOR(5 DOWNTO 0);
+SIGNAL ERROR : STD_LOGIC;
+SIGNAL INTERMEDIATE_CODE : STD_LOGIC_VECTOR(6 DOWNTO 0);
+
+BEGIN
+	ENC : g31_64_6_Encoder
+		PORT MAP (
+			INPUTS => KEYS,
+			CODE => CODE,
+			ERROR => ERROR
+		);
+		
+	WITH CODE(5) SELECT
+		INTERMEDIATE_CODE <= 
+			"0100000" OR ((6 DOWNTO 5 => '0') & CODE(4 DOWNTO 0)) WHEN '0',
+			"1000000" OR ((6 DOWNTO 5 => '0') & CODE(4 DOWNTO 0)) WHEN '1',
+			"0000000" WHEN OTHERS;
+	WITH ERROR SELECT
+		ASCII_CODE <= 
+			INTERMEDIATE_CODE WHEN '0',
+			"0000000" WHEN OTHERS;
+END bdf_type;
+
