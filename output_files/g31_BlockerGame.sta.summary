@@ -3,99 +3,51 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK'
-Slack : -5.900
-TNS   : -64.870
-
-Type  : Slow 1100mV 85C Model Setup 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : -1.934
-TNS   : -21.471
+Slack : -1.260
+TNS   : -35.803
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK'
-Slack : -0.416
-TNS   : -3.004
-
-Type  : Slow 1100mV 85C Model Hold 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : 0.687
+Slack : 0.669
 TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : -0.394
-TNS   : -6.122
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK'
 Slack : -0.394
-TNS   : -5.775
+TNS   : -15.386
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK'
-Slack : -5.614
-TNS   : -61.724
-
-Type  : Slow 1100mV 0C Model Setup 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : -2.018
-TNS   : -21.257
+Slack : -1.205
+TNS   : -34.713
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK'
-Slack : -0.619
-TNS   : -5.063
-
-Type  : Slow 1100mV 0C Model Hold 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : 0.671
+Slack : 0.711
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK'
 Slack : -0.394
-TNS   : -6.313
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : -0.394
-TNS   : -6.272
+TNS   : -16.404
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK'
-Slack : -3.566
-TNS   : -39.220
-
-Type  : Fast 1100mV 85C Model Setup 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : -0.711
-TNS   : -8.520
+Slack : -0.281
+TNS   : -7.545
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK'
-Slack : 0.003
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : 0.357
+Slack : 0.300
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK'
-Slack : -0.077
-TNS   : -0.841
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : 0.107
-TNS   : 0.000
+Slack : -0.079
+TNS   : -2.240
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK'
-Slack : -3.031
-TNS   : -33.335
-
-Type  : Fast 1100mV 0C Model Setup 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : -0.634
-TNS   : -7.252
+Slack : -0.188
+TNS   : -4.780
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK'
-Slack : -0.186
-TNS   : -1.365
-
-Type  : Fast 1100mV 0C Model Hold 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : 0.320
+Slack : 0.294
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK'
 Slack : -0.079
-TNS   : -0.857
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[0]'
-Slack : 0.114
-TNS   : 0.000
+TNS   : -2.256
 
 ------------------------------------------------------------
