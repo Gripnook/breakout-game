@@ -1,7 +1,8 @@
 |g31_VGA
 CLOCK => LPM_COUNTER:counter_X.CLOCK
 CLOCK => LPM_COUNTER:counter_Y.CLOCK
-RST => ~NO_FANOUT~
+RST => CLEAR_X.DATAA
+RST => CLEAR_Y.DATAA
 BLANKING <= BLANKING.DB_MAX_OUTPUT_PORT_TYPE
 ROW[0] <= ROW.DB_MAX_OUTPUT_PORT_TYPE
 ROW[1] <= ROW.DB_MAX_OUTPUT_PORT_TYPE
@@ -120,15 +121,15 @@ sclr => counter_reg_bit[0].SCLR
 
 
 |g31_VGA|LPM_COUNTER:counter_Y
-clock => cntr_3ti:auto_generated.clock
-clk_en => cntr_3ti:auto_generated.clk_en
-cnt_en => ~NO_FANOUT~
+clock => cntr_eti:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_eti:auto_generated.cnt_en
 updown => ~NO_FANOUT~
 aclr => ~NO_FANOUT~
 aset => ~NO_FANOUT~
 aconst => ~NO_FANOUT~
 aload => ~NO_FANOUT~
-sclr => cntr_3ti:auto_generated.sclr
+sclr => cntr_eti:auto_generated.sclr
 sset => ~NO_FANOUT~
 sconst => ~NO_FANOUT~
 sload => ~NO_FANOUT~
@@ -143,16 +144,16 @@ data[7] => ~NO_FANOUT~
 data[8] => ~NO_FANOUT~
 data[9] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_3ti:auto_generated.q[0]
-q[1] <= cntr_3ti:auto_generated.q[1]
-q[2] <= cntr_3ti:auto_generated.q[2]
-q[3] <= cntr_3ti:auto_generated.q[3]
-q[4] <= cntr_3ti:auto_generated.q[4]
-q[5] <= cntr_3ti:auto_generated.q[5]
-q[6] <= cntr_3ti:auto_generated.q[6]
-q[7] <= cntr_3ti:auto_generated.q[7]
-q[8] <= cntr_3ti:auto_generated.q[8]
-q[9] <= cntr_3ti:auto_generated.q[9]
+q[0] <= cntr_eti:auto_generated.q[0]
+q[1] <= cntr_eti:auto_generated.q[1]
+q[2] <= cntr_eti:auto_generated.q[2]
+q[3] <= cntr_eti:auto_generated.q[3]
+q[4] <= cntr_eti:auto_generated.q[4]
+q[5] <= cntr_eti:auto_generated.q[5]
+q[6] <= cntr_eti:auto_generated.q[6]
+q[7] <= cntr_eti:auto_generated.q[7]
+q[8] <= cntr_eti:auto_generated.q[8]
+q[9] <= cntr_eti:auto_generated.q[9]
 cout <= <GND>
 eq[0] <= <GND>
 eq[1] <= <GND>
@@ -172,8 +173,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|g31_VGA|LPM_COUNTER:counter_Y|cntr_3ti:auto_generated
-clk_en => counter_reg_bit[9].IN0
+|g31_VGA|LPM_COUNTER:counter_Y|cntr_eti:auto_generated
 clock => counter_reg_bit[9].CLK
 clock => counter_reg_bit[8].CLK
 clock => counter_reg_bit[7].CLK
@@ -184,6 +184,7 @@ clock => counter_reg_bit[3].CLK
 clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
+cnt_en => _.IN0
 q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
