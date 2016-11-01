@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g31_BlockerGame
-Tue Nov 01 16:22:54 2016
+Tue Nov 01 16:57:55 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -116,12 +116,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.09        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   9.1%      ;
+;     Processor 2            ; < 0.1%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -777,7 +777,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Tue Nov 01 16:22:41 2016
+    Info: Processing started: Tue Nov 01 16:57:42 2016
 Info: Command: quartus_sta g31_BlockerGame -c g31_BlockerGame
 Info: qsta_default_script.tcl version: #11
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
@@ -790,7 +790,7 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'g31_BlockerGame.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Warning (332060): Node: CLOCK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register g31_VGA:VGA1|lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[9] is being clocked by CLOCK
+    Info (13166): Register g31_VGA:VGA|lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[9] is being clocked by CLOCK
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
@@ -819,7 +819,7 @@ Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: CLOCK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register g31_VGA:VGA1|lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[9] is being clocked by CLOCK
+    Info (13166): Register g31_VGA:VGA|lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[9] is being clocked by CLOCK
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332146): Worst-case setup slack is 10.395
     Info (332119):     Slack       End Point TNS Clock 
@@ -845,7 +845,7 @@ Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: CLOCK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register g31_VGA:VGA1|lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[9] is being clocked by CLOCK
+    Info (13166): Register g31_VGA:VGA|lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[9] is being clocked by CLOCK
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332146): Worst-case setup slack is 12.710
     Info (332119):     Slack       End Point TNS Clock 
@@ -869,7 +869,7 @@ Info (332146): Worst-case minimum pulse width slack is 15.145
     Info (332119):    15.145               0.000 altera_reserved_tck 
 Info: Analyzing Fast 1100mV 0C Model
 Warning (332060): Node: CLOCK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register g31_VGA:VGA1|lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[9] is being clocked by CLOCK
+    Info (13166): Register g31_VGA:VGA|lpm_counter:counter_X|cntr_o8i:auto_generated|counter_reg_bit[9] is being clocked by CLOCK
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332146): Worst-case setup slack is 13.178
     Info (332119):     Slack       End Point TNS Clock 
@@ -894,8 +894,8 @@ Info (332146): Worst-case minimum pulse width slack is 15.168
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1130 megabytes
-    Info: Processing ended: Tue Nov 01 16:22:54 2016
+    Info: Peak virtual memory: 1123 megabytes
+    Info: Processing ended: Tue Nov 01 16:57:55 2016
     Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:14
 

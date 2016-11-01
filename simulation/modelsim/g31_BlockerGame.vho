@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition"
 
--- DATE "11/01/2016 16:22:58"
+-- DATE "11/01/2016 16:57:59"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -126,70 +126,70 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|trigger_out_mode_
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 SIGNAL \CLOCK~input_o\ : std_logic;
 SIGNAL \CLOCK~inputCLKENA0_outclk\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita0~sumout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita0~sumout\ : std_logic;
 SIGNAL \RST~input_o\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita8~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita9~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita0~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita5~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita6~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita6~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita7~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita7~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita8~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita8~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita9~sumout\ : std_logic;
-SIGNAL \VGA1|Equal0~1_combout\ : std_logic;
-SIGNAL \VGA1|CLEAR_X~0_combout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita0~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita1~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita1~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita2~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita2~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita3~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita3~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita4~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita4~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita5~sumout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita9~COUT\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|counter_comb_bita10~sumout\ : std_logic;
-SIGNAL \VGA1|Equal0~0_combout\ : std_logic;
-SIGNAL \VGA1|Equal1~1_combout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|_~0_combout\ : std_logic;
-SIGNAL \VGA1|Equal1~0_combout\ : std_logic;
-SIGNAL \VGA1|CLEAR_Y~0_combout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita0~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita1~sumout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita1~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita2~sumout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita2~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita3~sumout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita3~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita4~sumout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita4~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita5~sumout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita5~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita6~sumout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita6~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita7~sumout\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita7~COUT\ : std_logic;
-SIGNAL \VGA1|counter_Y|auto_generated|counter_comb_bita8~sumout\ : std_logic;
-SIGNAL \VGA1|LessThan9~0_combout\ : std_logic;
-SIGNAL \VGA1|BLANKING~1_combout\ : std_logic;
-SIGNAL \VGA1|BLANKING~2_combout\ : std_logic;
-SIGNAL \VGA1|BLANKING~0_combout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita8~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita9~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita0~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita5~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita6~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita6~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita7~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita7~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita8~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita8~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita9~sumout\ : std_logic;
+SIGNAL \VGA|Equal0~1_combout\ : std_logic;
+SIGNAL \VGA|CLEAR_X~0_combout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita0~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita1~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita1~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita2~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita2~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita3~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita3~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita4~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita4~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita5~sumout\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita9~COUT\ : std_logic;
+SIGNAL \VGA|counter_X|auto_generated|counter_comb_bita10~sumout\ : std_logic;
+SIGNAL \VGA|Equal0~0_combout\ : std_logic;
+SIGNAL \VGA|Equal1~1_combout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|_~0_combout\ : std_logic;
+SIGNAL \VGA|Equal1~0_combout\ : std_logic;
+SIGNAL \VGA|CLEAR_Y~0_combout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita0~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita1~sumout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita1~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita2~sumout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita2~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita3~sumout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita3~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita4~sumout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita4~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita5~sumout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita5~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita6~sumout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita6~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita7~sumout\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita7~COUT\ : std_logic;
+SIGNAL \VGA|counter_Y|auto_generated|counter_comb_bita8~sumout\ : std_logic;
+SIGNAL \VGA|LessThan9~0_combout\ : std_logic;
+SIGNAL \VGA|BLANKING~1_combout\ : std_logic;
+SIGNAL \VGA|BLANKING~2_combout\ : std_logic;
+SIGNAL \VGA|BLANKING~0_combout\ : std_logic;
 SIGNAL \R~3_combout\ : std_logic;
-SIGNAL \VGA1|Add1~2_combout\ : std_logic;
+SIGNAL \VGA|Add1~2_combout\ : std_logic;
 SIGNAL \R~2_combout\ : std_logic;
-SIGNAL \VGA1|Add1~1_combout\ : std_logic;
+SIGNAL \VGA|Add1~1_combout\ : std_logic;
 SIGNAL \R~0_combout\ : std_logic;
 SIGNAL \LessThan4~0_combout\ : std_logic;
-SIGNAL \VGA1|Add1~0_combout\ : std_logic;
+SIGNAL \VGA|Add1~0_combout\ : std_logic;
 SIGNAL \R~1_combout\ : std_logic;
-SIGNAL \VGA1|LessThan4~0_combout\ : std_logic;
-SIGNAL \VGA1|LessThan9~1_combout\ : std_logic;
-SIGNAL \VGA1|BLANKING~3_combout\ : std_logic;
-SIGNAL \VGA1|COLUMN[9]~0_combout\ : std_logic;
+SIGNAL \VGA|LessThan4~0_combout\ : std_logic;
+SIGNAL \VGA|LessThan9~1_combout\ : std_logic;
+SIGNAL \VGA|BLANKING~3_combout\ : std_logic;
+SIGNAL \VGA|COLUMN[9]~0_combout\ : std_logic;
 SIGNAL \R~4_combout\ : std_logic;
 SIGNAL \G~0_combout\ : std_logic;
 SIGNAL \B~6_combout\ : std_logic;
@@ -201,9 +201,9 @@ SIGNAL \B~2_combout\ : std_logic;
 SIGNAL \B~3_combout\ : std_logic;
 SIGNAL \B~8_combout\ : std_logic;
 SIGNAL \B~7_combout\ : std_logic;
-SIGNAL \VGA1|LessThan8~0_combout\ : std_logic;
-SIGNAL \VGA1|LessThan8~1_combout\ : std_logic;
-SIGNAL \VGA1|LessThan9~2_combout\ : std_logic;
+SIGNAL \VGA|LessThan8~0_combout\ : std_logic;
+SIGNAL \VGA|LessThan8~1_combout\ : std_logic;
+SIGNAL \VGA|LessThan9~2_combout\ : std_logic;
 SIGNAL \altera_reserved_tms~input_o\ : std_logic;
 SIGNAL \altera_reserved_tck~input_o\ : std_logic;
 SIGNAL \altera_reserved_tdi~input_o\ : std_logic;
@@ -585,7 +585,7 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:18:sm1|holdff~q\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:18:sm1|p_match_out~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:18:sm1|regoutff~q\ : std_logic;
-SIGNAL \VGA1|LessThan9~2_wirecell_combout\ : std_logic;
+SIGNAL \VGA|LessThan9~2_wirecell_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:21:sm1|holdff~q\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:21:sm1|p_match_out~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:21:sm1|regoutff~q\ : std_logic;
@@ -611,7 +611,7 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:5:sm1|holdff~q\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:5:sm1|p_match_out~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:5:sm1|regoutff~q\ : std_logic;
-SIGNAL \VGA1|LessThan8~1_wirecell_combout\ : std_logic;
+SIGNAL \VGA|LessThan8~1_wirecell_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:10:sm1|holdff~q\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:10:sm1|p_match_out~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:10:sm1|regoutff~q\ : std_logic;
@@ -1250,9 +1250,9 @@ SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrum
 SIGNAL \altera_internal_jtag~TDO\ : std_logic;
 SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|ram_data_shift_out|dffs\ : std_logic_vector(21 DOWNTO 0);
-SIGNAL \VGA1|counter_X|auto_generated|counter_reg_bit\ : std_logic_vector(10 DOWNTO 0);
+SIGNAL \VGA|counter_X|auto_generated|counter_reg_bit\ : std_logic_vector(10 DOWNTO 0);
 SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \VGA1|counter_Y|auto_generated|counter_reg_bit\ : std_logic_vector(9 DOWNTO 0);
+SIGNAL \VGA|counter_Y|auto_generated|counter_reg_bit\ : std_logic_vector(9 DOWNTO 0);
 SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg\ : std_logic_vector(10 DOWNTO 0);
 SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|tms_cnt\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \auto_signaltap_0|acq_trigger_in_reg\ : std_logic_vector(21 DOWNTO 0);
@@ -1291,6 +1291,44 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|condition_delay_r
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|xraddr\ : std_logic_vector(0 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|current_segment_delayed\ : std_logic_vector(0 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs\ : std_logic_vector(65 DOWNTO 0);
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~4_combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|ALT_INV_dffs\ : std_logic_vector(10 DOWNTO 0);
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~3_combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~2_combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~1_combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~0_combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_bypass_reg_out~q\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_status_shift_enable~0_combout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|ALT_INV_dffs\ : std_logic_vector(16 DOWNTO 0);
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a21\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a20~portbdataout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a16\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a17\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a18\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a19\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a15~portbdataout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a11\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a12\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a13\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a14\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a10~portbdataout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a6\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a7\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a8\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a9\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a5~portbdataout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita10~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita8~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita6~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita1~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita2~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita3~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~1_sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita0~sumout\ : std_logic;
+SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\ : std_logic_vector(10 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|ALT_INV_Equal0~2_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|ALT_INV_Equal0~1_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|ALT_INV_Equal0~0_combout\ : std_logic;
@@ -1311,7 +1349,6 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_trigger_o
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_cdr~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|ALT_INV_status_ram_shift_load~combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|ALT_INV_Equal3~0_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|ALT_INV_dffs\ : std_logic_vector(10 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_crc_len_reg[17]~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_LessThan0~6_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_LessThan0~5_combout\ : std_logic;
@@ -1322,13 +1359,11 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_LessThan0
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_LessThan0~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|ALT_INV_is_buffer_wrapped_once_sig~q\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR~3_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR[1]~2_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_word_counter\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR[1]~1_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_reset_all~q\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|ALT_INV_dffs\ : std_logic_vector(16 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_run~q\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_status_load_on~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|ALT_INV_buffer_manager:collecting_post_data_var~q\ : std_logic;
@@ -1426,41 +1461,6 @@ SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_crc_rom_sr_ena~0_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR~13_combout\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR~12_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~4_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~3_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~2_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~1_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~0_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_bypass_reg_out~q\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_status_shift_enable~0_combout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a21\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a20~portbdataout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a16\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a17\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a18\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a19\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a15~portbdataout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a11\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a12\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a13\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a14\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a10~portbdataout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a6\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a7\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a8\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a9\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a5~portbdataout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita10~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita8~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita6~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita1~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita2~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita3~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~1_sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita0~sumout\ : std_logic;
-SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\ : std_logic_vector(10 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a1\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a2\ : std_logic;
@@ -1628,14 +1628,14 @@ SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrum
 SIGNAL \ALT_INV_altera_internal_jtag~TDIUTAP\ : std_logic;
 SIGNAL \ALT_INV_altera_internal_jtag~TCKUTAP\ : std_logic;
 SIGNAL \ALT_INV_altera_internal_jtag~TMSUTAP\ : std_logic;
-SIGNAL \VGA1|ALT_INV_LessThan8~1_wirecell_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_Equal1~1_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_Equal1~0_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_Equal0~1_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_Equal0~0_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_LessThan9~2_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_LessThan8~1_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_LessThan8~0_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_LessThan8~1_wirecell_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_Equal1~1_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_Equal1~0_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_Equal0~1_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_Equal0~0_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_LessThan9~2_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_LessThan8~1_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_LessThan8~0_combout\ : std_logic;
 SIGNAL \ALT_INV_B~6_combout\ : std_logic;
 SIGNAL \ALT_INV_B~5_combout\ : std_logic;
 SIGNAL \ALT_INV_B~4_combout\ : std_logic;
@@ -1644,24 +1644,24 @@ SIGNAL \ALT_INV_B~2_combout\ : std_logic;
 SIGNAL \ALT_INV_B~1_combout\ : std_logic;
 SIGNAL \ALT_INV_B~0_combout\ : std_logic;
 SIGNAL \ALT_INV_R~3_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_BLANKING~3_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_LessThan9~1_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_LessThan4~0_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_BLANKING~3_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_LessThan9~1_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_LessThan4~0_combout\ : std_logic;
 SIGNAL \ALT_INV_R~2_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_Add1~2_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_BLANKING~2_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_LessThan9~0_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_BLANKING~1_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_Add1~2_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_BLANKING~2_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_LessThan9~0_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_BLANKING~1_combout\ : std_logic;
 SIGNAL \ALT_INV_R~1_combout\ : std_logic;
 SIGNAL \ALT_INV_LessThan4~0_combout\ : std_logic;
 SIGNAL \ALT_INV_R~0_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_Add1~1_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_COLUMN[9]~0_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_BLANKING~0_combout\ : std_logic;
-SIGNAL \VGA1|ALT_INV_Add1~0_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_Add1~1_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_COLUMN[9]~0_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_BLANKING~0_combout\ : std_logic;
+SIGNAL \VGA|ALT_INV_Add1~0_combout\ : std_logic;
 SIGNAL \ALT_INV_B~8_combout\ : std_logic;
-SIGNAL \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\ : std_logic_vector(10 DOWNTO 0);
-SIGNAL \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\ : std_logic_vector(9 DOWNTO 0);
+SIGNAL \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\ : std_logic_vector(10 DOWNTO 0);
+SIGNAL \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\ : std_logic_vector(9 DOWNTO 0);
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|ALT_INV_dffs[19]~DUPLICATE_q\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|ALT_INV_dffs[3]~DUPLICATE_q\ : std_logic;
 SIGNAL \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_word_counter[1]~DUPLICATE_q\ : std_logic;
@@ -1884,6 +1884,50 @@ ww_devpor <= devpor;
 
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a20~portbdataout\ <= \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a20_PORTBDATAOUT_bus\(0);
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a21\ <= \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a20_PORTBDATAOUT_bus\(1);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~4_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~4_combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|ALT_INV_dffs\(0) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs\(0);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~3_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~3_combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~2_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~2_combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR\(0) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|WORD_SR\(0);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~1_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~1_combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~0_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~0_combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_bypass_reg_out~q\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|bypass_reg_out~q\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_status_shift_enable~0_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_shift_enable~0_combout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|ALT_INV_dffs\(0) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|dffs\(0);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a21\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a21\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a20~portbdataout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a20~portbdataout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a16\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a16\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a17\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a17\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a18\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a18\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a19\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a19\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a15~portbdataout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a15~portbdataout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a11\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a11\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a12\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a12\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a13\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a13\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a14\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a14\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a10~portbdataout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a10~portbdataout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a6\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a6\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a7\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a7\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a8\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a8\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a9\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a9\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a5~portbdataout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a5~portbdataout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita10~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_comb_bita10~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita8~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_comb_bita8~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita6~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_comb_bita6~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_comb_bita4~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita1~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita1~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita2~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita2~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita3~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita3~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita4~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~1_sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita4~1_sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita0~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita0~sumout\;
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(10) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(10);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(9) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(9);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(8) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(8);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(7) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(7);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(6) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(6);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(5) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(5);
+\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(4) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(4);
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|ALT_INV_Equal0~2_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|Equal0~2_combout\;
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|ALT_INV_Equal0~1_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|Equal0~1_combout\;
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|ALT_INV_Equal0~0_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|Equal0~0_combout\;
@@ -2163,50 +2207,6 @@ ww_devpor <= devpor;
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|ALT_INV_dffs\(4) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|dffs\(4);
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|ALT_INV_dffs\(5) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs\(5);
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|ALT_INV_dffs\(4) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs\(4);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~4_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~4_combout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|ALT_INV_dffs\(0) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|segment_offset_config_deserialize|dffs\(0);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~3_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~3_combout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~2_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~2_combout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_WORD_SR\(0) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|WORD_SR\(0);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~1_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~1_combout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_tdo_internal~0_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_internal~0_combout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_bypass_reg_out~q\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|bypass_reg_out~q\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ALT_INV_status_shift_enable~0_combout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_shift_enable~0_combout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|ALT_INV_dffs\(0) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|status_register|dffs\(0);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a21\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a21\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a20~portbdataout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a20~portbdataout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a16\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a16\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a17\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a17\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a18\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a18\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a19\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a19\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a15~portbdataout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a15~portbdataout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a11\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a11\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a12\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a12\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a13\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a13\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a14\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a14\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a10~portbdataout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a10~portbdataout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a6\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a6\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a7\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a7\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a8\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a8\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a9\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a9\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ALT_INV_ram_block1a5~portbdataout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a5~portbdataout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita10~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_comb_bita10~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita8~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_comb_bita8~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita6~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_comb_bita6~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_comb_bita4~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita1~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita1~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita2~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita2~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita3~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita3~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita4~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita4~1_sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita4~1_sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|ALT_INV_counter_comb_bita0~sumout\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|adv_point_3_and_more:advance_pointer_counter|auto_generated|counter_comb_bita0~sumout\;
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(10) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(10);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(9) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(9);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(8) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(8);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(7) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(7);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(6) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(6);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(5) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(5);
-\auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(4) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(4);
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(3) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(3);
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(2) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(2);
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|ALT_INV_counter_reg_bit\(1) <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|read_pointer_counter|auto_generated|counter_reg_bit\(1);
@@ -2541,14 +2541,14 @@ ww_devpor <= devpor;
 \ALT_INV_altera_internal_jtag~TDIUTAP\ <= NOT \altera_internal_jtag~TDIUTAP\;
 \ALT_INV_altera_internal_jtag~TCKUTAP\ <= NOT \altera_internal_jtag~TCKUTAP\;
 \ALT_INV_altera_internal_jtag~TMSUTAP\ <= NOT \altera_internal_jtag~TMSUTAP\;
-\VGA1|ALT_INV_LessThan8~1_wirecell_combout\ <= NOT \VGA1|LessThan8~1_wirecell_combout\;
-\VGA1|ALT_INV_Equal1~1_combout\ <= NOT \VGA1|Equal1~1_combout\;
-\VGA1|ALT_INV_Equal1~0_combout\ <= NOT \VGA1|Equal1~0_combout\;
-\VGA1|ALT_INV_Equal0~1_combout\ <= NOT \VGA1|Equal0~1_combout\;
-\VGA1|ALT_INV_Equal0~0_combout\ <= NOT \VGA1|Equal0~0_combout\;
-\VGA1|ALT_INV_LessThan9~2_combout\ <= NOT \VGA1|LessThan9~2_combout\;
-\VGA1|ALT_INV_LessThan8~1_combout\ <= NOT \VGA1|LessThan8~1_combout\;
-\VGA1|ALT_INV_LessThan8~0_combout\ <= NOT \VGA1|LessThan8~0_combout\;
+\VGA|ALT_INV_LessThan8~1_wirecell_combout\ <= NOT \VGA|LessThan8~1_wirecell_combout\;
+\VGA|ALT_INV_Equal1~1_combout\ <= NOT \VGA|Equal1~1_combout\;
+\VGA|ALT_INV_Equal1~0_combout\ <= NOT \VGA|Equal1~0_combout\;
+\VGA|ALT_INV_Equal0~1_combout\ <= NOT \VGA|Equal0~1_combout\;
+\VGA|ALT_INV_Equal0~0_combout\ <= NOT \VGA|Equal0~0_combout\;
+\VGA|ALT_INV_LessThan9~2_combout\ <= NOT \VGA|LessThan9~2_combout\;
+\VGA|ALT_INV_LessThan8~1_combout\ <= NOT \VGA|LessThan8~1_combout\;
+\VGA|ALT_INV_LessThan8~0_combout\ <= NOT \VGA|LessThan8~0_combout\;
 \ALT_INV_B~6_combout\ <= NOT \B~6_combout\;
 \ALT_INV_B~5_combout\ <= NOT \B~5_combout\;
 \ALT_INV_B~4_combout\ <= NOT \B~4_combout\;
@@ -2557,43 +2557,43 @@ ww_devpor <= devpor;
 \ALT_INV_B~1_combout\ <= NOT \B~1_combout\;
 \ALT_INV_B~0_combout\ <= NOT \B~0_combout\;
 \ALT_INV_R~3_combout\ <= NOT \R~3_combout\;
-\VGA1|ALT_INV_BLANKING~3_combout\ <= NOT \VGA1|BLANKING~3_combout\;
-\VGA1|ALT_INV_LessThan9~1_combout\ <= NOT \VGA1|LessThan9~1_combout\;
-\VGA1|ALT_INV_LessThan4~0_combout\ <= NOT \VGA1|LessThan4~0_combout\;
+\VGA|ALT_INV_BLANKING~3_combout\ <= NOT \VGA|BLANKING~3_combout\;
+\VGA|ALT_INV_LessThan9~1_combout\ <= NOT \VGA|LessThan9~1_combout\;
+\VGA|ALT_INV_LessThan4~0_combout\ <= NOT \VGA|LessThan4~0_combout\;
 \ALT_INV_R~2_combout\ <= NOT \R~2_combout\;
-\VGA1|ALT_INV_Add1~2_combout\ <= NOT \VGA1|Add1~2_combout\;
-\VGA1|ALT_INV_BLANKING~2_combout\ <= NOT \VGA1|BLANKING~2_combout\;
-\VGA1|ALT_INV_LessThan9~0_combout\ <= NOT \VGA1|LessThan9~0_combout\;
-\VGA1|ALT_INV_BLANKING~1_combout\ <= NOT \VGA1|BLANKING~1_combout\;
+\VGA|ALT_INV_Add1~2_combout\ <= NOT \VGA|Add1~2_combout\;
+\VGA|ALT_INV_BLANKING~2_combout\ <= NOT \VGA|BLANKING~2_combout\;
+\VGA|ALT_INV_LessThan9~0_combout\ <= NOT \VGA|LessThan9~0_combout\;
+\VGA|ALT_INV_BLANKING~1_combout\ <= NOT \VGA|BLANKING~1_combout\;
 \ALT_INV_R~1_combout\ <= NOT \R~1_combout\;
 \ALT_INV_LessThan4~0_combout\ <= NOT \LessThan4~0_combout\;
 \ALT_INV_R~0_combout\ <= NOT \R~0_combout\;
-\VGA1|ALT_INV_Add1~1_combout\ <= NOT \VGA1|Add1~1_combout\;
-\VGA1|ALT_INV_COLUMN[9]~0_combout\ <= NOT \VGA1|COLUMN[9]~0_combout\;
-\VGA1|ALT_INV_BLANKING~0_combout\ <= NOT \VGA1|BLANKING~0_combout\;
-\VGA1|ALT_INV_Add1~0_combout\ <= NOT \VGA1|Add1~0_combout\;
+\VGA|ALT_INV_Add1~1_combout\ <= NOT \VGA|Add1~1_combout\;
+\VGA|ALT_INV_COLUMN[9]~0_combout\ <= NOT \VGA|COLUMN[9]~0_combout\;
+\VGA|ALT_INV_BLANKING~0_combout\ <= NOT \VGA|BLANKING~0_combout\;
+\VGA|ALT_INV_Add1~0_combout\ <= NOT \VGA|Add1~0_combout\;
 \ALT_INV_B~8_combout\ <= NOT \B~8_combout\;
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(0) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(0);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(1) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(1);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(2);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(3);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(4);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(5);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(6);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(8);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(7);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(9);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(0) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(0);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(1);
-\VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2) <= NOT \VGA1|counter_Y|auto_generated|counter_reg_bit\(2);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(3);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(10);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(4);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(5);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(6);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(7);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(8);
-\VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9) <= NOT \VGA1|counter_X|auto_generated|counter_reg_bit\(9);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(0) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(0);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(1) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(1);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(2);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(3);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(4);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(5);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(6);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(8);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(7);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(9);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(0) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(0);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(1);
+\VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2) <= NOT \VGA|counter_Y|auto_generated|counter_reg_bit\(2);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(3);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(10);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(4);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(5);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(6);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(7);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(8);
+\VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9) <= NOT \VGA|counter_X|auto_generated|counter_reg_bit\(9);
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|ALT_INV_dffs[19]~DUPLICATE_q\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs[19]~DUPLICATE_q\;
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|ALT_INV_dffs[3]~DUPLICATE_q\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs[3]~DUPLICATE_q\;
 \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|ALT_INV_word_counter[1]~DUPLICATE_q\ <= NOT \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|crc_rom_sr|word_counter[1]~DUPLICATE_q\;
@@ -2889,7 +2889,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \VGA1|ALT_INV_LessThan8~1_combout\,
+	i => \VGA|ALT_INV_LessThan8~1_combout\,
 	devoe => ww_devoe,
 	o => ww_HSYNC);
 
@@ -2902,7 +2902,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \VGA1|ALT_INV_LessThan9~2_combout\,
+	i => \VGA|ALT_INV_LessThan9~2_combout\,
 	devoe => ww_devoe,
 	o => ww_VSYNC);
 
@@ -2945,10 +2945,10 @@ PORT MAP (
 	outclk => \CLOCK~inputCLKENA0_outclk\);
 
 -- Location: LABCELL_X12_Y6_N0
-\VGA1|counter_Y|auto_generated|counter_comb_bita0\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita0~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(0) ) + ( VCC ) + ( !VCC ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita0~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(0) ) + ( VCC ) + ( !VCC ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita0~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(0) ) + ( VCC ) + ( !VCC ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita0~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(0) ) + ( VCC ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2957,10 +2957,10 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(0),
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(0),
 	cin => GND,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita0~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita0~COUT\);
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita0~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita0~COUT\);
 
 -- Location: IOIBUF_X14_Y0_N1
 \RST~input\ : cyclonev_io_ibuf
@@ -2974,10 +2974,10 @@ PORT MAP (
 	o => \RST~input_o\);
 
 -- Location: LABCELL_X12_Y6_N24
-\VGA1|counter_Y|auto_generated|counter_comb_bita8\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita8~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(8) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita7~COUT\ ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita8~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(8) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita7~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita8~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(8) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita7~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita8~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(8) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita7~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2986,15 +2986,15 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita7~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita8~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita8~COUT\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita7~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita8~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita8~COUT\);
 
 -- Location: LABCELL_X12_Y6_N27
-\VGA1|counter_Y|auto_generated|counter_comb_bita9\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita9~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(9) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita8~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita9~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(9) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita8~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3003,15 +3003,15 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita8~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita9~sumout\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita8~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita9~sumout\);
 
 -- Location: LABCELL_X11_Y6_N0
-\VGA1|counter_X|auto_generated|counter_comb_bita0\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita0~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(0) ) + ( VCC ) + ( !VCC ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita0~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(0) ) + ( VCC ) + ( !VCC ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita0~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(0) ) + ( VCC ) + ( !VCC ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita0~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(0) ) + ( VCC ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3020,16 +3020,16 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(0),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(0),
 	cin => GND,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita0~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita0~COUT\);
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita0~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita0~COUT\);
 
 -- Location: LABCELL_X11_Y6_N15
-\VGA1|counter_X|auto_generated|counter_comb_bita5\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita5~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(5) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita4~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita5~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(5) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita4~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita5~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(5) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita4~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita5~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(5) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita4~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3038,16 +3038,16 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita4~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita5~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita5~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita4~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita5~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita5~COUT\);
 
 -- Location: LABCELL_X11_Y6_N18
-\VGA1|counter_X|auto_generated|counter_comb_bita6\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita6~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(6) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita5~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita6~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(6) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita5~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita6~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(6) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita5~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita6~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(6) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita5~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3056,13 +3056,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita5~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita6~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita6~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita5~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita6~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita6~COUT\);
 
 -- Location: FF_X11_Y6_N20
-\VGA1|counter_X|auto_generated|counter_reg_bit[6]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3070,17 +3070,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita6~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita6~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(6));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(6));
 
 -- Location: LABCELL_X11_Y6_N21
-\VGA1|counter_X|auto_generated|counter_comb_bita7\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita7~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(7) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita6~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita7~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(7) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita6~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita7~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(7) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita6~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita7~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(7) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita6~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3089,13 +3089,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita6~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita7~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita7~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita6~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita7~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita7~COUT\);
 
 -- Location: FF_X11_Y6_N23
-\VGA1|counter_X|auto_generated|counter_reg_bit[7]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3103,17 +3103,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita7~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita7~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(7));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(7));
 
 -- Location: LABCELL_X11_Y6_N24
-\VGA1|counter_X|auto_generated|counter_comb_bita8\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita8~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(8) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita7~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita8~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(8) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita7~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita8~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(8) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita7~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita8~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(8) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita7~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3122,13 +3122,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita7~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita8~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita8~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita7~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita8~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita8~COUT\);
 
 -- Location: FF_X11_Y6_N26
-\VGA1|counter_X|auto_generated|counter_reg_bit[8]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3136,17 +3136,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita8~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita8~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(8));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(8));
 
 -- Location: LABCELL_X11_Y6_N27
-\VGA1|counter_X|auto_generated|counter_comb_bita9\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita9~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(9) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita8~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita9~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(9) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita8~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita9~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(9) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita8~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita9~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(9) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita8~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3155,13 +3155,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita8~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita9~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita9~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita8~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita9~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita9~COUT\);
 
 -- Location: FF_X11_Y6_N29
-\VGA1|counter_X|auto_generated|counter_reg_bit[9]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[9]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3169,17 +3169,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita9~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita9~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(9));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(9));
 
 -- Location: LABCELL_X11_Y6_N42
-\VGA1|Equal0~1\ : cyclonev_lcell_comb
+\VGA|Equal0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|Equal0~1_combout\ = ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(9) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(8) & (\VGA1|counter_X|auto_generated|counter_reg_bit\(3) & 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & \VGA1|counter_X|auto_generated|counter_reg_bit\(2)))) ) ) )
+-- \VGA|Equal0~1_combout\ = ( !\VGA|counter_X|auto_generated|counter_reg_bit\(9) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(4) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(8) & (\VGA|counter_X|auto_generated|counter_reg_bit\(3) & 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(7) & \VGA|counter_X|auto_generated|counter_reg_bit\(2)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3188,18 +3188,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
-	datae => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	combout => \VGA1|Equal0~1_combout\);
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
+	datae => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	combout => \VGA|Equal0~1_combout\);
 
 -- Location: LABCELL_X11_Y6_N51
-\VGA1|CLEAR_X~0\ : cyclonev_lcell_comb
+\VGA|CLEAR_X~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|CLEAR_X~0_combout\ = ( \VGA1|Equal0~1_combout\ & ( (\VGA1|Equal0~0_combout\) # (\RST~input_o\) ) ) # ( !\VGA1|Equal0~1_combout\ & ( \RST~input_o\ ) )
+-- \VGA|CLEAR_X~0_combout\ = ( \VGA|Equal0~1_combout\ & ( (\VGA|Equal0~0_combout\) # (\RST~input_o\) ) ) # ( !\VGA|Equal0~1_combout\ & ( \RST~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3209,12 +3209,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \ALT_INV_RST~input_o\,
-	datac => \VGA1|ALT_INV_Equal0~0_combout\,
-	dataf => \VGA1|ALT_INV_Equal0~1_combout\,
-	combout => \VGA1|CLEAR_X~0_combout\);
+	datac => \VGA|ALT_INV_Equal0~0_combout\,
+	dataf => \VGA|ALT_INV_Equal0~1_combout\,
+	combout => \VGA|CLEAR_X~0_combout\);
 
 -- Location: FF_X11_Y6_N1
-\VGA1|counter_X|auto_generated|counter_reg_bit[0]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3222,17 +3222,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita0~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita0~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(0));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(0));
 
 -- Location: LABCELL_X11_Y6_N3
-\VGA1|counter_X|auto_generated|counter_comb_bita1\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita1~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(1) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita0~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita1~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(1) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita0~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita1~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(1) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita0~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita1~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(1) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita0~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3241,13 +3241,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(1),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita0~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita1~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita1~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(1),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita0~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita1~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita1~COUT\);
 
 -- Location: FF_X11_Y6_N5
-\VGA1|counter_X|auto_generated|counter_reg_bit[1]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3255,17 +3255,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita1~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita1~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(1));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(1));
 
 -- Location: LABCELL_X11_Y6_N6
-\VGA1|counter_X|auto_generated|counter_comb_bita2\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita2~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(2) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita1~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita2~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(2) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita1~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita2~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(2) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita1~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita2~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(2) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita1~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3274,13 +3274,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita1~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita2~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita2~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita1~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita2~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita2~COUT\);
 
 -- Location: FF_X11_Y6_N8
-\VGA1|counter_X|auto_generated|counter_reg_bit[2]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3288,17 +3288,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita2~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita2~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(2));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(2));
 
 -- Location: LABCELL_X11_Y6_N9
-\VGA1|counter_X|auto_generated|counter_comb_bita3\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita3~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(3) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita2~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita3~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(3) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita2~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita3~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(3) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita2~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita3~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(3) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita2~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3307,13 +3307,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita2~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita3~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita3~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita2~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita3~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita3~COUT\);
 
 -- Location: FF_X11_Y6_N11
-\VGA1|counter_X|auto_generated|counter_reg_bit[3]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3321,17 +3321,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita3~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita3~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(3));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(3));
 
 -- Location: LABCELL_X11_Y6_N12
-\VGA1|counter_X|auto_generated|counter_comb_bita4\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita4~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(4) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita3~COUT\ ))
--- \VGA1|counter_X|auto_generated|counter_comb_bita4~COUT\ = CARRY(( \VGA1|counter_X|auto_generated|counter_reg_bit\(4) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita3~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita4~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(4) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita3~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita4~COUT\ = CARRY(( \VGA|counter_X|auto_generated|counter_reg_bit\(4) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita3~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3340,13 +3340,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita3~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita4~sumout\,
-	cout => \VGA1|counter_X|auto_generated|counter_comb_bita4~COUT\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita3~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita4~sumout\,
+	cout => \VGA|counter_X|auto_generated|counter_comb_bita4~COUT\);
 
 -- Location: FF_X11_Y6_N14
-\VGA1|counter_X|auto_generated|counter_reg_bit[4]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3354,14 +3354,14 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita4~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita4~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(4));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(4));
 
 -- Location: FF_X11_Y6_N17
-\VGA1|counter_X|auto_generated|counter_reg_bit[5]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[5]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3369,16 +3369,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita5~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita5~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(5));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(5));
 
 -- Location: LABCELL_X11_Y6_N30
-\VGA1|counter_X|auto_generated|counter_comb_bita10\ : cyclonev_lcell_comb
+\VGA|counter_X|auto_generated|counter_comb_bita10\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_X|auto_generated|counter_comb_bita10~sumout\ = SUM(( \VGA1|counter_X|auto_generated|counter_reg_bit\(10) ) + ( GND ) + ( \VGA1|counter_X|auto_generated|counter_comb_bita9~COUT\ ))
+-- \VGA|counter_X|auto_generated|counter_comb_bita10~sumout\ = SUM(( \VGA|counter_X|auto_generated|counter_reg_bit\(10) ) + ( GND ) + ( \VGA|counter_X|auto_generated|counter_comb_bita9~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3387,12 +3387,12 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
-	cin => \VGA1|counter_X|auto_generated|counter_comb_bita9~COUT\,
-	sumout => \VGA1|counter_X|auto_generated|counter_comb_bita10~sumout\);
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	cin => \VGA|counter_X|auto_generated|counter_comb_bita9~COUT\,
+	sumout => \VGA|counter_X|auto_generated|counter_comb_bita10~sumout\);
 
 -- Location: FF_X11_Y6_N32
-\VGA1|counter_X|auto_generated|counter_reg_bit[10]\ : dffeas
+\VGA|counter_X|auto_generated|counter_reg_bit[10]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3400,17 +3400,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_X|auto_generated|counter_comb_bita10~sumout\,
-	sclr => \VGA1|CLEAR_X~0_combout\,
+	d => \VGA|counter_X|auto_generated|counter_comb_bita10~sumout\,
+	sclr => \VGA|CLEAR_X~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_X|auto_generated|counter_reg_bit\(10));
+	q => \VGA|counter_X|auto_generated|counter_reg_bit\(10));
 
 -- Location: LABCELL_X10_Y6_N57
-\VGA1|Equal0~0\ : cyclonev_lcell_comb
+\VGA|Equal0~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|Equal0~0_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(10) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & (\VGA1|counter_X|auto_generated|counter_reg_bit\(0) & 
--- \VGA1|counter_X|auto_generated|counter_reg_bit\(1)))) ) )
+-- \VGA|Equal0~0_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(10) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(5) & (!\VGA|counter_X|auto_generated|counter_reg_bit\(6) & (\VGA|counter_X|auto_generated|counter_reg_bit\(0) & 
+-- \VGA|counter_X|auto_generated|counter_reg_bit\(1)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3419,17 +3419,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(0),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(1),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
-	combout => \VGA1|Equal0~0_combout\);
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(0),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(1),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	combout => \VGA|Equal0~0_combout\);
 
 -- Location: LABCELL_X12_Y6_N39
-\VGA1|Equal1~1\ : cyclonev_lcell_comb
+\VGA|Equal1~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|Equal1~1_combout\ = ( !\VGA1|counter_Y|auto_generated|counter_reg_bit\(8) & ( (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(6) & (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(1) & \VGA1|counter_Y|auto_generated|counter_reg_bit\(0))) ) )
+-- \VGA|Equal1~1_combout\ = ( !\VGA|counter_Y|auto_generated|counter_reg_bit\(8) & ( (!\VGA|counter_Y|auto_generated|counter_reg_bit\(6) & (!\VGA|counter_Y|auto_generated|counter_reg_bit\(1) & \VGA|counter_Y|auto_generated|counter_reg_bit\(0))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3438,18 +3438,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6),
-	datac => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1),
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(0),
-	dataf => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8),
-	combout => \VGA1|Equal1~1_combout\);
+	dataa => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6),
+	datac => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1),
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(0),
+	dataf => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8),
+	combout => \VGA|Equal1~1_combout\);
 
 -- Location: LABCELL_X11_Y6_N54
-\VGA1|counter_Y|auto_generated|_~0\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|_~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|_~0_combout\ = ( \VGA1|Equal1~0_combout\ & ( \RST~input_o\ ) ) # ( !\VGA1|Equal1~0_combout\ & ( \RST~input_o\ ) ) # ( \VGA1|Equal1~0_combout\ & ( !\RST~input_o\ & ( (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(2) & 
--- (((\VGA1|Equal0~0_combout\ & \VGA1|Equal0~1_combout\)) # (\VGA1|Equal1~1_combout\))) # (\VGA1|counter_Y|auto_generated|counter_reg_bit\(2) & (\VGA1|Equal0~0_combout\ & ((\VGA1|Equal0~1_combout\)))) ) ) ) # ( !\VGA1|Equal1~0_combout\ & ( !\RST~input_o\ & ( 
--- (\VGA1|Equal0~0_combout\ & \VGA1|Equal0~1_combout\) ) ) )
+-- \VGA|counter_Y|auto_generated|_~0_combout\ = ( \VGA|Equal1~0_combout\ & ( \RST~input_o\ ) ) # ( !\VGA|Equal1~0_combout\ & ( \RST~input_o\ ) ) # ( \VGA|Equal1~0_combout\ & ( !\RST~input_o\ & ( (!\VGA|counter_Y|auto_generated|counter_reg_bit\(2) & 
+-- (((\VGA|Equal0~0_combout\ & \VGA|Equal0~1_combout\)) # (\VGA|Equal1~1_combout\))) # (\VGA|counter_Y|auto_generated|counter_reg_bit\(2) & (\VGA|Equal0~0_combout\ & ((\VGA|Equal0~1_combout\)))) ) ) ) # ( !\VGA|Equal1~0_combout\ & ( !\RST~input_o\ & ( 
+-- (\VGA|Equal0~0_combout\ & \VGA|Equal0~1_combout\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3458,16 +3458,16 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
-	datab => \VGA1|ALT_INV_Equal0~0_combout\,
-	datac => \VGA1|ALT_INV_Equal1~1_combout\,
-	datad => \VGA1|ALT_INV_Equal0~1_combout\,
-	datae => \VGA1|ALT_INV_Equal1~0_combout\,
+	dataa => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
+	datab => \VGA|ALT_INV_Equal0~0_combout\,
+	datac => \VGA|ALT_INV_Equal1~1_combout\,
+	datad => \VGA|ALT_INV_Equal0~1_combout\,
+	datae => \VGA|ALT_INV_Equal1~0_combout\,
 	dataf => \ALT_INV_RST~input_o\,
-	combout => \VGA1|counter_Y|auto_generated|_~0_combout\);
+	combout => \VGA|counter_Y|auto_generated|_~0_combout\);
 
 -- Location: FF_X12_Y6_N29
-\VGA1|counter_Y|auto_generated|counter_reg_bit[9]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[9]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3475,18 +3475,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita9~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita9~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(9));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(9));
 
 -- Location: LABCELL_X12_Y6_N48
-\VGA1|Equal1~0\ : cyclonev_lcell_comb
+\VGA|Equal1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|Equal1~0_combout\ = ( !\VGA1|counter_Y|auto_generated|counter_reg_bit\(5) & ( (\VGA1|counter_Y|auto_generated|counter_reg_bit\(3) & (\VGA1|counter_Y|auto_generated|counter_reg_bit\(4) & (\VGA1|counter_Y|auto_generated|counter_reg_bit\(7) & 
--- \VGA1|counter_Y|auto_generated|counter_reg_bit\(9)))) ) )
+-- \VGA|Equal1~0_combout\ = ( !\VGA|counter_Y|auto_generated|counter_reg_bit\(5) & ( (\VGA|counter_Y|auto_generated|counter_reg_bit\(3) & (\VGA|counter_Y|auto_generated|counter_reg_bit\(4) & (\VGA|counter_Y|auto_generated|counter_reg_bit\(7) & 
+-- \VGA|counter_Y|auto_generated|counter_reg_bit\(9)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3495,17 +3495,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3),
-	datab => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datac => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7),
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9),
-	dataf => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5),
-	combout => \VGA1|Equal1~0_combout\);
+	dataa => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3),
+	datab => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datac => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7),
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9),
+	dataf => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5),
+	combout => \VGA|Equal1~0_combout\);
 
 -- Location: LABCELL_X11_Y6_N48
-\VGA1|CLEAR_Y~0\ : cyclonev_lcell_comb
+\VGA|CLEAR_Y~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|CLEAR_Y~0_combout\ = ( \VGA1|Equal1~1_combout\ & ( ((!\VGA1|counter_Y|auto_generated|counter_reg_bit\(2) & \VGA1|Equal1~0_combout\)) # (\RST~input_o\) ) ) # ( !\VGA1|Equal1~1_combout\ & ( \RST~input_o\ ) )
+-- \VGA|CLEAR_Y~0_combout\ = ( \VGA|Equal1~1_combout\ & ( ((!\VGA|counter_Y|auto_generated|counter_reg_bit\(2) & \VGA|Equal1~0_combout\)) # (\RST~input_o\) ) ) # ( !\VGA|Equal1~1_combout\ & ( \RST~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3515,13 +3515,13 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \ALT_INV_RST~input_o\,
-	datac => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
-	datad => \VGA1|ALT_INV_Equal1~0_combout\,
-	dataf => \VGA1|ALT_INV_Equal1~1_combout\,
-	combout => \VGA1|CLEAR_Y~0_combout\);
+	datac => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
+	datad => \VGA|ALT_INV_Equal1~0_combout\,
+	dataf => \VGA|ALT_INV_Equal1~1_combout\,
+	combout => \VGA|CLEAR_Y~0_combout\);
 
 -- Location: FF_X12_Y6_N2
-\VGA1|counter_Y|auto_generated|counter_reg_bit[0]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3529,18 +3529,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita0~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita0~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(0));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(0));
 
 -- Location: LABCELL_X12_Y6_N3
-\VGA1|counter_Y|auto_generated|counter_comb_bita1\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita1~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(1) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita0~COUT\ ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita1~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(1) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita0~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita1~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(1) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita0~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita1~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(1) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita0~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3549,13 +3549,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita0~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita1~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita1~COUT\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita0~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita1~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita1~COUT\);
 
 -- Location: FF_X12_Y6_N5
-\VGA1|counter_Y|auto_generated|counter_reg_bit[1]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3563,18 +3563,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita1~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita1~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(1));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(1));
 
 -- Location: LABCELL_X12_Y6_N6
-\VGA1|counter_Y|auto_generated|counter_comb_bita2\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita2~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(2) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita1~COUT\ ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita2~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(2) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita1~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita2~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(2) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita1~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita2~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(2) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita1~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3583,13 +3583,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita1~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita2~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita2~COUT\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita1~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita2~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita2~COUT\);
 
 -- Location: FF_X12_Y6_N8
-\VGA1|counter_Y|auto_generated|counter_reg_bit[2]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3597,18 +3597,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita2~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita2~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(2));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(2));
 
 -- Location: LABCELL_X12_Y6_N9
-\VGA1|counter_Y|auto_generated|counter_comb_bita3\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita3~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(3) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita2~COUT\ ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita3~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(3) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita2~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita3~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(3) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita2~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita3~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(3) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita2~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3617,13 +3617,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita2~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita3~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita3~COUT\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita2~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita3~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita3~COUT\);
 
 -- Location: FF_X12_Y6_N11
-\VGA1|counter_Y|auto_generated|counter_reg_bit[3]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3631,18 +3631,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita3~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita3~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(3));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(3));
 
 -- Location: LABCELL_X12_Y6_N12
-\VGA1|counter_Y|auto_generated|counter_comb_bita4\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita4~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(4) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita3~COUT\ ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita4~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(4) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita3~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita4~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(4) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita3~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita4~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(4) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita3~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3651,13 +3651,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita3~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita4~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita4~COUT\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita3~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita4~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita4~COUT\);
 
 -- Location: FF_X12_Y6_N14
-\VGA1|counter_Y|auto_generated|counter_reg_bit[4]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3665,18 +3665,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita4~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita4~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(4));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(4));
 
 -- Location: LABCELL_X12_Y6_N15
-\VGA1|counter_Y|auto_generated|counter_comb_bita5\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita5~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(5) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita4~COUT\ ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita5~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(5) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita4~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita5~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(5) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita4~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita5~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(5) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita4~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3685,13 +3685,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita4~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita5~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita5~COUT\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita4~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita5~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita5~COUT\);
 
 -- Location: FF_X12_Y6_N17
-\VGA1|counter_Y|auto_generated|counter_reg_bit[5]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[5]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3699,18 +3699,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita5~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita5~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(5));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(5));
 
 -- Location: LABCELL_X12_Y6_N18
-\VGA1|counter_Y|auto_generated|counter_comb_bita6\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita6~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(6) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita5~COUT\ ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita6~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(6) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita5~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita6~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(6) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita5~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita6~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(6) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita5~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3719,13 +3719,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita5~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita6~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita6~COUT\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita5~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita6~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita6~COUT\);
 
 -- Location: FF_X12_Y6_N20
-\VGA1|counter_Y|auto_generated|counter_reg_bit[6]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3733,18 +3733,18 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita6~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita6~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(6));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(6));
 
 -- Location: LABCELL_X12_Y6_N21
-\VGA1|counter_Y|auto_generated|counter_comb_bita7\ : cyclonev_lcell_comb
+\VGA|counter_Y|auto_generated|counter_comb_bita7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|counter_Y|auto_generated|counter_comb_bita7~sumout\ = SUM(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(7) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita6~COUT\ ))
--- \VGA1|counter_Y|auto_generated|counter_comb_bita7~COUT\ = CARRY(( \VGA1|counter_Y|auto_generated|counter_reg_bit\(7) ) + ( GND ) + ( \VGA1|counter_Y|auto_generated|counter_comb_bita6~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita7~sumout\ = SUM(( \VGA|counter_Y|auto_generated|counter_reg_bit\(7) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita6~COUT\ ))
+-- \VGA|counter_Y|auto_generated|counter_comb_bita7~COUT\ = CARRY(( \VGA|counter_Y|auto_generated|counter_reg_bit\(7) ) + ( GND ) + ( \VGA|counter_Y|auto_generated|counter_comb_bita6~COUT\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3753,13 +3753,13 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7),
-	cin => \VGA1|counter_Y|auto_generated|counter_comb_bita6~COUT\,
-	sumout => \VGA1|counter_Y|auto_generated|counter_comb_bita7~sumout\,
-	cout => \VGA1|counter_Y|auto_generated|counter_comb_bita7~COUT\);
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7),
+	cin => \VGA|counter_Y|auto_generated|counter_comb_bita6~COUT\,
+	sumout => \VGA|counter_Y|auto_generated|counter_comb_bita7~sumout\,
+	cout => \VGA|counter_Y|auto_generated|counter_comb_bita7~COUT\);
 
 -- Location: FF_X12_Y6_N23
-\VGA1|counter_Y|auto_generated|counter_reg_bit[7]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3767,15 +3767,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita7~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita7~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(7));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(7));
 
 -- Location: FF_X12_Y6_N26
-\VGA1|counter_Y|auto_generated|counter_reg_bit[8]\ : dffeas
+\VGA|counter_Y|auto_generated|counter_reg_bit[8]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3783,17 +3783,17 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	d => \VGA1|counter_Y|auto_generated|counter_comb_bita8~sumout\,
-	sclr => \VGA1|CLEAR_Y~0_combout\,
-	ena => \VGA1|counter_Y|auto_generated|_~0_combout\,
+	d => \VGA|counter_Y|auto_generated|counter_comb_bita8~sumout\,
+	sclr => \VGA|CLEAR_Y~0_combout\,
+	ena => \VGA|counter_Y|auto_generated|_~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VGA1|counter_Y|auto_generated|counter_reg_bit\(8));
+	q => \VGA|counter_Y|auto_generated|counter_reg_bit\(8));
 
 -- Location: LABCELL_X12_Y6_N51
-\VGA1|LessThan9~0\ : cyclonev_lcell_comb
+\VGA|LessThan9~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|LessThan9~0_combout\ = ( !\VGA1|counter_Y|auto_generated|counter_reg_bit\(5) & ( (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(4) & !\VGA1|counter_Y|auto_generated|counter_reg_bit\(3)) ) )
+-- \VGA|LessThan9~0_combout\ = ( !\VGA|counter_Y|auto_generated|counter_reg_bit\(5) & ( (!\VGA|counter_Y|auto_generated|counter_reg_bit\(4) & !\VGA|counter_Y|auto_generated|counter_reg_bit\(3)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3802,15 +3802,15 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datac => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3),
-	dataf => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5),
-	combout => \VGA1|LessThan9~0_combout\);
+	datab => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datac => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3),
+	dataf => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5),
+	combout => \VGA|LessThan9~0_combout\);
 
 -- Location: LABCELL_X12_Y6_N54
-\VGA1|BLANKING~1\ : cyclonev_lcell_comb
+\VGA|BLANKING~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|BLANKING~1_combout\ = (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(2) & ((!\VGA1|counter_Y|auto_generated|counter_reg_bit\(1)) # (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(0))))
+-- \VGA|BLANKING~1_combout\ = (!\VGA|counter_Y|auto_generated|counter_reg_bit\(2) & ((!\VGA|counter_Y|auto_generated|counter_reg_bit\(1)) # (!\VGA|counter_Y|auto_generated|counter_reg_bit\(0))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3819,18 +3819,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1),
-	datab => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
-	datac => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(0),
-	combout => \VGA1|BLANKING~1_combout\);
+	dataa => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1),
+	datab => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
+	datac => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(0),
+	combout => \VGA|BLANKING~1_combout\);
 
 -- Location: LABCELL_X12_Y6_N30
-\VGA1|BLANKING~2\ : cyclonev_lcell_comb
+\VGA|BLANKING~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|BLANKING~2_combout\ = ( \VGA1|counter_Y|auto_generated|counter_reg_bit\(7) & ( \VGA1|counter_Y|auto_generated|counter_reg_bit\(6) & ( \VGA1|counter_Y|auto_generated|counter_reg_bit\(9) ) ) ) # ( !\VGA1|counter_Y|auto_generated|counter_reg_bit\(7) & 
--- ( \VGA1|counter_Y|auto_generated|counter_reg_bit\(6) & ( (\VGA1|counter_Y|auto_generated|counter_reg_bit\(8) & \VGA1|counter_Y|auto_generated|counter_reg_bit\(9)) ) ) ) # ( \VGA1|counter_Y|auto_generated|counter_reg_bit\(7) & ( 
--- !\VGA1|counter_Y|auto_generated|counter_reg_bit\(6) & ( (\VGA1|counter_Y|auto_generated|counter_reg_bit\(9) & (((!\VGA1|LessThan9~0_combout\) # (!\VGA1|BLANKING~1_combout\)) # (\VGA1|counter_Y|auto_generated|counter_reg_bit\(8)))) ) ) ) # ( 
--- !\VGA1|counter_Y|auto_generated|counter_reg_bit\(7) & ( !\VGA1|counter_Y|auto_generated|counter_reg_bit\(6) & ( (\VGA1|counter_Y|auto_generated|counter_reg_bit\(8) & \VGA1|counter_Y|auto_generated|counter_reg_bit\(9)) ) ) )
+-- \VGA|BLANKING~2_combout\ = ( \VGA|counter_Y|auto_generated|counter_reg_bit\(7) & ( \VGA|counter_Y|auto_generated|counter_reg_bit\(6) & ( \VGA|counter_Y|auto_generated|counter_reg_bit\(9) ) ) ) # ( !\VGA|counter_Y|auto_generated|counter_reg_bit\(7) & ( 
+-- \VGA|counter_Y|auto_generated|counter_reg_bit\(6) & ( (\VGA|counter_Y|auto_generated|counter_reg_bit\(8) & \VGA|counter_Y|auto_generated|counter_reg_bit\(9)) ) ) ) # ( \VGA|counter_Y|auto_generated|counter_reg_bit\(7) & ( 
+-- !\VGA|counter_Y|auto_generated|counter_reg_bit\(6) & ( (\VGA|counter_Y|auto_generated|counter_reg_bit\(9) & (((!\VGA|LessThan9~0_combout\) # (!\VGA|BLANKING~1_combout\)) # (\VGA|counter_Y|auto_generated|counter_reg_bit\(8)))) ) ) ) # ( 
+-- !\VGA|counter_Y|auto_generated|counter_reg_bit\(7) & ( !\VGA|counter_Y|auto_generated|counter_reg_bit\(6) & ( (\VGA|counter_Y|auto_generated|counter_reg_bit\(8) & \VGA|counter_Y|auto_generated|counter_reg_bit\(9)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3839,22 +3839,22 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8),
-	datab => \VGA1|ALT_INV_LessThan9~0_combout\,
-	datac => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9),
-	datad => \VGA1|ALT_INV_BLANKING~1_combout\,
-	datae => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7),
-	dataf => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6),
-	combout => \VGA1|BLANKING~2_combout\);
+	dataa => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8),
+	datab => \VGA|ALT_INV_LessThan9~0_combout\,
+	datac => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9),
+	datad => \VGA|ALT_INV_BLANKING~1_combout\,
+	datae => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7),
+	dataf => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6),
+	combout => \VGA|BLANKING~2_combout\);
 
 -- Location: LABCELL_X10_Y6_N18
-\VGA1|BLANKING~0\ : cyclonev_lcell_comb
+\VGA|BLANKING~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|BLANKING~0_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( \VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(9)) # ((!\VGA1|counter_X|auto_generated|counter_reg_bit\(8)) # 
--- ((!\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & !\VGA1|counter_X|auto_generated|counter_reg_bit\(4)))) ) ) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( \VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( 
--- (\VGA1|counter_X|auto_generated|counter_reg_bit\(8)) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(9)) ) ) ) # ( \VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( 
--- (((\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & \VGA1|counter_X|auto_generated|counter_reg_bit\(4))) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(8))) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(9)) ) ) ) # ( 
--- !\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( (\VGA1|counter_X|auto_generated|counter_reg_bit\(8)) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(9)) ) ) )
+-- \VGA|BLANKING~0_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( \VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(9)) # ((!\VGA|counter_X|auto_generated|counter_reg_bit\(8)) # 
+-- ((!\VGA|counter_X|auto_generated|counter_reg_bit\(5) & !\VGA|counter_X|auto_generated|counter_reg_bit\(4)))) ) ) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( \VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( 
+-- (\VGA|counter_X|auto_generated|counter_reg_bit\(8)) # (\VGA|counter_X|auto_generated|counter_reg_bit\(9)) ) ) ) # ( \VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( 
+-- (((\VGA|counter_X|auto_generated|counter_reg_bit\(5) & \VGA|counter_X|auto_generated|counter_reg_bit\(4))) # (\VGA|counter_X|auto_generated|counter_reg_bit\(8))) # (\VGA|counter_X|auto_generated|counter_reg_bit\(9)) ) ) ) # ( 
+-- !\VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( (\VGA|counter_X|auto_generated|counter_reg_bit\(8)) # (\VGA|counter_X|auto_generated|counter_reg_bit\(9)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3863,21 +3863,20 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datae => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	combout => \VGA1|BLANKING~0_combout\);
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datae => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	combout => \VGA|BLANKING~0_combout\);
 
 -- Location: LABCELL_X10_Y6_N36
 \R~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \R~3_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(5) & ( \VGA1|BLANKING~0_combout\ & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & ((!\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & 
--- ((\VGA1|counter_X|auto_generated|counter_reg_bit\(6)))) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & !\VGA1|counter_X|auto_generated|counter_reg_bit\(6))))) ) ) ) # ( 
--- !\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & ( \VGA1|BLANKING~0_combout\ & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(7) $ (!\VGA1|counter_X|auto_generated|counter_reg_bit\(6)))) ) 
--- ) )
+-- \R~3_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(5) & ( \VGA|BLANKING~0_combout\ & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(10) & ((!\VGA|counter_X|auto_generated|counter_reg_bit\(7) & 
+-- ((\VGA|counter_X|auto_generated|counter_reg_bit\(6)))) # (\VGA|counter_X|auto_generated|counter_reg_bit\(7) & (!\VGA|counter_X|auto_generated|counter_reg_bit\(4) & !\VGA|counter_X|auto_generated|counter_reg_bit\(6))))) ) ) ) # ( 
+-- !\VGA|counter_X|auto_generated|counter_reg_bit\(5) & ( \VGA|BLANKING~0_combout\ & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(10) & (!\VGA|counter_X|auto_generated|counter_reg_bit\(7) $ (!\VGA|counter_X|auto_generated|counter_reg_bit\(6)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3886,20 +3885,20 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	datae => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	dataf => \VGA1|ALT_INV_BLANKING~0_combout\,
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	datae => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	dataf => \VGA|ALT_INV_BLANKING~0_combout\,
 	combout => \R~3_combout\);
 
 -- Location: LABCELL_X10_Y6_N45
-\VGA1|Add1~2\ : cyclonev_lcell_comb
+\VGA|Add1~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|Add1~2_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(4) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(8) $ (((!\VGA1|counter_X|auto_generated|counter_reg_bit\(7)) # ((!\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & 
--- !\VGA1|counter_X|auto_generated|counter_reg_bit\(6))))) ) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(8) $ (((!\VGA1|counter_X|auto_generated|counter_reg_bit\(6)) # 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(7)))) ) )
+-- \VGA|Add1~2_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(4) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(8) $ (((!\VGA|counter_X|auto_generated|counter_reg_bit\(7)) # ((!\VGA|counter_X|auto_generated|counter_reg_bit\(5) & 
+-- !\VGA|counter_X|auto_generated|counter_reg_bit\(6))))) ) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(4) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(8) $ (((!\VGA|counter_X|auto_generated|counter_reg_bit\(6)) # 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(7)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3908,17 +3907,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	combout => \VGA1|Add1~2_combout\);
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	combout => \VGA|Add1~2_combout\);
 
 -- Location: LABCELL_X9_Y6_N57
 \R~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \R~2_combout\ = ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & ( (\VGA1|BLANKING~0_combout\ & \VGA1|Add1~2_combout\) ) )
+-- \R~2_combout\ = ( !\VGA|counter_X|auto_generated|counter_reg_bit\(10) & ( (\VGA|BLANKING~0_combout\ & \VGA|Add1~2_combout\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3927,16 +3926,16 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \VGA1|ALT_INV_BLANKING~0_combout\,
-	datad => \VGA1|ALT_INV_Add1~2_combout\,
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	datac => \VGA|ALT_INV_BLANKING~0_combout\,
+	datad => \VGA|ALT_INV_Add1~2_combout\,
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
 	combout => \R~2_combout\);
 
 -- Location: LABCELL_X10_Y6_N51
-\VGA1|Add1~1\ : cyclonev_lcell_comb
+\VGA|Add1~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|Add1~1_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(7) ) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(7) $ 
--- (((!\VGA1|counter_X|auto_generated|counter_reg_bit\(4)) # (!\VGA1|counter_X|auto_generated|counter_reg_bit\(5)))) ) )
+-- \VGA|Add1~1_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(7) ) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(7) $ 
+-- (((!\VGA|counter_X|auto_generated|counter_reg_bit\(4)) # (!\VGA|counter_X|auto_generated|counter_reg_bit\(5)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3945,17 +3944,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	combout => \VGA1|Add1~1_combout\);
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	combout => \VGA|Add1~1_combout\);
 
 -- Location: LABCELL_X10_Y6_N54
 \R~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \R~0_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(4) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & !\VGA1|counter_X|auto_generated|counter_reg_bit\(6)) ) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & ( 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ((\VGA1|counter_X|auto_generated|counter_reg_bit\(3)) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(5)))) ) )
+-- \R~0_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(4) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(5) & !\VGA|counter_X|auto_generated|counter_reg_bit\(6)) ) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(4) & ( 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ((\VGA|counter_X|auto_generated|counter_reg_bit\(3)) # (\VGA|counter_X|auto_generated|counter_reg_bit\(5)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3964,17 +3963,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
 	combout => \R~0_combout\);
 
 -- Location: LABCELL_X10_Y6_N12
 \LessThan4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \LessThan4~0_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( (\VGA1|counter_X|auto_generated|counter_reg_bit\(3) & (\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & \VGA1|counter_X|auto_generated|counter_reg_bit\(5))) ) ) # ( 
--- !\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(4)) # (!\VGA1|counter_X|auto_generated|counter_reg_bit\(5)) ) )
+-- \LessThan4~0_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( (\VGA|counter_X|auto_generated|counter_reg_bit\(3) & (\VGA|counter_X|auto_generated|counter_reg_bit\(4) & \VGA|counter_X|auto_generated|counter_reg_bit\(5))) ) ) # ( 
+-- !\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(4)) # (!\VGA|counter_X|auto_generated|counter_reg_bit\(5)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -3983,20 +3982,20 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
 	combout => \LessThan4~0_combout\);
 
 -- Location: LABCELL_X10_Y6_N0
-\VGA1|Add1~0\ : cyclonev_lcell_comb
+\VGA|Add1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|Add1~0_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( \VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(9) ) ) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( 
--- \VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(9) $ (!\VGA1|counter_X|auto_generated|counter_reg_bit\(8)) ) ) ) # ( \VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( 
--- !\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(9) $ (((!\VGA1|counter_X|auto_generated|counter_reg_bit\(8) & ((!\VGA1|counter_X|auto_generated|counter_reg_bit\(5)) # 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(4)))))) ) ) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(9) $ 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(8)) ) ) )
+-- \VGA|Add1~0_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( \VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(9) ) ) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( 
+-- \VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(9) $ (!\VGA|counter_X|auto_generated|counter_reg_bit\(8)) ) ) ) # ( \VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( 
+-- !\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(9) $ (((!\VGA|counter_X|auto_generated|counter_reg_bit\(8) & ((!\VGA|counter_X|auto_generated|counter_reg_bit\(5)) # 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(4)))))) ) ) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(9) $ 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(8)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4005,19 +4004,19 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datae => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	combout => \VGA1|Add1~0_combout\);
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datae => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	combout => \VGA|Add1~0_combout\);
 
 -- Location: LABCELL_X9_Y6_N12
 \R~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \R~1_combout\ = ( \VGA1|Add1~0_combout\ & ( \VGA1|BLANKING~0_combout\ & ( (\VGA1|Add1~1_combout\ & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & \LessThan4~0_combout\)) ) ) ) # ( !\VGA1|Add1~0_combout\ & ( \VGA1|BLANKING~0_combout\ & ( 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & ((\R~0_combout\) # (\VGA1|Add1~1_combout\))) ) ) )
+-- \R~1_combout\ = ( \VGA|Add1~0_combout\ & ( \VGA|BLANKING~0_combout\ & ( (\VGA|Add1~1_combout\ & (!\VGA|counter_X|auto_generated|counter_reg_bit\(10) & \LessThan4~0_combout\)) ) ) ) # ( !\VGA|Add1~0_combout\ & ( \VGA|BLANKING~0_combout\ & ( 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(10) & ((\R~0_combout\) # (\VGA|Add1~1_combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4026,19 +4025,19 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|ALT_INV_Add1~1_combout\,
+	dataa => \VGA|ALT_INV_Add1~1_combout\,
 	datab => \ALT_INV_R~0_combout\,
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
 	datad => \ALT_INV_LessThan4~0_combout\,
-	datae => \VGA1|ALT_INV_Add1~0_combout\,
-	dataf => \VGA1|ALT_INV_BLANKING~0_combout\,
+	datae => \VGA|ALT_INV_Add1~0_combout\,
+	dataf => \VGA|ALT_INV_BLANKING~0_combout\,
 	combout => \R~1_combout\);
 
 -- Location: LABCELL_X11_Y6_N39
-\VGA1|LessThan4~0\ : cyclonev_lcell_comb
+\VGA|LessThan4~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|LessThan4~0_combout\ = ( \VGA1|counter_Y|auto_generated|counter_reg_bit\(4) & ( \VGA1|counter_Y|auto_generated|counter_reg_bit\(5) ) ) # ( !\VGA1|counter_Y|auto_generated|counter_reg_bit\(4) & ( (\VGA1|counter_Y|auto_generated|counter_reg_bit\(3) & 
--- \VGA1|counter_Y|auto_generated|counter_reg_bit\(5)) ) )
+-- \VGA|LessThan4~0_combout\ = ( \VGA|counter_Y|auto_generated|counter_reg_bit\(4) & ( \VGA|counter_Y|auto_generated|counter_reg_bit\(5) ) ) # ( !\VGA|counter_Y|auto_generated|counter_reg_bit\(4) & ( (\VGA|counter_Y|auto_generated|counter_reg_bit\(3) & 
+-- \VGA|counter_Y|auto_generated|counter_reg_bit\(5)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4047,15 +4046,15 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3),
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5),
-	dataf => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
-	combout => \VGA1|LessThan4~0_combout\);
+	dataa => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(3),
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(5),
+	dataf => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
+	combout => \VGA|LessThan4~0_combout\);
 
 -- Location: LABCELL_X12_Y6_N36
-\VGA1|LessThan9~1\ : cyclonev_lcell_comb
+\VGA|LessThan9~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|LessThan9~1_combout\ = ( !\VGA1|counter_Y|auto_generated|counter_reg_bit\(8) & ( (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(6) & (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(7) & !\VGA1|counter_Y|auto_generated|counter_reg_bit\(9))) ) )
+-- \VGA|LessThan9~1_combout\ = ( !\VGA|counter_Y|auto_generated|counter_reg_bit\(8) & ( (!\VGA|counter_Y|auto_generated|counter_reg_bit\(6) & (!\VGA|counter_Y|auto_generated|counter_reg_bit\(7) & !\VGA|counter_Y|auto_generated|counter_reg_bit\(9))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4064,17 +4063,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6),
-	datac => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7),
-	datad => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9),
-	dataf => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8),
-	combout => \VGA1|LessThan9~1_combout\);
+	dataa => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(6),
+	datac => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(7),
+	datad => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(9),
+	dataf => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(8),
+	combout => \VGA|LessThan9~1_combout\);
 
 -- Location: LABCELL_X12_Y6_N42
-\VGA1|BLANKING~3\ : cyclonev_lcell_comb
+\VGA|BLANKING~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|BLANKING~3_combout\ = ( \VGA1|LessThan9~1_combout\ & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & ( (\VGA1|LessThan4~0_combout\ & (\VGA1|BLANKING~0_combout\ & ((!\VGA1|BLANKING~1_combout\) # 
--- (\VGA1|counter_Y|auto_generated|counter_reg_bit\(4))))) ) ) ) # ( !\VGA1|LessThan9~1_combout\ & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & ( \VGA1|BLANKING~0_combout\ ) ) )
+-- \VGA|BLANKING~3_combout\ = ( \VGA|LessThan9~1_combout\ & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(10) & ( (\VGA|LessThan4~0_combout\ & (\VGA|BLANKING~0_combout\ & ((!\VGA|BLANKING~1_combout\) # 
+-- (\VGA|counter_Y|auto_generated|counter_reg_bit\(4))))) ) ) ) # ( !\VGA|LessThan9~1_combout\ & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(10) & ( \VGA|BLANKING~0_combout\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4083,18 +4082,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|ALT_INV_BLANKING~1_combout\,
-	datab => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datac => \VGA1|ALT_INV_LessThan4~0_combout\,
-	datad => \VGA1|ALT_INV_BLANKING~0_combout\,
-	datae => \VGA1|ALT_INV_LessThan9~1_combout\,
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
-	combout => \VGA1|BLANKING~3_combout\);
+	dataa => \VGA|ALT_INV_BLANKING~1_combout\,
+	datab => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datac => \VGA|ALT_INV_LessThan4~0_combout\,
+	datad => \VGA|ALT_INV_BLANKING~0_combout\,
+	datae => \VGA|ALT_INV_LessThan9~1_combout\,
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	combout => \VGA|BLANKING~3_combout\);
 
 -- Location: LABCELL_X9_Y6_N33
-\VGA1|COLUMN[9]~0\ : cyclonev_lcell_comb
+\VGA|COLUMN[9]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|COLUMN[9]~0_combout\ = ( \VGA1|Add1~0_combout\ & ( \VGA1|BLANKING~0_combout\ & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(10) ) ) )
+-- \VGA|COLUMN[9]~0_combout\ = ( \VGA|Add1~0_combout\ & ( \VGA|BLANKING~0_combout\ & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(10) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4103,16 +4102,16 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
-	datae => \VGA1|ALT_INV_Add1~0_combout\,
-	dataf => \VGA1|ALT_INV_BLANKING~0_combout\,
-	combout => \VGA1|COLUMN[9]~0_combout\);
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	datae => \VGA|ALT_INV_Add1~0_combout\,
+	dataf => \VGA|ALT_INV_BLANKING~0_combout\,
+	combout => \VGA|COLUMN[9]~0_combout\);
 
 -- Location: LABCELL_X9_Y6_N24
 \R~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \R~4_combout\ = ( \VGA1|BLANKING~3_combout\ & ( \VGA1|COLUMN[9]~0_combout\ & ( (!\VGA1|BLANKING~2_combout\ & ((!\R~2_combout\ & (\R~3_combout\)) # (\R~2_combout\ & ((!\R~1_combout\))))) ) ) ) # ( \VGA1|BLANKING~3_combout\ & ( !\VGA1|COLUMN[9]~0_combout\ & 
--- ( (!\VGA1|BLANKING~2_combout\ & (\R~2_combout\ & !\R~1_combout\)) ) ) )
+-- \R~4_combout\ = ( \VGA|BLANKING~3_combout\ & ( \VGA|COLUMN[9]~0_combout\ & ( (!\VGA|BLANKING~2_combout\ & ((!\R~2_combout\ & (\R~3_combout\)) # (\R~2_combout\ & ((!\R~1_combout\))))) ) ) ) # ( \VGA|BLANKING~3_combout\ & ( !\VGA|COLUMN[9]~0_combout\ & ( 
+-- (!\VGA|BLANKING~2_combout\ & (\R~2_combout\ & !\R~1_combout\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4121,18 +4120,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|ALT_INV_BLANKING~2_combout\,
+	dataa => \VGA|ALT_INV_BLANKING~2_combout\,
 	datab => \ALT_INV_R~3_combout\,
 	datac => \ALT_INV_R~2_combout\,
 	datad => \ALT_INV_R~1_combout\,
-	datae => \VGA1|ALT_INV_BLANKING~3_combout\,
-	dataf => \VGA1|ALT_INV_COLUMN[9]~0_combout\,
+	datae => \VGA|ALT_INV_BLANKING~3_combout\,
+	dataf => \VGA|ALT_INV_COLUMN[9]~0_combout\,
 	combout => \R~4_combout\);
 
 -- Location: LABCELL_X9_Y6_N54
 \G~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \G~0_combout\ = ( !\VGA1|BLANKING~2_combout\ & ( (\VGA1|BLANKING~3_combout\ & (\VGA1|COLUMN[9]~0_combout\ & ((!\R~3_combout\) # (\R~2_combout\)))) ) )
+-- \G~0_combout\ = ( !\VGA|BLANKING~2_combout\ & ( (\VGA|BLANKING~3_combout\ & (\VGA|COLUMN[9]~0_combout\ & ((!\R~3_combout\) # (\R~2_combout\)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4142,16 +4141,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \ALT_INV_R~2_combout\,
-	datab => \VGA1|ALT_INV_BLANKING~3_combout\,
-	datac => \VGA1|ALT_INV_COLUMN[9]~0_combout\,
+	datab => \VGA|ALT_INV_BLANKING~3_combout\,
+	datac => \VGA|ALT_INV_COLUMN[9]~0_combout\,
 	datad => \ALT_INV_R~3_combout\,
-	dataf => \VGA1|ALT_INV_BLANKING~2_combout\,
+	dataf => \VGA|ALT_INV_BLANKING~2_combout\,
 	combout => \G~0_combout\);
 
 -- Location: LABCELL_X9_Y6_N36
 \B~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~6_combout\ = ( !\VGA1|Add1~0_combout\ & ( \VGA1|BLANKING~0_combout\ & ( (\VGA1|Add1~2_combout\ & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & ((\R~0_combout\) # (\VGA1|Add1~1_combout\)))) ) ) )
+-- \B~6_combout\ = ( !\VGA|Add1~0_combout\ & ( \VGA|BLANKING~0_combout\ & ( (\VGA|Add1~2_combout\ & (!\VGA|counter_X|auto_generated|counter_reg_bit\(10) & ((\R~0_combout\) # (\VGA|Add1~1_combout\)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4160,21 +4159,21 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|ALT_INV_Add1~1_combout\,
-	datab => \VGA1|ALT_INV_Add1~2_combout\,
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	dataa => \VGA|ALT_INV_Add1~1_combout\,
+	datab => \VGA|ALT_INV_Add1~2_combout\,
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
 	datad => \ALT_INV_R~0_combout\,
-	datae => \VGA1|ALT_INV_Add1~0_combout\,
-	dataf => \VGA1|ALT_INV_BLANKING~0_combout\,
+	datae => \VGA|ALT_INV_Add1~0_combout\,
+	dataf => \VGA|ALT_INV_BLANKING~0_combout\,
 	combout => \B~6_combout\);
 
 -- Location: LABCELL_X10_Y6_N6
 \B~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~5_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(5) & ( \VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & (((\VGA1|counter_X|auto_generated|counter_reg_bit\(3) & 
--- \VGA1|counter_X|auto_generated|counter_reg_bit\(2))) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(4)))) ) ) ) # ( \VGA1|counter_X|auto_generated|counter_reg_bit\(5) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & \VGA1|counter_X|auto_generated|counter_reg_bit\(7)) ) ) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ( 
--- \VGA1|counter_X|auto_generated|counter_reg_bit\(7) ) ) )
+-- \B~5_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(5) & ( \VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(7) & (((\VGA|counter_X|auto_generated|counter_reg_bit\(3) & 
+-- \VGA|counter_X|auto_generated|counter_reg_bit\(2))) # (\VGA|counter_X|auto_generated|counter_reg_bit\(4)))) ) ) ) # ( \VGA|counter_X|auto_generated|counter_reg_bit\(5) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(4) & \VGA|counter_X|auto_generated|counter_reg_bit\(7)) ) ) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(5) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ( 
+-- \VGA|counter_X|auto_generated|counter_reg_bit\(7) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4183,19 +4182,19 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
-	datae => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
+	datae => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
 	combout => \B~5_combout\);
 
 -- Location: LABCELL_X10_Y6_N42
 \B~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~4_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(4) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(5)) # (((!\VGA1|counter_X|auto_generated|counter_reg_bit\(3) & 
--- !\VGA1|counter_X|auto_generated|counter_reg_bit\(2))) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(6))) ) )
+-- \B~4_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(4) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(4) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(5)) # (((!\VGA|counter_X|auto_generated|counter_reg_bit\(3) & 
+-- !\VGA|counter_X|auto_generated|counter_reg_bit\(2))) # (\VGA|counter_X|auto_generated|counter_reg_bit\(6))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4204,19 +4203,19 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
 	combout => \B~4_combout\);
 
 -- Location: LABCELL_X10_Y6_N33
 \B~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~0_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(2) & ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(5) $ (!\VGA1|counter_X|auto_generated|counter_reg_bit\(4)) ) ) # ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(2) & ( 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & (\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & \VGA1|counter_X|auto_generated|counter_reg_bit\(3))) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(4))) ) )
+-- \B~0_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(2) & ( !\VGA|counter_X|auto_generated|counter_reg_bit\(5) $ (!\VGA|counter_X|auto_generated|counter_reg_bit\(4)) ) ) # ( !\VGA|counter_X|auto_generated|counter_reg_bit\(2) & ( 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(5) & (\VGA|counter_X|auto_generated|counter_reg_bit\(4) & \VGA|counter_X|auto_generated|counter_reg_bit\(3))) # (\VGA|counter_X|auto_generated|counter_reg_bit\(5) & 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(4))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4225,17 +4224,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
 	combout => \B~0_combout\);
 
 -- Location: LABCELL_X9_Y6_N18
 \B~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~1_combout\ = ( \B~0_combout\ & ( (\VGA1|Add1~1_combout\ & (\LessThan4~0_combout\ & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & \VGA1|BLANKING~0_combout\))) ) ) # ( !\B~0_combout\ & ( (!\VGA1|Add1~1_combout\) # ((\LessThan4~0_combout\ & 
--- (!\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & \VGA1|BLANKING~0_combout\))) ) )
+-- \B~1_combout\ = ( \B~0_combout\ & ( (\VGA|Add1~1_combout\ & (\LessThan4~0_combout\ & (!\VGA|counter_X|auto_generated|counter_reg_bit\(10) & \VGA|BLANKING~0_combout\))) ) ) # ( !\B~0_combout\ & ( (!\VGA|Add1~1_combout\) # ((\LessThan4~0_combout\ & 
+-- (!\VGA|counter_X|auto_generated|counter_reg_bit\(10) & \VGA|BLANKING~0_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4244,17 +4243,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|ALT_INV_Add1~1_combout\,
+	dataa => \VGA|ALT_INV_Add1~1_combout\,
 	datab => \ALT_INV_LessThan4~0_combout\,
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
-	datad => \VGA1|ALT_INV_BLANKING~0_combout\,
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	datad => \VGA|ALT_INV_BLANKING~0_combout\,
 	dataf => \ALT_INV_B~0_combout\,
 	combout => \B~1_combout\);
 
 -- Location: LABCELL_X10_Y6_N15
 \B~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~2_combout\ = (\VGA1|counter_X|auto_generated|counter_reg_bit\(3) & \VGA1|counter_X|auto_generated|counter_reg_bit\(2))
+-- \B~2_combout\ = (\VGA|counter_X|auto_generated|counter_reg_bit\(3) & \VGA|counter_X|auto_generated|counter_reg_bit\(2))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4263,16 +4262,16 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(2),
 	combout => \B~2_combout\);
 
 -- Location: LABCELL_X10_Y6_N24
 \B~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~3_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( \VGA1|counter_X|auto_generated|counter_reg_bit\(4) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & (((\VGA1|counter_X|auto_generated|counter_reg_bit\(5))))) # 
--- (\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(5) & ((!\B~2_combout\) # (!\VGA1|counter_X|auto_generated|counter_reg_bit\(8))))) ) ) ) # ( \VGA1|counter_X|auto_generated|counter_reg_bit\(7) & ( 
--- !\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & ( (\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & ((!\VGA1|counter_X|auto_generated|counter_reg_bit\(5)) # (!\VGA1|counter_X|auto_generated|counter_reg_bit\(8)))) ) ) )
+-- \B~3_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( \VGA|counter_X|auto_generated|counter_reg_bit\(4) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(6) & (((\VGA|counter_X|auto_generated|counter_reg_bit\(5))))) # 
+-- (\VGA|counter_X|auto_generated|counter_reg_bit\(6) & (!\VGA|counter_X|auto_generated|counter_reg_bit\(5) & ((!\B~2_combout\) # (!\VGA|counter_X|auto_generated|counter_reg_bit\(8))))) ) ) ) # ( \VGA|counter_X|auto_generated|counter_reg_bit\(7) & ( 
+-- !\VGA|counter_X|auto_generated|counter_reg_bit\(4) & ( (\VGA|counter_X|auto_generated|counter_reg_bit\(6) & ((!\VGA|counter_X|auto_generated|counter_reg_bit\(5)) # (!\VGA|counter_X|auto_generated|counter_reg_bit\(8)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4281,19 +4280,19 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
 	datab => \ALT_INV_B~2_combout\,
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
-	datae => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
+	datae => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
 	combout => \B~3_combout\);
 
 -- Location: LABCELL_X9_Y6_N0
 \B~8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~8_combout\ = ( !\VGA1|Add1~2_combout\ & ( (((!\VGA1|BLANKING~0_combout\) # ((\B~4_combout\ & \R~3_combout\))) # (\B~3_combout\)) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(10)) ) ) # ( \VGA1|Add1~2_combout\ & ( ((((!\VGA1|BLANKING~0_combout\) # 
--- (\B~3_combout\)) # (\B~1_combout\))) # (\VGA1|counter_X|auto_generated|counter_reg_bit\(10)) ) )
+-- \B~8_combout\ = ( !\VGA|Add1~2_combout\ & ( (((!\VGA|BLANKING~0_combout\) # ((\B~4_combout\ & \R~3_combout\))) # (\B~3_combout\)) # (\VGA|counter_X|auto_generated|counter_reg_bit\(10)) ) ) # ( \VGA|Add1~2_combout\ & ( ((((!\VGA|BLANKING~0_combout\) # 
+-- (\B~3_combout\)) # (\B~1_combout\))) # (\VGA|counter_X|auto_generated|counter_reg_bit\(10)) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4302,20 +4301,20 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
 	datab => \ALT_INV_B~4_combout\,
 	datac => \ALT_INV_B~1_combout\,
 	datad => \ALT_INV_B~3_combout\,
-	datae => \VGA1|ALT_INV_Add1~2_combout\,
-	dataf => \VGA1|ALT_INV_BLANKING~0_combout\,
+	datae => \VGA|ALT_INV_Add1~2_combout\,
+	dataf => \VGA|ALT_INV_BLANKING~0_combout\,
 	datag => \ALT_INV_R~3_combout\,
 	combout => \B~8_combout\);
 
 -- Location: LABCELL_X9_Y6_N6
 \B~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \B~7_combout\ = ( \B~8_combout\ & ( !\VGA1|BLANKING~2_combout\ & ( (\VGA1|BLANKING~3_combout\ & (((\B~6_combout\ & !\B~5_combout\)) # (\VGA1|COLUMN[9]~0_combout\))) ) ) ) # ( !\B~8_combout\ & ( !\VGA1|BLANKING~2_combout\ & ( (\B~6_combout\ & 
--- (!\B~5_combout\ & \VGA1|BLANKING~3_combout\)) ) ) )
+-- \B~7_combout\ = ( \B~8_combout\ & ( !\VGA|BLANKING~2_combout\ & ( (\VGA|BLANKING~3_combout\ & (((\B~6_combout\ & !\B~5_combout\)) # (\VGA|COLUMN[9]~0_combout\))) ) ) ) # ( !\B~8_combout\ & ( !\VGA|BLANKING~2_combout\ & ( (\B~6_combout\ & (!\B~5_combout\ & 
+-- \VGA|BLANKING~3_combout\)) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4326,16 +4325,16 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \ALT_INV_B~6_combout\,
 	datab => \ALT_INV_B~5_combout\,
-	datac => \VGA1|ALT_INV_COLUMN[9]~0_combout\,
-	datad => \VGA1|ALT_INV_BLANKING~3_combout\,
+	datac => \VGA|ALT_INV_COLUMN[9]~0_combout\,
+	datad => \VGA|ALT_INV_BLANKING~3_combout\,
 	datae => \ALT_INV_B~8_combout\,
-	dataf => \VGA1|ALT_INV_BLANKING~2_combout\,
+	dataf => \VGA|ALT_INV_BLANKING~2_combout\,
 	combout => \B~7_combout\);
 
 -- Location: LABCELL_X11_Y6_N36
-\VGA1|LessThan8~0\ : cyclonev_lcell_comb
+\VGA|LessThan8~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|LessThan8~0_combout\ = ( \VGA1|counter_X|auto_generated|counter_reg_bit\(3) & ( (\VGA1|counter_X|auto_generated|counter_reg_bit\(4) & (\VGA1|counter_X|auto_generated|counter_reg_bit\(6) & \VGA1|counter_X|auto_generated|counter_reg_bit\(5))) ) )
+-- \VGA|LessThan8~0_combout\ = ( \VGA|counter_X|auto_generated|counter_reg_bit\(3) & ( (\VGA|counter_X|auto_generated|counter_reg_bit\(4) & (\VGA|counter_X|auto_generated|counter_reg_bit\(6) & \VGA|counter_X|auto_generated|counter_reg_bit\(5))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4344,17 +4343,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
-	datad => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
-	combout => \VGA1|LessThan8~0_combout\);
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(4),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(6),
+	datad => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(5),
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(3),
+	combout => \VGA|LessThan8~0_combout\);
 
 -- Location: LABCELL_X10_Y6_N48
-\VGA1|LessThan8~1\ : cyclonev_lcell_comb
+\VGA|LessThan8~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|LessThan8~1_combout\ = ( !\VGA1|counter_X|auto_generated|counter_reg_bit\(10) & ( (!\VGA1|counter_X|auto_generated|counter_reg_bit\(7) & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(8) & (!\VGA1|counter_X|auto_generated|counter_reg_bit\(9) & 
--- !\VGA1|LessThan8~0_combout\))) ) )
+-- \VGA|LessThan8~1_combout\ = ( !\VGA|counter_X|auto_generated|counter_reg_bit\(10) & ( (!\VGA|counter_X|auto_generated|counter_reg_bit\(7) & (!\VGA|counter_X|auto_generated|counter_reg_bit\(8) & (!\VGA|counter_X|auto_generated|counter_reg_bit\(9) & 
+-- !\VGA|LessThan8~0_combout\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4363,17 +4362,17 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
-	datab => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
-	datac => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
-	datad => \VGA1|ALT_INV_LessThan8~0_combout\,
-	dataf => \VGA1|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
-	combout => \VGA1|LessThan8~1_combout\);
+	dataa => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(7),
+	datab => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(8),
+	datac => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(9),
+	datad => \VGA|ALT_INV_LessThan8~0_combout\,
+	dataf => \VGA|counter_X|auto_generated|ALT_INV_counter_reg_bit\(10),
+	combout => \VGA|LessThan8~1_combout\);
 
 -- Location: LABCELL_X12_Y6_N57
-\VGA1|LessThan9~2\ : cyclonev_lcell_comb
+\VGA|LessThan9~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|LessThan9~2_combout\ = ( \VGA1|LessThan9~0_combout\ & ( (\VGA1|LessThan9~1_combout\ & ((!\VGA1|counter_Y|auto_generated|counter_reg_bit\(1)) # (!\VGA1|counter_Y|auto_generated|counter_reg_bit\(2)))) ) )
+-- \VGA|LessThan9~2_combout\ = ( \VGA|LessThan9~0_combout\ & ( (\VGA|LessThan9~1_combout\ & ((!\VGA|counter_Y|auto_generated|counter_reg_bit\(1)) # (!\VGA|counter_Y|auto_generated|counter_reg_bit\(2)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -4382,11 +4381,11 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1),
-	datab => \VGA1|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
-	datad => \VGA1|ALT_INV_LessThan9~1_combout\,
-	dataf => \VGA1|ALT_INV_LessThan9~0_combout\,
-	combout => \VGA1|LessThan9~2_combout\);
+	dataa => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(1),
+	datab => \VGA|counter_Y|auto_generated|ALT_INV_counter_reg_bit\(2),
+	datad => \VGA|ALT_INV_LessThan9~1_combout\,
+	dataf => \VGA|ALT_INV_LessThan9~0_combout\,
+	combout => \VGA|LessThan9~2_combout\);
 
 -- Location: IOIBUF_X11_Y0_N7
 \altera_reserved_tms~input\ : cyclonev_io_ibuf
@@ -12558,9 +12557,9 @@ PORT MAP (
 	q => \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:18:sm1|regoutff~q\);
 
 -- Location: LABCELL_X13_Y4_N27
-\VGA1|LessThan9~2_wirecell\ : cyclonev_lcell_comb
+\VGA|LessThan9~2_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|LessThan9~2_wirecell_combout\ = ( !\VGA1|LessThan9~2_combout\ )
+-- \VGA|LessThan9~2_wirecell_combout\ = ( !\VGA|LessThan9~2_combout\ )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -12569,8 +12568,8 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datae => \VGA1|ALT_INV_LessThan9~2_combout\,
-	combout => \VGA1|LessThan9~2_wirecell_combout\);
+	datae => \VGA|ALT_INV_LessThan9~2_combout\,
+	combout => \VGA|LessThan9~2_wirecell_combout\);
 
 -- Location: FF_X11_Y4_N11
 \auto_signaltap_0|acq_trigger_in_reg[21]\ : dffeas
@@ -12581,7 +12580,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	asdata => \VGA1|LessThan9~2_wirecell_combout\,
+	asdata => \VGA|LessThan9~2_wirecell_combout\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -13055,9 +13054,9 @@ PORT MAP (
 	q => \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_modules_gen:0:trigger_match|gen_sbpmg_pipeline_less_than_two:sm0:5:sm1|regoutff~q\);
 
 -- Location: LABCELL_X10_Y6_N30
-\VGA1|LessThan8~1_wirecell\ : cyclonev_lcell_comb
+\VGA|LessThan8~1_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \VGA1|LessThan8~1_wirecell_combout\ = ( !\VGA1|LessThan8~1_combout\ )
+-- \VGA|LessThan8~1_wirecell_combout\ = ( !\VGA|LessThan8~1_combout\ )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -13066,8 +13065,8 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataf => \VGA1|ALT_INV_LessThan8~1_combout\,
-	combout => \VGA1|LessThan8~1_wirecell_combout\);
+	dataf => \VGA|ALT_INV_LessThan8~1_combout\,
+	combout => \VGA|LessThan8~1_wirecell_combout\);
 
 -- Location: FF_X6_Y4_N34
 \auto_signaltap_0|acq_trigger_in_reg[10]\ : dffeas
@@ -13078,7 +13077,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	asdata => \VGA1|LessThan8~1_wirecell_combout\,
+	asdata => \VGA|LessThan8~1_wirecell_combout\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -16648,7 +16647,7 @@ PORT MAP (
 -- Location: MLABCELL_X6_Y4_N30
 \auto_signaltap_0|acq_data_in_reg[10]~feeder\ : cyclonev_lcell_comb
 -- Equation(s):
--- \auto_signaltap_0|acq_data_in_reg[10]~feeder_combout\ = \VGA1|LessThan8~1_wirecell_combout\
+-- \auto_signaltap_0|acq_data_in_reg[10]~feeder_combout\ = \VGA|LessThan8~1_wirecell_combout\
 
 -- pragma translate_off
 GENERIC MAP (
@@ -16657,7 +16656,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \VGA1|ALT_INV_LessThan8~1_wirecell_combout\,
+	datac => \VGA|ALT_INV_LessThan8~1_wirecell_combout\,
 	combout => \auto_signaltap_0|acq_data_in_reg[10]~feeder_combout\);
 
 -- Location: FF_X6_Y4_N31
@@ -17965,7 +17964,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \CLOCK~inputCLKENA0_outclk\,
-	asdata => \VGA1|LessThan9~2_wirecell_combout\,
+	asdata => \VGA|LessThan9~2_wirecell_combout\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,

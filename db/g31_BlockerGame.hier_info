@@ -1,6 +1,6 @@
 |g31_VGA_Test_Pattern
-CLOCK => g31_VGA:VGA1.CLOCK
-RST => g31_VGA:VGA1.RST
+CLOCK => g31_VGA:VGA.CLOCK
+RST => g31_VGA:VGA.RST
 R[0] <= R.DB_MAX_OUTPUT_PORT_TYPE
 R[1] <= R.DB_MAX_OUTPUT_PORT_TYPE
 R[2] <= R.DB_MAX_OUTPUT_PORT_TYPE
@@ -13,11 +13,11 @@ B[0] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[1] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[2] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[3] <= B.DB_MAX_OUTPUT_PORT_TYPE
-HSYNC <= g31_VGA:VGA1.HSYNC
-VSYNC <= g31_VGA:VGA1.VSYNC
+HSYNC <= g31_VGA:VGA.HSYNC
+VSYNC <= g31_VGA:VGA.VSYNC
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA1
+|g31_VGA_Test_Pattern|g31_VGA:VGA
 CLOCK => LPM_COUNTER:counter_X.CLOCK
 CLOCK => LPM_COUNTER:counter_Y.CLOCK
 RST => CLEAR_X.DATAA
@@ -47,7 +47,7 @@ HSYNC <= LessThan8.DB_MAX_OUTPUT_PORT_TYPE
 VSYNC <= LessThan9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA1|LPM_COUNTER:counter_X
+|g31_VGA_Test_Pattern|g31_VGA:VGA|LPM_COUNTER:counter_X
 clock => cntr_o8i:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -102,7 +102,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA1|LPM_COUNTER:counter_X|cntr_o8i:auto_generated
+|g31_VGA_Test_Pattern|g31_VGA:VGA|LPM_COUNTER:counter_X|cntr_o8i:auto_generated
 clock => counter_reg_bit[10].CLK
 clock => counter_reg_bit[9].CLK
 clock => counter_reg_bit[8].CLK
@@ -139,7 +139,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA1|LPM_COUNTER:counter_Y
+|g31_VGA_Test_Pattern|g31_VGA:VGA|LPM_COUNTER:counter_Y
 clock => cntr_eti:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => cntr_eti:auto_generated.cnt_en
@@ -192,7 +192,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA1|LPM_COUNTER:counter_Y|cntr_eti:auto_generated
+|g31_VGA_Test_Pattern|g31_VGA:VGA|LPM_COUNTER:counter_Y|cntr_eti:auto_generated
 clock => counter_reg_bit[9].CLK
 clock => counter_reg_bit[8].CLK
 clock => counter_reg_bit[7].CLK
