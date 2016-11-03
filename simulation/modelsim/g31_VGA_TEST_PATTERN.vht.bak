@@ -74,7 +74,22 @@ always : PROCESS
 -- (        )                                                 
 -- variable declarations                                      
 BEGIN                                                         
-        -- code executes for every event on sensitivity list  
-WAIT;                                                        
+	CLOCK <= '1';
+	WAIT FOR 10 ns;
+	RST <= '1';
+	CLOCK <= '0';
+	WAIT FOR 10 ns;
+	CLOCK <= '1';
+	WAIT FOR 10 ns;
+	RST <= '0';
+	CLOCK <= '0';
+	WAIT FOR 10 ns;
+	FOR i IN 0 TO 692640 LOOP
+		CLOCK <= '1';
+		WAIT FOR 10 ns;
+		CLOCK <= '0';
+		WAIT FOR 10 ns;
+	END LOOP;
+WAIT;
 END PROCESS always;                                          
 END g31_VGA_TEST_PATTERN_arch;
