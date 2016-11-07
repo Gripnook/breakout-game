@@ -1,12 +1,20 @@
-{C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA_Test_Pattern.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA_Test_Pattern.vhd}
+{C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd}
 Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Loading package LPM_COMPONENTS
--- Compiling entity g31_VGA_Test_Pattern
--- Compiling architecture bdf_type of g31_VGA_Test_Pattern
+-- Compiling entity g31_Text_Address_Generator
+-- Compiling architecture bdf_type of g31_Text_Address_Generator
+
+} {} {}} {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht}
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity g31_Text_Address_Generator_vhd_tst
+-- Compiling architecture g31_Text_Address_Generator_arch of g31_Text_Address_Generator_vhd_tst
 
 } {} {}} {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd}
 Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
@@ -17,22 +25,5 @@ Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 -- Loading package LPM_COMPONENTS
 -- Compiling entity g31_VGA
 -- Compiling architecture bdf_type of g31_VGA
-
-} {} {}} {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_VGA_TEST_PATTERN.vht} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_VGA_TEST_PATTERN.vht}
-Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity g31_VGA_TEST_PATTERN_vhd_tst
--- Compiling architecture g31_VGA_TEST_PATTERN_arch of g31_VGA_TEST_PATTERN_vhd_tst
-
-} {} {}} {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_VGA.vht} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_VGA.vht}
-Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity g31_VGA_vhd_tst
--- Compiling architecture g31_VGA_arch of g31_VGA_vhd_tst
 
 } {} {}}
