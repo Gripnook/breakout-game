@@ -30,76 +30,76 @@ BEGIN
 	BEGIN
 		IF TO_INTEGER(UNSIGNED(text_row)) = 17 THEN
 			CASE TO_INTEGER(UNSIGNED(text_col)) IS
-				WHEN 1 =>
+				WHEN 0 =>
 					ascii_8bit := x"53";
 					rgb <= x"FF0000";
-				WHEN 2 =>
+				WHEN 1 =>
 					ascii_8bit := x"43";
 					rgb <= x"FF0000";
-				WHEN 3 =>
+				WHEN 2 =>
 					ascii_8bit := x"4F";
 					rgb <= x"FF0000";
-				WHEN 4 =>
+				WHEN 3 =>
 					ascii_8bit := x"52";
 					rgb <= x"FF0000";
-				WHEN 5 =>
+				WHEN 4 =>
 					ascii_8bit := x"45";
 					rgb <= x"FF0000";
-				WHEN 6 =>
+				WHEN 5 =>
 					ascii_8bit := x"3A";
 					rgb <= x"FF0000";
-				WHEN 7 =>
+				WHEN 6 =>
 					ascii_8bit := x"20";
 					rgb <= x"000000";
-				WHEN 8 =>
+				WHEN 7 =>
 					ascii_8bit := "0" & bcd_to_ascii(to_bcd(score)(19 downto 16));
 					rgb <= x"FFFFFF";
-				WHEN 9 =>
+				WHEN 8 =>
 					ascii_8bit := "0" & bcd_to_ascii(to_bcd(score)(15 downto 12));
 					rgb <= x"FFFFFF";
-				WHEN 10 =>
+				WHEN 9 =>
 					ascii_8bit := "0" & bcd_to_ascii(to_bcd(score)(11 downto 8));
 					rgb <= x"FFFFFF";
-				WHEN 11 =>
+				WHEN 10 =>
 					ascii_8bit := "0" & bcd_to_ascii(to_bcd(score)(7 downto 4));
 					rgb <= x"FFFFFF";
-				WHEN 12 =>
+				WHEN 11 =>
 					ascii_8bit := "0" & bcd_to_ascii(to_bcd(score)(3 downto 0));
 					rgb <= x"FFFFFF";
+				WHEN 12 =>
+					ascii_8bit := x"20";
+					rgb <= x"000000";
 				WHEN 13 =>
 					ascii_8bit := x"20";
 					rgb <= x"000000";
 				WHEN 14 =>
-					ascii_8bit := x"20";
-					rgb <= x"000000";
-				WHEN 15 =>
 					ascii_8bit := x"4C";
+					rgb <= x"FFFF00";
+				WHEN 15 =>
+					ascii_8bit := x"45";
 					rgb <= x"FFFF00";
 				WHEN 16 =>
-					ascii_8bit := x"45";
-					rgb <= x"FFFF00";
-				WHEN 17 =>
 					ascii_8bit := x"56";
 					rgb <= x"FFFF00";
-				WHEN 18 =>
+				WHEN 17 =>
 					ascii_8bit := x"45";
 					rgb <= x"FFFF00";
-				WHEN 19 =>
+				WHEN 18 =>
 					ascii_8bit := x"4C";
 					rgb <= x"FFFF00";
-				WHEN 20 =>
+				WHEN 19 =>
 					ascii_8bit := x"3A";
 					rgb <= x"FFFF00";
-				WHEN 21 =>
+				WHEN 20 =>
 					ascii_8bit := "0" & bcd_to_ascii("0" & level);
 					rgb <= x"FFFFFF";
+				WHEN 21 =>
+					ascii_8bit := x"20";
+					rgb <= x"000000";
 				WHEN 22 =>
 					ascii_8bit := x"20";
 					rgb <= x"000000";
 				WHEN 23 =>
-					ascii_8bit := x"20";
-					rgb <= x"000000";
-				WHEN 24 =>
 					if (unsigned(life) >= 7) then
 						ascii_8bit := x"03";
 						rgb <= x"FFC0CB";
@@ -107,7 +107,7 @@ BEGIN
 						ascii_8bit := x"20";
 						rgb <= x"000000";
 					end if;
-				WHEN 25 =>
+				WHEN 24 =>
 					if (unsigned(life) >= 6) then
 						ascii_8bit := x"03";
 						rgb <= x"FFC0CB";
@@ -115,7 +115,7 @@ BEGIN
 						ascii_8bit := x"20";
 						rgb <= x"000000";
 					end if;
-				WHEN 26 =>
+				WHEN 25 =>
 					if (unsigned(life) >= 5) then
 						ascii_8bit := x"03";
 						rgb <= x"FFC0CB";
@@ -123,7 +123,7 @@ BEGIN
 						ascii_8bit := x"20";
 						rgb <= x"000000";
 					end if;
-				WHEN 27 =>
+				WHEN 26 =>
 					if (unsigned(life) >= 4) then
 						ascii_8bit := x"03";
 						rgb <= x"FFC0CB";
@@ -131,7 +131,7 @@ BEGIN
 						ascii_8bit := x"20";
 						rgb <= x"000000";
 					end if;
-				WHEN 28 =>
+				WHEN 27 =>
 					if (unsigned(life) >= 3) then
 						ascii_8bit := x"03";
 						rgb <= x"FFC0CB";
@@ -139,7 +139,7 @@ BEGIN
 						ascii_8bit := x"20";
 						rgb <= x"000000";
 					end if;
-				WHEN 29 =>
+				WHEN 28 =>
 					if (unsigned(life) >= 2) then
 						ascii_8bit := x"03";
 						rgb <= x"FFC0CB";
@@ -147,7 +147,7 @@ BEGIN
 						ascii_8bit := x"20";
 						rgb <= x"000000";
 					end if;
-				WHEN 30 =>
+				WHEN 29 =>
 					if (unsigned(life) >= 1) then
 						ascii_8bit := x"03";
 						rgb <= x"FFC0CB";

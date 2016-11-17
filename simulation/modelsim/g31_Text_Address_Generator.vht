@@ -35,11 +35,11 @@ ARCHITECTURE g31_Text_Address_Generator_arch OF g31_Text_Address_Generator_vhd_t
 -- constants                                                 
 -- signals                                                   
 SIGNAL COLUMN : UNSIGNED(9 DOWNTO 0);
-SIGNAL font_col : UNSIGNED(2 DOWNTO 0);
-SIGNAL font_row : UNSIGNED(3 DOWNTO 0);
+SIGNAL font_col : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL font_row : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL ROW : UNSIGNED(9 DOWNTO 0);
-SIGNAL text_col : UNSIGNED(5 DOWNTO 0);
-SIGNAL text_row : UNSIGNED(4 DOWNTO 0);
+SIGNAL text_col : STD_LOGIC_VECTOR(5 DOWNTO 0);
+SIGNAL text_row : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL CLOCK    : STD_LOGIC;
 SIGNAL RST      : STD_LOGIC;
 SIGNAL BLANKING : STD_LOGIC;
@@ -48,11 +48,11 @@ SIGNAL VSYNC    : STD_LOGIC;
 COMPONENT g31_Text_Address_Generator
 	PORT (
 	COLUMN : IN UNSIGNED(9 DOWNTO 0);
-	font_col : OUT UNSIGNED(2 DOWNTO 0);
-	font_row : OUT UNSIGNED(3 DOWNTO 0);
+	font_col : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	font_row : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 	ROW : IN UNSIGNED(9 DOWNTO 0);
-	text_col : OUT UNSIGNED(5 DOWNTO 0);
-	text_row : OUT UNSIGNED(4 DOWNTO 0)
+	text_col : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+	text_row : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
 	);
 END COMPONENT;
 COMPONENT g31_VGA IS
