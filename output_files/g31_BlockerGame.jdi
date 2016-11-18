@@ -3,7 +3,7 @@
     <hash md5_digest_80b="b2c92756ec0f6b07ddb2"/>
   </project>
   <file_info>
-    <file device="5CSEMA5F31C7" path="g31_BlockerGame.sof" usercode="0xFFFFFFFF"/>
+    <file device="5CSEMA5F31C6" path="g31_BlockerGame.sof" usercode="0xFFFFFFFF"/>
   </file_info>
   <hub_info hub_ir_width="10" ir_width="10" node_addr_width="1" node_count="1"/>
   <node_info>

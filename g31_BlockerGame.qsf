@@ -60,7 +60,7 @@ set_global_assignment -name TOP_LEVEL_ENTITY g31_VGA_Test_Pattern
 
 # Fitter Assignments
 # ==================
-set_global_assignment -name DEVICE 5CSEMA5F31C7
+set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 
