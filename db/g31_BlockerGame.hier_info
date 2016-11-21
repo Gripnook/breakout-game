@@ -1,13 +1,78 @@
-|g31_VGA_Test_Pattern
+|g31_Breakout_Game
 CLOCK => g31_VGA:VGA.CLOCK
+CLOCK => ball_horizontal_speed[0].CLK
+CLOCK => ball_horizontal_speed[1].CLK
+CLOCK => ball_vertical_speed[0].CLK
+CLOCK => ball_vertical_speed[1].CLK
+CLOCK => ball_col[0].CLK
+CLOCK => ball_col[1].CLK
+CLOCK => ball_col[2].CLK
+CLOCK => ball_col[3].CLK
+CLOCK => ball_col[4].CLK
+CLOCK => ball_col[5].CLK
+CLOCK => ball_col[6].CLK
+CLOCK => ball_row[0].CLK
+CLOCK => ball_row[1].CLK
+CLOCK => ball_row[2].CLK
+CLOCK => ball_row[3].CLK
+CLOCK => ball_row[4].CLK
+CLOCK => ball_row[5].CLK
+CLOCK => ball_row[6].CLK
+CLOCK => \Update_Ball:ball_next_row[0].CLK
+CLOCK => \Update_Ball:ball_next_row[1].CLK
+CLOCK => \Update_Ball:ball_next_row[2].CLK
+CLOCK => \Update_Ball:ball_next_row[3].CLK
+CLOCK => \Update_Ball:ball_next_row[4].CLK
+CLOCK => \Update_Ball:ball_next_row[5].CLK
+CLOCK => \Update_Ball:ball_next_row[6].CLK
+CLOCK => \Update_Ball:ball_next_col[0].CLK
+CLOCK => \Update_Ball:ball_next_col[1].CLK
+CLOCK => \Update_Ball:ball_next_col[2].CLK
+CLOCK => \Update_Ball:ball_next_col[3].CLK
+CLOCK => \Update_Ball:ball_next_col[4].CLK
+CLOCK => \Update_Ball:ball_next_col[5].CLK
+CLOCK => \Update_Ball:ball_next_col[6].CLK
 CLOCK => fontROM:CharacterROM.clkA
 CLOCK => LPM_COUNTER:counter_score_interval.CLOCK
 CLOCK => LPM_COUNTER:counter_score.CLOCK
+CLOCK => LPM_COUNTER:counter_frame.CLOCK
 CLOCK => LPM_FF:reg1.CLOCK
 CLOCK => LPM_FF:reg2.CLOCK
 CLOCK => LPM_FF:reg3.CLOCK
 CLOCK => CLOCK_OUT.DATAIN
-RST => g31_VGA:VGA.RST
+RST_N => ball_horizontal_speed[0].PRESET
+RST_N => ball_horizontal_speed[1].PRESET
+RST_N => ball_vertical_speed[0].PRESET
+RST_N => ball_vertical_speed[1].PRESET
+RST_N => ball_col[0].PRESET
+RST_N => ball_col[1].ACLR
+RST_N => ball_col[2].ACLR
+RST_N => ball_col[3].ACLR
+RST_N => ball_col[4].PRESET
+RST_N => ball_col[5].PRESET
+RST_N => ball_col[6].ACLR
+RST_N => ball_row[0].PRESET
+RST_N => ball_row[1].ACLR
+RST_N => ball_row[2].ACLR
+RST_N => ball_row[3].ACLR
+RST_N => ball_row[4].ACLR
+RST_N => ball_row[5].ACLR
+RST_N => ball_row[6].PRESET
+RST_N => g31_VGA:VGA.RST
+RST_N => \Update_Ball:ball_next_row[0].ENA
+RST_N => \Update_Ball:ball_next_row[1].ENA
+RST_N => \Update_Ball:ball_next_row[2].ENA
+RST_N => \Update_Ball:ball_next_row[3].ENA
+RST_N => \Update_Ball:ball_next_row[4].ENA
+RST_N => \Update_Ball:ball_next_row[5].ENA
+RST_N => \Update_Ball:ball_next_row[6].ENA
+RST_N => \Update_Ball:ball_next_col[0].ENA
+RST_N => \Update_Ball:ball_next_col[1].ENA
+RST_N => \Update_Ball:ball_next_col[2].ENA
+RST_N => \Update_Ball:ball_next_col[3].ENA
+RST_N => \Update_Ball:ball_next_col[4].ENA
+RST_N => \Update_Ball:ball_next_col[5].ENA
+RST_N => \Update_Ball:ball_next_col[6].ENA
 level[0] => g31_Text_Generator:Text_Generator.level[0]
 level[1] => g31_Text_Generator:Text_Generator.level[1]
 level[2] => g31_Text_Generator:Text_Generator.level[2]
@@ -43,11 +108,10 @@ VSYNC <= g31_VGA:VGA.VSYNC
 CLOCK_OUT <= CLOCK.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA
+|g31_Breakout_Game|g31_VGA:VGA
 CLOCK => LPM_COUNTER:counter_X.CLOCK
 CLOCK => LPM_COUNTER:counter_Y.CLOCK
-RST => CLEAR_X.DATAA
-RST => CLEAR_Y.DATAA
+RST => ~NO_FANOUT~
 BLANKING <= BLANKING.DB_MAX_OUTPUT_PORT_TYPE
 ROW[0] <= ROW.DB_MAX_OUTPUT_PORT_TYPE
 ROW[1] <= ROW.DB_MAX_OUTPUT_PORT_TYPE
@@ -73,7 +137,7 @@ HSYNC <= LessThan8.DB_MAX_OUTPUT_PORT_TYPE
 VSYNC <= LessThan9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA|LPM_COUNTER:counter_X
+|g31_Breakout_Game|g31_VGA:VGA|LPM_COUNTER:counter_X
 clock => cntr_o8i:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -128,7 +192,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA|LPM_COUNTER:counter_X|cntr_o8i:auto_generated
+|g31_Breakout_Game|g31_VGA:VGA|LPM_COUNTER:counter_X|cntr_o8i:auto_generated
 clock => counter_reg_bit[10].CLK
 clock => counter_reg_bit[9].CLK
 clock => counter_reg_bit[8].CLK
@@ -165,7 +229,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA|LPM_COUNTER:counter_Y
+|g31_Breakout_Game|g31_VGA:VGA|LPM_COUNTER:counter_Y
 clock => cntr_eti:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => cntr_eti:auto_generated.cnt_en
@@ -218,7 +282,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|g31_VGA_Test_Pattern|g31_VGA:VGA|LPM_COUNTER:counter_Y|cntr_eti:auto_generated
+|g31_Breakout_Game|g31_VGA:VGA|LPM_COUNTER:counter_Y|cntr_eti:auto_generated
 clock => counter_reg_bit[9].CLK
 clock => counter_reg_bit[8].CLK
 clock => counter_reg_bit[7].CLK
@@ -253,7 +317,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|g31_VGA_Test_Pattern|g31_Text_Address_Generator:Text_Address_Generator
+|g31_Breakout_Game|g31_Text_Address_Generator:Text_Address_Generator
 COLUMN[0] => ~NO_FANOUT~
 COLUMN[1] => font_col[0].DATAIN
 COLUMN[2] => font_col[1].DATAIN
@@ -294,7 +358,7 @@ font_row[2] <= ROW[3].DB_MAX_OUTPUT_PORT_TYPE
 font_row[3] <= ROW[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|g31_Text_Generator:Text_Generator
+|g31_Breakout_Game|g31_Text_Generator:Text_Generator
 text_col[0] => Mux0.IN69
 text_col[0] => Mux1.IN69
 text_col[0] => Mux2.IN69
@@ -475,7 +539,7 @@ ascii[5] <= ascii_8bit.DB_MAX_OUTPUT_PORT_TYPE
 ascii[6] <= ascii_8bit.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|fontROM:CharacterROM
+|g31_Breakout_Game|fontROM:CharacterROM
 clkA => dataOutA[0].CLK
 clkA => dataOutA[1].CLK
 clkA => dataOutA[2].CLK
@@ -501,7 +565,50 @@ font_col[2] => Mux0.IN0
 font_bit <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|LPM_COUNTER:counter_score_interval
+|g31_Breakout_Game|g31_Game_Address_Generator:Game_Address_Generator
+COLUMN[0] => pixel_col[0].DATAIN
+COLUMN[1] => pixel_col[1].DATAIN
+COLUMN[2] => pixel_col[2].DATAIN
+COLUMN[3] => game_col[0].DATAIN
+COLUMN[4] => game_col[1].DATAIN
+COLUMN[5] => game_col[2].DATAIN
+COLUMN[6] => game_col[3].DATAIN
+COLUMN[7] => game_col[4].DATAIN
+COLUMN[8] => game_col[5].DATAIN
+COLUMN[9] => game_col[6].DATAIN
+ROW[0] => pixel_row[0].DATAIN
+ROW[1] => pixel_row[1].DATAIN
+ROW[2] => pixel_row[2].DATAIN
+ROW[3] => game_row[0].DATAIN
+ROW[4] => game_row[1].DATAIN
+ROW[5] => game_row[2].DATAIN
+ROW[6] => game_row[3].DATAIN
+ROW[7] => game_row[4].DATAIN
+ROW[8] => game_row[5].DATAIN
+ROW[9] => game_row[6].DATAIN
+game_col[0] <= COLUMN[3].DB_MAX_OUTPUT_PORT_TYPE
+game_col[1] <= COLUMN[4].DB_MAX_OUTPUT_PORT_TYPE
+game_col[2] <= COLUMN[5].DB_MAX_OUTPUT_PORT_TYPE
+game_col[3] <= COLUMN[6].DB_MAX_OUTPUT_PORT_TYPE
+game_col[4] <= COLUMN[7].DB_MAX_OUTPUT_PORT_TYPE
+game_col[5] <= COLUMN[8].DB_MAX_OUTPUT_PORT_TYPE
+game_col[6] <= COLUMN[9].DB_MAX_OUTPUT_PORT_TYPE
+game_row[0] <= ROW[3].DB_MAX_OUTPUT_PORT_TYPE
+game_row[1] <= ROW[4].DB_MAX_OUTPUT_PORT_TYPE
+game_row[2] <= ROW[5].DB_MAX_OUTPUT_PORT_TYPE
+game_row[3] <= ROW[6].DB_MAX_OUTPUT_PORT_TYPE
+game_row[4] <= ROW[7].DB_MAX_OUTPUT_PORT_TYPE
+game_row[5] <= ROW[8].DB_MAX_OUTPUT_PORT_TYPE
+game_row[6] <= ROW[9].DB_MAX_OUTPUT_PORT_TYPE
+pixel_col[0] <= COLUMN[0].DB_MAX_OUTPUT_PORT_TYPE
+pixel_col[1] <= COLUMN[1].DB_MAX_OUTPUT_PORT_TYPE
+pixel_col[2] <= COLUMN[2].DB_MAX_OUTPUT_PORT_TYPE
+pixel_row[0] <= ROW[0].DB_MAX_OUTPUT_PORT_TYPE
+pixel_row[1] <= ROW[1].DB_MAX_OUTPUT_PORT_TYPE
+pixel_row[2] <= ROW[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|g31_Breakout_Game|LPM_COUNTER:counter_score_interval
 clock => cntr_u8i:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
@@ -586,7 +693,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|g31_VGA_Test_Pattern|LPM_COUNTER:counter_score_interval|cntr_u8i:auto_generated
+|g31_Breakout_Game|LPM_COUNTER:counter_score_interval|cntr_u8i:auto_generated
 clock => counter_reg_bit[25].CLK
 clock => counter_reg_bit[24].CLK
 clock => counter_reg_bit[23].CLK
@@ -668,7 +775,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|g31_VGA_Test_Pattern|LPM_COUNTER:counter_score
+|g31_Breakout_Game|LPM_COUNTER:counter_score
 clock => cntr_0fi:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => cntr_0fi:auto_generated.cnt_en
@@ -733,7 +840,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|g31_VGA_Test_Pattern|LPM_COUNTER:counter_score|cntr_0fi:auto_generated
+|g31_Breakout_Game|LPM_COUNTER:counter_score|cntr_0fi:auto_generated
 clock => counter_reg_bit[15].CLK
 clock => counter_reg_bit[14].CLK
 clock => counter_reg_bit[13].CLK
@@ -769,7 +876,174 @@ q[14] <= counter_reg_bit[14].DB_MAX_OUTPUT_PORT_TYPE
 q[15] <= counter_reg_bit[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|LPM_FF:reg1
+|g31_Breakout_Game|LPM_COUNTER:counter_frame
+clock => cntr_u8i:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_u8i:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => ~NO_FANOUT~
+data[6] => ~NO_FANOUT~
+data[7] => ~NO_FANOUT~
+data[8] => ~NO_FANOUT~
+data[9] => ~NO_FANOUT~
+data[10] => ~NO_FANOUT~
+data[11] => ~NO_FANOUT~
+data[12] => ~NO_FANOUT~
+data[13] => ~NO_FANOUT~
+data[14] => ~NO_FANOUT~
+data[15] => ~NO_FANOUT~
+data[16] => ~NO_FANOUT~
+data[17] => ~NO_FANOUT~
+data[18] => ~NO_FANOUT~
+data[19] => ~NO_FANOUT~
+data[20] => ~NO_FANOUT~
+data[21] => ~NO_FANOUT~
+data[22] => ~NO_FANOUT~
+data[23] => ~NO_FANOUT~
+data[24] => ~NO_FANOUT~
+data[25] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_u8i:auto_generated.q[0]
+q[1] <= cntr_u8i:auto_generated.q[1]
+q[2] <= cntr_u8i:auto_generated.q[2]
+q[3] <= cntr_u8i:auto_generated.q[3]
+q[4] <= cntr_u8i:auto_generated.q[4]
+q[5] <= cntr_u8i:auto_generated.q[5]
+q[6] <= cntr_u8i:auto_generated.q[6]
+q[7] <= cntr_u8i:auto_generated.q[7]
+q[8] <= cntr_u8i:auto_generated.q[8]
+q[9] <= cntr_u8i:auto_generated.q[9]
+q[10] <= cntr_u8i:auto_generated.q[10]
+q[11] <= cntr_u8i:auto_generated.q[11]
+q[12] <= cntr_u8i:auto_generated.q[12]
+q[13] <= cntr_u8i:auto_generated.q[13]
+q[14] <= cntr_u8i:auto_generated.q[14]
+q[15] <= cntr_u8i:auto_generated.q[15]
+q[16] <= cntr_u8i:auto_generated.q[16]
+q[17] <= cntr_u8i:auto_generated.q[17]
+q[18] <= cntr_u8i:auto_generated.q[18]
+q[19] <= cntr_u8i:auto_generated.q[19]
+q[20] <= cntr_u8i:auto_generated.q[20]
+q[21] <= cntr_u8i:auto_generated.q[21]
+q[22] <= cntr_u8i:auto_generated.q[22]
+q[23] <= cntr_u8i:auto_generated.q[23]
+q[24] <= cntr_u8i:auto_generated.q[24]
+q[25] <= cntr_u8i:auto_generated.q[25]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|g31_Breakout_Game|LPM_COUNTER:counter_frame|cntr_u8i:auto_generated
+clock => counter_reg_bit[25].CLK
+clock => counter_reg_bit[24].CLK
+clock => counter_reg_bit[23].CLK
+clock => counter_reg_bit[22].CLK
+clock => counter_reg_bit[21].CLK
+clock => counter_reg_bit[20].CLK
+clock => counter_reg_bit[19].CLK
+clock => counter_reg_bit[18].CLK
+clock => counter_reg_bit[17].CLK
+clock => counter_reg_bit[16].CLK
+clock => counter_reg_bit[15].CLK
+clock => counter_reg_bit[14].CLK
+clock => counter_reg_bit[13].CLK
+clock => counter_reg_bit[12].CLK
+clock => counter_reg_bit[11].CLK
+clock => counter_reg_bit[10].CLK
+clock => counter_reg_bit[9].CLK
+clock => counter_reg_bit[8].CLK
+clock => counter_reg_bit[7].CLK
+clock => counter_reg_bit[6].CLK
+clock => counter_reg_bit[5].CLK
+clock => counter_reg_bit[4].CLK
+clock => counter_reg_bit[3].CLK
+clock => counter_reg_bit[2].CLK
+clock => counter_reg_bit[1].CLK
+clock => counter_reg_bit[0].CLK
+q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= counter_reg_bit[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= counter_reg_bit[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= counter_reg_bit[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= counter_reg_bit[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= counter_reg_bit[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= counter_reg_bit[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= counter_reg_bit[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= counter_reg_bit[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= counter_reg_bit[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= counter_reg_bit[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= counter_reg_bit[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= counter_reg_bit[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= counter_reg_bit[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= counter_reg_bit[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= counter_reg_bit[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= counter_reg_bit[19].DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= counter_reg_bit[20].DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= counter_reg_bit[21].DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= counter_reg_bit[22].DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= counter_reg_bit[23].DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= counter_reg_bit[24].DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= counter_reg_bit[25].DB_MAX_OUTPUT_PORT_TYPE
+sclr => _.IN1
+sclr => counter_reg_bit[25].SCLR
+sclr => counter_reg_bit[24].SCLR
+sclr => counter_reg_bit[23].SCLR
+sclr => counter_reg_bit[22].SCLR
+sclr => counter_reg_bit[21].SCLR
+sclr => counter_reg_bit[20].SCLR
+sclr => counter_reg_bit[19].SCLR
+sclr => counter_reg_bit[18].SCLR
+sclr => counter_reg_bit[17].SCLR
+sclr => counter_reg_bit[16].SCLR
+sclr => counter_reg_bit[15].SCLR
+sclr => counter_reg_bit[14].SCLR
+sclr => counter_reg_bit[13].SCLR
+sclr => counter_reg_bit[12].SCLR
+sclr => counter_reg_bit[11].SCLR
+sclr => counter_reg_bit[10].SCLR
+sclr => counter_reg_bit[9].SCLR
+sclr => counter_reg_bit[8].SCLR
+sclr => counter_reg_bit[7].SCLR
+sclr => counter_reg_bit[6].SCLR
+sclr => counter_reg_bit[5].SCLR
+sclr => counter_reg_bit[4].SCLR
+sclr => counter_reg_bit[3].SCLR
+sclr => counter_reg_bit[2].SCLR
+sclr => counter_reg_bit[1].SCLR
+sclr => counter_reg_bit[0].SCLR
+
+
+|g31_Breakout_Game|LPM_FF:reg1
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -790,7 +1064,7 @@ q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|LPM_FF:reg2
+|g31_Breakout_Game|LPM_FF:reg2
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -815,7 +1089,7 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|g31_VGA_Test_Pattern|LPM_FF:reg3
+|g31_Breakout_Game|LPM_FF:reg3
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
