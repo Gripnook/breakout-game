@@ -2,132 +2,132 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'CLOCK'
-Slack : 6.388
-TNS   : 0.000
-
 Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 9.886
+Slack : 8.758
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'CLOCK'
-Slack : 0.278
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : 10.919
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.465
+Slack : 0.276
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.297
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 13.859
+Slack : 14.860
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.764
+Slack : 0.691
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK'
-Slack : 8.891
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : 8.873
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.358
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Setup 'CLOCK'
-Slack : 6.640
+Slack : 15.343
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 9.992
+Slack : 9.011
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'CLOCK'
-Slack : 0.261
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : 11.027
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.430
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.280
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 13.953
+Slack : 14.935
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.721
+Slack : 0.632
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK'
-Slack : 8.882
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : 8.828
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.372
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'CLOCK'
-Slack : 7.148
+Slack : 15.369
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 12.802
+Slack : 11.961
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'CLOCK'
-Slack : 0.160
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : 14.374
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.193
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.175
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 15.013
+Slack : 15.832
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.369
+Slack : 0.302
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK'
-Slack : 8.742
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : 8.786
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.126
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'CLOCK'
-Slack : 7.459
+Slack : 15.108
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 13.190
+Slack : 12.499
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'CLOCK'
-Slack : 0.147
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : 14.818
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.161
+Slack : 0.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.148
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 15.240
+Slack : 15.944
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.324
+Slack : 0.262
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK'
-Slack : 8.738
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : 8.782
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.150
+Slack : 15.142
 TNS   : 0.000
 
 ------------------------------------------------------------

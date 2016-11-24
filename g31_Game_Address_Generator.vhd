@@ -3,29 +3,29 @@
 --
 -- Copyright (C) 2016 g31
 -- Version 1.0
--- Author: Andrei Purcarus Vlastimil Lacina
+-- Author: Andrei Purcarus, Vlastimil Lacina
 -- Date: November 21st, 2016
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
-ENTITY g31_Game_Address_Generator IS
-	PORT (
-		COLUMN   : IN  UNSIGNED(9 DOWNTO 0); -- column 0 to 799
-		ROW      : IN  UNSIGNED(9 DOWNTO 0); -- row 0 to 599
-		game_col : OUT STD_LOGIC_VECTOR(6 DOWNTO 0); -- game column 0 to 99
-		game_row : OUT STD_LOGIC_VECTOR(6 DOWNTO 0); -- game row 0 to 67
-		pixel_col : OUT STD_LOGIC_VECTOR(2 DOWNTO 0); -- pixel column 0 to 7
-		pixel_row : OUT STD_LOGIC_VECTOR(2 DOWNTO 0) -- pixel row 0 to 7
+entity g31_Game_Address_Generator is
+	port (
+		column   :  in  unsigned(9 downto 0); -- column 0 to 799
+		row      :  in  unsigned(9 downto 0); -- row 0 to 599
+		game_col :  out std_logic_vector(6 downto 0); -- game column 0 to 99
+		game_row :  out std_logic_vector(6 downto 0); -- game row 0 to 67
+		pixel_col : out std_logic_vector(2 downto 0); -- pixel column 0 to 7
+		pixel_row : out std_logic_vector(2 downto 0)  -- pixel row 0 to 7
 	);
-END g31_Game_Address_Generator;
+end g31_Game_Address_Generator;
 
-ARCHITECTURE bdf_type OF g31_Game_Address_Generator IS
-BEGIN
-	game_col <= STD_LOGIC_VECTOR(COLUMN(9 DOWNTO 3));
-	game_row <= STD_LOGIC_VECTOR(ROW(9 DOWNTO 3));
-	pixel_col <= STD_LOGIC_VECTOR(COLUMN(2 DOWNTO 0));
-	pixel_row <= STD_LOGIC_VECTOR(ROW(2 DOWNTO 0));
-END bdf_type;
+architecture bdf_type of g31_Game_Address_Generator is
+begin
+	game_col <= std_logic_vector(column(9 downto 3));
+	game_row <= std_logic_vector(row(9 downto 3));
+	pixel_col <= std_logic_vector(column(2 downto 0));
+	pixel_row <= std_logic_vector(row(2 downto 0));
+end bdf_type;
 

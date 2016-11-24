@@ -3,70 +3,70 @@
 --
 -- Copyright (C) 2016 g31
 -- Version 1.0
--- Author: Andrei Purcarus Vlastimil Lacina
+-- Author: Andrei Purcarus, Vlastimil Lacina
 -- Date: October 24th, 2016
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-LIBRARY lpm;
-USE lpm.lpm_components.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+library LPM;
+use LPM.LPM_COMPONENTS.ALL;
 
-ENTITY g31_VGA IS
-	PORT (
-		CLOCK    : IN  STD_LOGIC; -- 50MHz
-		RST      : IN  STD_LOGIC; -- reset
-		BLANKING : OUT STD_LOGIC; -- blank display when zero
-		ROW      : OUT UNSIGNED(9 DOWNTO 0); -- line 0 to 599
-		COLUMN   : OUT UNSIGNED(9 DOWNTO 0); -- column 0 to 799
-		HSYNC    : OUT STD_LOGIC; -- horizontal sync signal
-		VSYNC    : OUT STD_LOGIC -- vertical sync signal
+entity g31_VGA is
+	port (
+		clock    : in  std_logic; -- 50MHz
+		rst      : in  std_logic; -- reset
+		blanking : out std_logic; -- blank display when zero
+		row      : out unsigned(9 downto 0); -- line 0 to 599
+		column   : out unsigned(9 downto 0); -- column 0 to 799
+		hsync    : out std_logic; -- horizontal sync signal
+		vsync    : out std_logic  -- vertical sync signal
 	);
-END g31_VGA;
+end g31_VGA;
 
-ARCHITECTURE bdf_type OF g31_VGA IS
+architecture bdf_type of g31_VGA is
 
-SIGNAL CLEAR_X, CLEAR_Y : STD_LOGIC;
-SIGNAL COUNT_X : STD_LOGIC_VECTOR(10 DOWNTO 0);
-SIGNAL COUNT_X_INT : INTEGER;
-SIGNAL COUNT_Y : STD_LOGIC_VECTOR(9 DOWNTO 0);
-SIGNAL COUNT_Y_INT : INTEGER;
-SIGNAL CNT_EN_Y : STD_LOGIC;
+signal clear_x, clear_y : std_logic;
+signal count_x : std_logic_vector(10 downto 0);
+signal count_x_int : integer;
+signal count_y : std_logic_vector( 9 downto 0);
+signal count_y_int : integer;
+signal count_en_y : std_logic;
 
-BEGIN
+begin
 
-	counter_X : lpm_counter
-		GENERIC MAP (LPM_WIDTH => 11)
-		PORT MAP (CLOCK => CLOCK, SCLR => CLEAR_X, Q => COUNT_X);
-	counter_Y : lpm_counter
-		GENERIC MAP (LPM_WIDTH => 10)
-		PORT MAP (CLOCK => CLOCK, CNT_EN => CNT_EN_Y, SCLR => CLEAR_Y, Q => COUNT_Y);
+	counter_x : lpm_counter
+		generic map (lpm_width => 11)
+		port map (clock => clock, sclr => clear_x, q => count_x);
+	counter_y : lpm_counter
+		generic map (lpm_width => 10)
+		port map (clock => clock, cnt_en => count_en_y, sclr => clear_y, q => count_y);
 	
-	WITH COUNT_X SELECT
-		CLEAR_X <= '1' WHEN "10000001111", -- 1039
-			'0' WHEN OTHERS;
-	WITH COUNT_Y SELECT
-		CLEAR_Y <= '1' WHEN "1010011001", -- 665
-			'0' WHEN OTHERS;
-	WITH COUNT_X SELECT
-		CNT_EN_Y <= '1' WHEN "10000001111", -- 1039
-			'0' WHEN OTHERS;
+	with count_x select
+		clear_x <= '1' when "10000001111", -- 1039
+			'0' when others;
+	with count_y select
+		clear_y <= '1' when "1010011001", -- 665
+			'0' when others;
+	with count_x select
+		count_en_y <= '1' when "10000001111", -- 1039
+			'0' when others;
 	
-	COUNT_X_INT <= TO_INTEGER(UNSIGNED(COUNT_X));
-	COUNT_Y_INT <= TO_INTEGER(UNSIGNED(COUNT_Y));
+	count_x_int <= to_integer(unsigned(count_x));
+	count_y_int <= to_integer(unsigned(count_y));
 	
-	ROW <= TO_UNSIGNED(COUNT_Y_INT - 43, 10) WHEN (COUNT_Y_INT >= 43 AND COUNT_Y_INT <= 642) ELSE
-		TO_UNSIGNED(599, 10);
-	COLUMN <= TO_UNSIGNED(COUNT_X_INT - 176, 10) WHEN (COUNT_X_INT >= 176 AND COUNT_X_INT <= 975) ELSE
-		TO_UNSIGNED(799, 10);
+	row <= to_unsigned(count_y_int - 43, 10) when (count_y_int >= 43 and count_y_int <= 642) else
+		to_unsigned(599, 10);
+	column <= to_unsigned(count_x_int - 176, 10) when (count_x_int >= 176 and count_x_int <= 975) else
+		to_unsigned(799, 10);
 	
-	BLANKING <= '0' WHEN ((COUNT_Y_INT < 43 OR COUNT_Y_INT > 642) OR ((COUNT_X_INT < 176 OR COUNT_X_INT > 975))) ELSE
+	blanking <= '0' when ((count_y_int < 43 or count_y_int > 642) or ((count_x_int < 176 or count_x_int > 975))) else
 		'1';
 	
-	HSYNC <= '0' WHEN (COUNT_X_INT < 120) ELSE
+	hsync <= '0' when (count_x_int < 120) else
 		'1';
-	VSYNC <= '0' WHEN (COUNT_Y_INT < 6) ELSE
+	vsync <= '0' when (count_y_int < 6) else
 		'1';
 	
-END bdf_type;
+end bdf_type;
 
