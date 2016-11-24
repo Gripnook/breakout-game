@@ -31,32 +31,35 @@ end g31_VGA_Generator;
 
 architecture bdf_type of g31_VGA_Generator is
 
+-- returns the index of the block currently displayed, or "111111" if none are displayed
 function display_block(blocks : std_logic_vector(59 downto 0);
 			game_col, game_row : std_logic_vector(6 downto 0);
-			pixel_col, pixel_row : std_logic_vector(2 downto 0)) return std_logic is
+			pixel_col, pixel_row : std_logic_vector(2 downto 0)) return std_logic_vector is
 	variable row_pos : std_logic_vector(6 downto 0);
 	variable col_pos : std_logic_vector(6 downto 0);
+	variable index   : integer;
 	begin
 	if (unsigned(game_row) < 2 or unsigned(game_row) > 21 or unsigned(game_col) < 2 or unsigned(game_col) >= 98) then
-		return '0';
+		return "111111";
 	end if;
 	
 	-- address of a block = 12 * ((game_row - 2)/4) + ((game_col - 2)/8)
 	row_pos := (std_logic_vector(unsigned(game_row) - to_unsigned(2, 7)));
 	col_pos := (std_logic_vector(unsigned(game_col) - to_unsigned(2, 7)));
-	if (blocks(12 * to_integer(unsigned(row_pos(6 downto 2))) + to_integer(unsigned(col_pos(6 downto 3)))) = '1') then
+	index   := 12 * to_integer(unsigned(row_pos(6 downto 2))) + to_integer(unsigned(col_pos(6 downto 3)));
+	if (blocks(index) = '1') then
 		-- check if the pixel is on the edge of the block (border)
 		if ((row_pos(1 downto 0) =  "00" and pixel_row = "000") or
 			 (row_pos(1 downto 0) =  "11" and pixel_row = "111") or
 			 (col_pos(2 downto 0) = "000" and pixel_col = "000") or
 			 (col_pos(2 downto 0) = "111" and pixel_col = "111")) then
-			return '0';
+			return "111111";
 		else
-			return '1';
+			return std_logic_vector(to_unsigned(index, 6));
 		end if;
 	end if;
 	
-	return '0';
+	return "111111";
 end display_block;
 
 signal rst      : std_logic;
@@ -151,11 +154,13 @@ CharacterROM : fontROM port map(clkA => clock, char_code => ascii, font_row => f
 Game_Address_Generator : g31_Game_Address_Generator port map(column => column, row => row,
 								game_col => game_col, game_row => game_row, pixel_col => pixel_col, pixel_row => pixel_row);
 
-Output_RGB : process (blanking, text_font_bit, ball_col, ball_row, game_col, game_row, pixel_col, pixel_row, blocks)
+Output_RGB : process (blanking, text_font_bit, ball_col, ball_row, game_col, game_row, pixel_col, pixel_row, blocks, paddle_col)
+variable block_index : std_logic_vector(5 downto 0);
 begin
 	r <= x"00";
 	g <= x"00";
 	b <= x"00";
+	block_index := display_block(blocks, game_col, game_row, pixel_col, pixel_row);
 	if (blanking = '0') then
 		r <= x"00";
 		g <= x"00";
@@ -166,15 +171,38 @@ begin
 		b <= text_rgb_delayed(7 downto 0);
 	elsif ((unsigned(game_col) < 2 or unsigned(game_col) >= 98) and unsigned(game_row) < 68) or (unsigned(game_row) < 2) then
 		r <= x"7F";
-		g <= x"00";
-		b <= x"FF";
+		g <= x"7F";
+		b <= x"7F";
 	elsif (ball_col = game_col and ball_row = game_row) then
 		r <= x"FF";
 		g <= x"FF";
 		b <= x"FF";
-	elsif (display_block(blocks, game_col, game_row, pixel_col, pixel_row) = '1') then
-		r <= x"00";
-		g <= x"00";
+	elsif (not (block_index = "111111")) then
+		if (unsigned(block_index) < 12) then
+			r <= x"FF";
+			g <= x"00";
+			b <= x"00";
+		elsif (unsigned(block_index) < 24) then
+			r <= x"FF";
+			g <= x"FF";
+			b <= x"00";
+		elsif (unsigned(block_index) < 36) then
+			r <= x"00";
+			g <= x"FF";
+			b <= x"FF";
+		elsif (unsigned(block_index) < 48) then
+			r <= x"00";
+			g <= x"FF";
+			b <= x"00";
+		else
+			r <= x"7F";
+			g <= x"00";
+			b <= x"FF";
+		end if;
+	elsif ((unsigned(game_row) >= 66 and unsigned(game_row) < 66 + 2) and 
+			 (unsigned(game_col) >= unsigned(paddle_col) and unsigned(game_col) < unsigned(paddle_col) + 16)) then
+		r <= x"7F";
+		g <= x"7F";
 		b <= x"FF";
 	end if;
 end process;

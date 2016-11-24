@@ -121,37 +121,37 @@ begin
 				when 23 =>
 					if (unsigned(life) >= 7) then
 						ascii <= "0000011";
-						rgb <= x"FF77FF";
+						rgb <= x"FF7FFF";
 					end if;
 				when 24 =>
 					if (unsigned(life) >= 6) then
 						ascii <= "0000011";
-						rgb <= x"FF77FF";
+						rgb <= x"FF7FFF";
 					end if;
 				when 25 =>
 					if (unsigned(life) >= 5) then
 						ascii <= "0000011";
-						rgb <= x"FF77FF";
+						rgb <= x"FF7FFF";
 					end if;
 				when 26 =>
 					if (unsigned(life) >= 4) then
 						ascii <= "0000011";
-						rgb <= x"FF77FF";
+						rgb <= x"FF7FFF";
 					end if;
 				when 27 =>
 					if (unsigned(life) >= 3) then
 						ascii <= "0000011";
-						rgb <= x"FF77FF";
+						rgb <= x"FF7FFF";
 					end if;
 				when 28 =>
 					if (unsigned(life) >= 2) then
 						ascii <= "0000011";
-						rgb <= x"FF77FF";
+						rgb <= x"FF7FFF";
 					end if;
 				when 29 =>
 					if (unsigned(life) >= 1) then
 						ascii <= "0000011";
-						rgb <= x"FF77FF";
+						rgb <= x"FF7FFF";
 					end if;
 				
 				when others =>
