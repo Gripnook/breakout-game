@@ -22,6 +22,7 @@ entity g31_VGA_Generator is
 		ball_row   : in  std_logic_vector( 6 downto 0); -- ball row address 0 to 67
 		paddle_col : in  std_logic_vector( 6 downto 0); -- paddle col address 0 to 99
 		blocks     : in  std_logic_vector(59 downto 0); -- blocks present or not bitmask
+		message_id : in  std_logic_vector( 2 downto 0); -- message to display to the player
 		r, g, b    : out std_logic_vector( 7 downto 0); -- 8-bit color output
 		hsync      : out std_logic; -- horizontal sync signal
 		vsync      : out std_logic; -- vertical sync signal
@@ -103,13 +104,14 @@ end component;
 
 component g31_Text_Generator is
 	port (
-		text_col : in  std_logic_vector( 5 downto 0); -- character column 0 to 49
-		text_row : in  std_logic_vector( 4 downto 0); -- character row 0 to 18
-		score    : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
-		level    : in  std_logic_vector( 2 downto 0); -- level 0 to 7
-		life     : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
-		rgb      : out std_logic_vector(23 downto 0); -- 24-bit color to display
-		ascii    : out std_logic_vector( 6 downto 0)  -- ascii code of the character to display
+		text_col   : in  std_logic_vector( 5 downto 0); -- character column 0 to 49
+		text_row   : in  std_logic_vector( 4 downto 0); -- character row 0 to 18
+		score      : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
+		level      : in  std_logic_vector( 2 downto 0); -- level 0 to 7
+		life       : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
+		message_id : in  std_logic_vector( 2 downto 0); -- message to display to the player
+		rgb        : out std_logic_vector(23 downto 0); -- 24-bit color to display
+		ascii      : out std_logic_vector( 6 downto 0)  -- ascii code of the character to display
 	);
 end component;
 
@@ -148,7 +150,7 @@ VGA : g31_VGA port map (clock => clock, rst => rst, blanking => blanking, row =>
 Text_Address_Generator : g31_Text_Address_Generator port map (column => column, row => row,
 								text_col => text_col, text_row => text_row, font_col => font_col, font_row => font_row);
 Text_Generator : g31_Text_Generator port map (text_col => text_col, text_row => text_row,
-								score => score, level => level, life => life, rgb => text_rgb, ascii => ascii);
+								score => score, level => level, life => life, message_id => message_id, rgb => text_rgb, ascii => ascii);
 CharacterROM : fontROM port map(clkA => clock, char_code => ascii, font_row => font_row_delayed, font_col => font_col_delayed,
 								font_bit => text_font_bit);
 Game_Address_Generator : g31_Game_Address_Generator port map(column => column, row => row,
@@ -216,6 +218,6 @@ reg2 : lpm_ff
 reg3 : lpm_ff
 	generic map (lpm_width => 24)
 	port map (clock => clock, data => text_rgb, q => text_rgb_delayed);
-
+	
 end bdf_type;
 

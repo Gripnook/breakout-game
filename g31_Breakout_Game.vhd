@@ -16,8 +16,10 @@ entity g31_Breakout_Game is
 	port (
 		clock          : in  std_logic; -- 50MHz
 		rst_n          : in  std_logic; -- negated reset
+		continue_n     : in  std_logic; -- unpauses the game
 		paddle_right_n : in  std_logic; -- move paddle to the right when low
 		paddle_left_n  : in  std_logic; -- move paddle to the left when low
+		cheats         : in  std_logic; -- enables invisible bottom wall
 		r, g, b        : out std_logic_vector(7 downto 0); -- 8-bit color output
 		hsync          : out std_logic; -- horizontal sync signal
 		vsync          : out std_logic; -- vertical sync signal
@@ -58,18 +60,55 @@ begin
 	return not result;
 end all_blocks_broken;
 
+function points_per_block(block_index : std_logic_vector(5 downto 0);
+			level : std_logic_vector(2 downto 0)) return unsigned is
+variable index : integer := 60;
+variable accumulator : unsigned(5 downto 0) := (others => '0');
+begin
+	while (unsigned(block_index) < index) loop
+		accumulator := accumulator + unsigned(level);
+		index := index - 12;
+	end loop;
+	return accumulator;
+end points_per_block;
+
+signal continue : std_logic := '0';
+signal pause_set : std_logic := '1';
+signal pause_in : std_logic_vector(0 downto 0) := "1";
+signal pause_out : std_logic_vector(0 downto 0) := "1";
+signal pause : std_logic := '1';
+signal pause_n : std_logic := '0';
+
+signal message_id_set : std_logic_vector(2 downto 0) := "001"; -- START?
+signal message_id : std_logic_vector(2 downto 0) := "001"; -- START?
+
 signal score : std_logic_vector(15 downto 0) := x"0000";
 signal level : std_logic_vector( 2 downto 0) := "001";
 signal life  : std_logic_vector( 2 downto 0) := "101";
 
-signal frame_counter : std_logic_vector(25 downto 0);
-signal clear_frame_counter : std_logic;
+constant BALL_COL_DEFAULT : std_logic_vector(6 downto 0) := "0110001"; -- 49
+constant BALL_ROW_DEFAULT : std_logic_vector(6 downto 0) := "1000001"; -- 65
+
+-- the ball update period decreses with each level to increase difficulty
+-- level 1 = 28 ms
+-- level 2 = 26 ms
+-- level 3 = 24 ms
+-- level 4 = 22 ms
+-- level 5 = 20 ms
+-- level 6 = 18 ms
+-- level 7 = 16 ms
+constant BALL_UPDATE_PERIOD_BASE : std_logic_vector(25 downto 0) := "00000000011000011010100000"; -- 2 ms
+signal ball_update_period : integer;
+signal ball_col_update_period, ball_row_update_period : std_logic_vector(25 downto 0);
+signal clear_ball_col_update, clear_ball_row_update : std_logic;
+signal ball_col_update_counter, ball_row_update_counter : std_logic_vector(25 downto 0);
+signal reset_ball_position : std_logic := '0';
+signal enable_ball_col, enable_ball_row : std_logic;
 
 signal ball_col : std_logic_vector(6 downto 0) := "0110001"; -- 49
 signal ball_row : std_logic_vector(6 downto 0) := "1000001"; -- 65
--- increment coordinate = "01"; same = "00"; decrement coordinate = "11";
-signal ball_vertical_speed : std_logic_vector(1 downto 0) := "11";
-signal ball_horizontal_speed : std_logic_vector(1 downto 0) := "11";
+signal ball_col_up : std_logic := '0';
+signal ball_row_up : std_logic := '0';
 
 signal blocks : std_logic_vector(59 downto 0) := (others => '1');
 
@@ -88,6 +127,7 @@ component g31_VGA_Generator is
 		ball_row   : in  std_logic_vector( 6 downto 0); -- ball row address 0 to 67
 		paddle_col : in  std_logic_vector( 6 downto 0); -- paddle col address 0 to 99
 		blocks     : in  std_logic_vector(59 downto 0); -- blocks present or not bitmask
+		message_id : in  std_logic_vector( 2 downto 0); -- message to display for the player
 		r, g, b    : out std_logic_vector( 7 downto 0); -- 8-bit color output
 		hsync      : out std_logic; -- horizontal sync signal
 		vsync      : out std_logic; -- vertical sync signal
@@ -98,137 +138,212 @@ end component;
 begin
 
 VGA_Generator : g31_VGA_Generator port map (clock => clock, score => score, level => level, life => life,
-								ball_col => ball_col, ball_row => ball_row, paddle_col => paddle_col, blocks => blocks,
+								ball_col => ball_col, ball_row => ball_row, paddle_col => paddle_col, blocks => blocks, message_id => message_id,
 								r => r, g => g, b => b, hsync => hsync, vsync => vsync, clock_vga => clock_vga);
 
-counter_frame : lpm_counter
+counter_ball_col_update : lpm_counter
 		generic map (lpm_width => 26)
-		port map (clock => clock, sclr => clear_frame_counter, q => frame_counter);
--- clear frame counter when equal to 50e6/32 - 1 for a frame every 1/32 seconds
-clear_frame_counter <= '1' when frame_counter = "00000101111101011110000011" else 
-	'0';
+		port map (clock => clock, sclr => clear_ball_col_update, q => ball_col_update_counter);
+clear_ball_col_update <= '1' when ball_col_update_counter = ball_col_update_period else 
+	pause;
 
-Update_Ball : process (clock, rst_n)
-variable ball_next_col, ball_next_row : unsigned(6 downto 0);
+counter_ball_row_update : lpm_counter
+		generic map (lpm_width => 26)
+		port map (clock => clock, sclr => clear_ball_row_update, q => ball_row_update_counter);
+clear_ball_row_update <= '1' when ball_row_update_counter = ball_row_update_period else 
+	pause;
+
+counter_ball_col : lpm_counter
+		generic map (lpm_width => 7)
+		port map (clock => clock, sload => reset_ball_position, data => BALL_COL_DEFAULT,
+			cnt_en => enable_ball_col, updown => ball_col_up, q => ball_col);
+enable_ball_col <= clear_ball_col_update and (not pause);
+
+counter_ball_row : lpm_counter
+		generic map (lpm_width => 7)
+		port map (clock => clock, sload => reset_ball_position, data => BALL_ROW_DEFAULT,
+			cnt_en => enable_ball_row, updown => ball_row_up, q => ball_row);
+enable_ball_row <= clear_ball_row_update and (not pause);
+
+reg_pause : lpm_ff
+	generic map (lpm_width => 1)
+	port map (clock => clock, data => pause_in, aclr => continue, q => pause_out);
+continue <= not continue_n;
+pause_in <= (0 => (pause or pause_set));
+pause <= pause_out(0);
+pause_n <= not pause;
+
+reg_message_id : lpm_ff
+	generic map (lpm_width => 3)
+	port map (clock => clock, data => message_id_set, sclr => pause_n, q => message_id);
+
+ball_update_period <= ((15 - to_integer(unsigned(level))) * to_integer(unsigned(BALL_UPDATE_PERIOD_BASE))) - 1;
+ball_col_update_period <= std_logic_vector(to_unsigned(ball_update_period, 26));
+ball_row_update_period <= std_logic_vector(to_unsigned(ball_update_period, 26));
+
+Update_Game : process (clock, rst_n)
+variable reset_score : std_logic := '0';
+variable reset_level : std_logic := '0';
+variable reset_life  : std_logic := '0';
+variable reset_ball  : std_logic := '0';
+variable reset_blocks : std_logic := '0';
+variable score_accumulator : unsigned(6 downto 0) := (others => '0');
+variable blocks_t : std_logic_vector(59 downto 0);
 variable block_index : std_logic_vector(5 downto 0);
-variable score_increase : integer;
 begin
-	if (rst_n = '0') then
+	if (pause = '1') then
+		pause_set <= '0';
+	elsif (rst_n = '0') then
 		score <= x"0000";
 		level <= "001";
 		life <= "101";
-		ball_col <= "0110001"; -- 49
-		ball_row <= "1000001"; -- 65
-		ball_horizontal_speed <= "11";
-		ball_vertical_speed <= "11";
+		reset_ball_position <= '1';
+		ball_col_up <= '0';
+		ball_row_up <= '0';
 		blocks <= (others => '1');
-	elsif (rising_edge(clock) and clear_frame_counter = '1') then
-		if (ball_horizontal_speed = "01") then
-			ball_next_col := unsigned(ball_col) + 1;
-			block_index := find_block_index(blocks, std_logic_vector(ball_next_col + to_unsigned(1, 7)), std_logic_vector(ball_next_row));
-			if (ball_next_col + 1 >= 98) then
-				ball_horizontal_speed <= "11";
-			elsif (not (block_index = "111111")) then
-				blocks(to_integer(unsigned(block_index))) <= '0';
-				score_increase := (5 - to_integer(unsigned(block_index)) / 12) * to_integer(unsigned(level));
-				score <= std_logic_vector(unsigned(score) + to_unsigned(score_increase, 16));
-				ball_horizontal_speed <= "11";
-			end if;
-		elsif (ball_horizontal_speed = "11") then
-			ball_next_col := unsigned(ball_col) - 1;
-			block_index := find_block_index(blocks, std_logic_vector(ball_next_col - to_unsigned(1, 7)), std_logic_vector(ball_next_row));
-			if (ball_next_col - 1 < 2) then
-				ball_horizontal_speed <= "01";
-			elsif (not (block_index = "111111")) then
-				blocks(to_integer(unsigned(block_index))) <= '0';
-				score_increase := (5 - to_integer(unsigned(block_index)) / 12) * to_integer(unsigned(level));
-				score <= std_logic_vector(unsigned(score) + to_unsigned(score_increase, 16));
-				ball_horizontal_speed <= "01";
-			end if;
-		end if;
+		pause_set <= '1';
+		message_id_set <= "001"; -- START?
+	elsif (rising_edge(clock)) then
+		reset_score := '0';
+		reset_level := '0';
+		reset_life  := '0';
+		reset_ball  := '0';
+		reset_blocks := '0';
+		score_accumulator := (others => '0');
+		blocks_t := blocks;
 		
-		if (ball_vertical_speed = "01") then
-			ball_next_row := unsigned(ball_row) + 1;
-			block_index := find_block_index(blocks, std_logic_vector(ball_next_col), std_logic_vector(ball_next_row + to_unsigned(1, 7)));
-			if (ball_next_row + 1 >= 67) then
-				if (life = "001") then
-					score <= x"0000";
-					level <= "001";
-					life <= "101";
-					ball_next_col := "0110001"; -- 49
-					ball_next_row := "1000001"; -- 65
-					ball_horizontal_speed <= "11";
-					ball_vertical_speed <= "11";
-					blocks <= (others => '1');
-				else
-					life <= std_logic_vector(unsigned(life) - to_unsigned(1, 3));
-					ball_next_col := "0110001"; -- 49
-					ball_next_row := "1000001"; -- 65
-					ball_horizontal_speed <= "11";
-					ball_vertical_speed <= "11";
+		-- update the counter directions after the positions are updated
+		if (ball_col_update_counter = "00000000000000000000000000" or ball_row_update_counter = "00000000000000000000000000") then
+			if (ball_col_up = '0') then
+				block_index := find_block_index(blocks_t, std_logic_vector(unsigned(ball_col) - to_unsigned(1, 7)), ball_row);
+				if (unsigned(ball_col) = to_unsigned(2, 7)) then
+					ball_col_up <= '1';
+				elsif (not (block_index = "111111")) then
+					blocks_t(to_integer(unsigned(block_index))) := '0';
+					score_accumulator := score_accumulator + points_per_block(block_index, level);
+					ball_col_up <= '1';
 				end if;
-			elsif (not (block_index = "111111")) then
-				blocks(to_integer(unsigned(block_index))) <= '0';
-				score_increase := (5 - to_integer(unsigned(block_index)) / 12) * to_integer(unsigned(level));
-				score <= std_logic_vector(unsigned(score) + to_unsigned(score_increase, 16));
-				ball_vertical_speed <= "11";
-			elsif ((ball_next_col >= unsigned(paddle_col) and ball_next_col < unsigned(paddle_col) + 16) and ball_next_row + 1 = 66) then
-				ball_vertical_speed <= "11";
+			elsif (ball_col_up = '1') then
+				block_index := find_block_index(blocks_t, std_logic_vector(unsigned(ball_col) + to_unsigned(1, 7)), ball_row);
+				if (unsigned(ball_col) = to_unsigned(97, 7)) then
+					ball_col_up <= '0';
+				elsif (not (block_index = "111111")) then
+					blocks_t(to_integer(unsigned(block_index))) := '0';
+					score_accumulator := score_accumulator + points_per_block(block_index, level);
+					ball_col_up <= '0';
+				end if;
 			end if;
-		elsif (ball_vertical_speed = "11") then
-			ball_next_row := unsigned(ball_row) - 1;
-			block_index := find_block_index(blocks, std_logic_vector(ball_next_col), std_logic_vector(ball_next_row - to_unsigned(1, 7)));
-			if (ball_next_row - 1 < 2) then
-				ball_vertical_speed <= "01";
-			elsif (not (block_index = "111111")) then
-				blocks(to_integer(unsigned(block_index))) <= '0';
-				score_increase := (5 - to_integer(unsigned(block_index)) / 12) * to_integer(unsigned(level));
-				score <= std_logic_vector(unsigned(score) + to_unsigned(score_increase, 16));
-				ball_vertical_speed <= "01";
+			if (ball_row_up = '0') then
+				block_index := find_block_index(blocks_t, ball_col, std_logic_vector(unsigned(ball_row) - to_unsigned(1, 7)));
+				if (unsigned(ball_row) = to_unsigned(2, 7)) then
+					ball_row_up <= '1';
+				elsif (not (block_index = "111111")) then
+					blocks_t(to_integer(unsigned(block_index))) := '0';
+					score_accumulator := score_accumulator + points_per_block(block_index, level);
+					ball_row_up <= '1';
+				end if;
+			elsif (ball_row_up = '1') then
+				block_index := find_block_index(blocks_t, ball_col, std_logic_vector(unsigned(ball_row) + to_unsigned(1, 7)));
+				if (unsigned(ball_row) = to_unsigned(67, 7)) then
+					if (cheats = '1') then
+						ball_row_up <= '0';
+					elsif (life = "001") then
+						reset_score := '1';
+						reset_level := '1';
+						reset_life  := '1';
+						reset_ball  := '1';
+						reset_blocks := '1';
+						pause_set <= '1';
+						message_id_set <= "011"; -- GAME OVER!
+					else
+						life <= std_logic_vector(unsigned(life) - to_unsigned(1, 3));
+						reset_ball := '1';
+					end if;
+				elsif (not (block_index = "111111")) then
+					blocks_t(to_integer(unsigned(block_index))) := '0';
+					score_accumulator := score_accumulator + points_per_block(block_index, level);
+					ball_row_up <= '0';
+				elsif ((unsigned(ball_col) >= unsigned(paddle_col) - 1 and unsigned(ball_col) < unsigned(paddle_col) + 17) and
+						 (unsigned(ball_row) = to_unsigned(65, 7))) then
+					case to_integer(unsigned(ball_col)) - to_integer(unsigned(paddle_col)) is
+						when -1 =>
+							if (ball_col_up = '1') then
+								ball_col_up <= '0';
+								ball_row_up <= '0';
+							end if;
+						when 16 =>
+							if (ball_col_up = '0') then
+								ball_col_up <= '1';
+								ball_row_up <= '0';
+							end if;
+						when others =>
+							ball_row_up <= '0';
+					end case;
+				end if;
 			end if;
 		end if;
 		
-		if (all_blocks_broken(blocks) = '1') then
+		if (all_blocks_broken(blocks_t) = '1') then
 			if (level = "111") then
-				score <= x"0000";
-				level <= "001";
-				life <= "101";
-				ball_next_col := "0110001"; -- 49
-				ball_next_row := "1000001"; -- 65
-				ball_horizontal_speed <= "11";
-				ball_vertical_speed <= "11";
-				blocks <= (others => '1');
+				reset_score := '1';
+				reset_level := '1';
+				reset_life  := '1';
+				reset_ball  := '1';
+				reset_blocks := '1';
+				pause_set <= '1';
+				message_id_set <= "100"; -- WINNER!
 			else
 				level <= std_logic_vector(unsigned(level) + to_unsigned(1, 3));
-				ball_next_col := "0110001"; -- 49
-				ball_next_row := "1000001"; -- 65
-				ball_horizontal_speed <= "11";
-				ball_vertical_speed <= "11";
-				blocks <= (others => '1');
+				reset_ball := '1';
+				reset_blocks := '1';
+				pause_set <= '1';
+				message_id_set <= "010"; -- CONTINUE?
 			end if;
 		end if;
 		
-		ball_col <= std_logic_vector(ball_next_col);
-		ball_row <= std_logic_vector(ball_next_row);
+		score <= std_logic_vector(unsigned(score) + score_accumulator);
+		blocks <= blocks_t;
+		
+		if (reset_score = '1') then
+			score <= x"0000";
+		end if;
+		if (reset_level = '1') then
+			level <= "001";
+		end if;
+		if (reset_life = '1') then
+			life <= "101";
+		end if;
+		if (reset_ball = '1') then
+			reset_ball_position <= '1';
+			ball_col_up <= '0';
+			ball_row_up <= '0';
+		else
+			reset_ball_position <= '0';
+		end if;
+		if (reset_blocks = '1') then
+			blocks <= (others => '1');
+		end if;
 	end if;
 end process;
 
 counter_paddle : lpm_counter
 		generic map (lpm_width => 26)
 		port map (clock => clock, sclr => clear_paddle_counter, q => paddle_counter);
--- clear frame counter when equal to 50e6/64 - 1 for a frame every 1/64 seconds
+-- the paddle is updated every 1/64 s
 clear_paddle_counter <= '1' when paddle_counter = "00000010111110101111000001" else 
-	'0';
-	
+	pause;
+
 Update_Paddle : process (clock)
 begin
-	if (rising_edge(clock) and clear_paddle_counter = '1') then
-		if (paddle_right_n = '0' and paddle_left_n = '0') then
-			-- do nothing
-		elsif (paddle_right_n = '0' and unsigned(paddle_col) < 98 - 16) then
-			paddle_col <= std_logic_vector(unsigned(paddle_col) + to_unsigned(1, 7));
-		elsif (paddle_left_n = '0' and unsigned(paddle_col) >= 2) then
-			paddle_col <= std_logic_vector(unsigned(paddle_col) - to_unsigned(1, 7));
+	if (rising_edge(clock)) then
+		if (pause = '0' and clear_paddle_counter = '1') then
+			if (paddle_right_n = '0' and paddle_left_n = '0') then
+				-- do nothing
+			elsif (paddle_right_n = '0' and unsigned(paddle_col) < 98 - 16) then
+				paddle_col <= std_logic_vector(unsigned(paddle_col) + to_unsigned(1, 7));
+			elsif (paddle_left_n = '0' and unsigned(paddle_col) >= 2) then
+				paddle_col <= std_logic_vector(unsigned(paddle_col) - to_unsigned(1, 7));
+			end if;
 		end if;
 	end if;
 end process;

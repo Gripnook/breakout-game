@@ -12,13 +12,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity g31_Text_Generator is
 	port (
-		text_col : in  std_logic_vector( 5 downto 0); -- character column 0 to 49
-		text_row : in  std_logic_vector( 4 downto 0); -- character row 0 to 18
-		score    : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
-		level    : in  std_logic_vector( 2 downto 0); -- level 0 to 7
-		life     : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
-		rgb      : out std_logic_vector(23 downto 0); -- 24-bit color to display
-		ascii    : out std_logic_vector( 6 downto 0)  -- ascii code of the character to display
+		text_col    : in  std_logic_vector( 5 downto 0); -- character column 0 to 49
+		text_row    : in  std_logic_vector( 4 downto 0); -- character row 0 to 18
+		score       : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
+		level       : in  std_logic_vector( 2 downto 0); -- level 0 to 7
+		life        : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
+		message_id  : in  std_logic_vector( 2 downto 0); -- message to display to the player
+		rgb         : out std_logic_vector(23 downto 0); -- 24-bit color to display
+		ascii       : out std_logic_vector( 6 downto 0)  -- ascii code of the character to display
 	);
 end g31_Text_Generator;
 
@@ -54,8 +55,16 @@ function bcd_to_ascii (bcd : std_logic_vector(3 downto 0)) return std_logic_vect
 	return ascii;
 end bcd_to_ascii;
 
+constant message0 : std_logic_vector(79 downto 0) := x"20202020202020202020";
+constant message1 : std_logic_vector(79 downto 0) := x"202053544152543f2020"; -- START?
+constant message2 : std_logic_vector(79 downto 0) := x"434f4e54494e55453f20"; -- CONTINUE?
+constant message3 : std_logic_vector(79 downto 0) := x"47414d45204f56455221"; -- GAME OVER!
+constant message4 : std_logic_vector(79 downto 0) := x"202057494e4e45522120"; -- WINNER!
+
 begin
-	text_gen : process (text_col, text_row, score, level, life)
+	text_gen : process (text_col, text_row)
+	variable relative_col : integer;
+	variable message : std_logic_vector(79 downto 0);
 	begin
 		ascii <= "0100000";
 		rgb <= x"000000";
@@ -154,6 +163,55 @@ begin
 						rgb <= x"FF7FFF";
 					end if;
 				
+				when others =>
+					-- do nothing
+			end case;
+		elsif (to_integer(unsigned(text_row)) = 8) then
+			case message_id is
+				when "000" =>
+					message := message0;
+				when "001" =>
+					message := message1;
+				when "010" =>
+					message := message2;
+				when "011" =>
+					message := message3;
+				when "100" =>
+					message := message4;
+				when others =>
+					message := message0;
+			end case;
+			case to_integer(unsigned(text_col)) is
+				when 20 =>
+					ascii <= message(78 downto 72);
+					rgb <= x"FFFFFF";
+				when 21 =>
+					ascii <= message(70 downto 64);
+					rgb <= x"FFFFFF";
+				when 22 =>
+					ascii <= message(62 downto 56);
+					rgb <= x"FFFFFF";
+				when 23 =>
+					ascii <= message(54 downto 48);
+					rgb <= x"FFFFFF";
+				when 24 =>
+					ascii <= message(46 downto 40);
+					rgb <= x"FFFFFF";
+				when 25 =>
+					ascii <= message(38 downto 32);
+					rgb <= x"FFFFFF";
+				when 26 =>
+					ascii <= message(30 downto 24);
+					rgb <= x"FFFFFF";
+				when 27 =>
+					ascii <= message(22 downto 16);
+					rgb <= x"FFFFFF";
+				when 28 =>
+					ascii <= message(14 downto 8);
+					rgb <= x"FFFFFF";
+				when 29 =>
+					ascii <= message(6 downto 0);
+					rgb <= x"FFFFFF";
 				when others =>
 					-- do nothing
 			end case;

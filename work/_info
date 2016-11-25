@@ -8,37 +8,37 @@ z2
 !i10f 100
 cModel Technology
 dC:/altera/15.0
-Eg31_text_address_generator
-Z0 w1479151080
+Efontrom
+Z0 w1478543877
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z4 dC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame
-Z5 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd
-Z6 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd
+Z5 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/fontROM.vhd
+Z6 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/fontROM.vhd
 l0
-L13
-VfC4Z5D;JC1aD7M5@jBN5b2
-!s100 7X1Po93hSeKSaJlJzh=WJ1
+L28
+V=7aDRSWCogW^KW=A9me>`2
+!s100 B7Y<DAGRfloZoL<CRWfWm0
 Z7 OV;C;10.3d;59
 32
-Z8 !s110 1479420948
+Z8 !s110 1480028313
 !i10b 1
-Z9 !s108 1479420948.567000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd|
-Z11 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd|
+Z9 !s108 1480028313.698000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/fontROM.vhd|
+Z11 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/fontROM.vhd|
 !i113 1
 Z12 o-work work -2002 -explicit
 Z13 tExplicit 1
-Abdf_type
+Abehavioral
 R1
 R2
 R3
-DEx4 work 26 g31_text_address_generator 0 22 fC4Z5D;JC1aD7M5@jBN5b2
-l25
-L24
-VnLm;chk;iFT5mmB0JQ5;;2
-!s100 jaM<]9T1^VUM:7oQ6BJnf1
+DEx4 work 7 fontrom 0 22 =7aDRSWCogW^KW=A9me>`2
+l2230
+L42
+VI<n=j:C9m5I^HdQaJXfM23
+!s100 gg^@e@>Vj`6DMjG_T;bHK2
 R7
 32
 R8
@@ -49,25 +49,189 @@ R11
 !i113 1
 R12
 R13
-Eg31_text_address_generator_vhd_tst
-Z14 w1479420941
+Eg31_breakout_game
+Z14 w1480027803
+Z15 DPx3 lpm 14 lpm_components 0 22 4J@JVnz0@^T1iA`f^fRg21
 R1
 R2
 R3
 R4
-Z15 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht
-Z16 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht
+Z16 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Breakout_Game.vhd
+Z17 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Breakout_Game.vhd
+l0
+L15
+V=a24XH^nh7JV3JoXaICV?0
+!s100 NEiSTfMTZ`3gFecEX_[0W1
+R7
+32
+Z18 !s110 1480028314
+!i10b 1
+Z19 !s108 1480028314.168000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Breakout_Game.vhd|
+Z21 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Breakout_Game.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R15
+R1
+R2
+R3
+DEx4 work 17 g31_breakout_game 0 22 =a24XH^nh7JV3JoXaICV?0
+l102
+L28
+VP[mN_HGKPgc7@Nnd;bz3=0
+!s100 8W;<V_0ZE9RWWJI_J1hTl1
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13
+Eg31_breakout_game_vhd_tst
+Z22 w1480028309
+R2
+R3
+R4
+Z23 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Breakout_Game.vht
+Z24 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Breakout_Game.vht
+l0
+L31
+VBlKShJead7Gi0ZjQW_:Vk1
+!s100 FAo^fQ>:1BV4kFYGTfB8k3
+R7
+32
+Z25 !s110 1480028312
+!i10b 1
+Z26 !s108 1480028312.744000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Breakout_Game.vht|
+Z28 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Breakout_Game.vht|
+!i113 1
+R12
+R13
+Ag31_breakout_game_arch
+R2
+R3
+DEx4 work 25 g31_breakout_game_vhd_tst 0 22 BlKShJead7Gi0ZjQW_:Vk1
+l60
+L33
+VX8=5ao[=jc7DJ8lMZ]`;V1
+!s100 n]I@g5fmPzAd;SNGjj2[g3
+R7
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R12
+R13
+Eg31_game_address_generator
+Z29 w1479948823
+R1
+R2
+R3
+R4
+Z30 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Game_Address_Generator.vhd
+Z31 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Game_Address_Generator.vhd
+l0
+L13
+VZ`Ae^a=Szdz]eG7`EUfcN1
+!s100 _NjUo7lfJA?@IlU5kCdP11
+R7
+32
+R18
+!i10b 1
+Z32 !s108 1480028314.706000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Game_Address_Generator.vhd|
+Z34 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Game_Address_Generator.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R1
+R2
+R3
+DEx4 work 26 g31_game_address_generator 0 22 Z`Ae^a=Szdz]eG7`EUfcN1
+l25
+L24
+V_5EP[FUfl^@;[SifZNS;k3
+!s100 ChEFYKI;73^][ITT7kM;E3
+R7
+32
+R18
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R12
+R13
+Eg31_text_address_generator
+Z35 w1479948652
+R1
+R2
+R3
+R4
+Z36 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd
+Z37 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd
+l0
+L13
+Vh7R]PJ5D=[Dgg1nT?U9az1
+!s100 MYVm4MinBX@SA7d@2P;8g0
+R7
+32
+Z38 !s110 1480028315
+!i10b 1
+Z39 !s108 1480028315.195000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd|
+Z41 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Address_Generator.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R1
+R2
+R3
+DEx4 work 26 g31_text_address_generator 0 22 h7R]PJ5D=[Dgg1nT?U9az1
+l25
+L24
+V[:;=o]5:FWZ?ceHhl]SH^1
+!s100 F_^fzHIg53foU1WUHM=?c1
+R7
+32
+R38
+!i10b 1
+R39
+R40
+R41
+!i113 1
+R12
+R13
+Eg31_text_address_generator_vhd_tst
+Z42 w1479420941
+R1
+R2
+R3
+R4
+Z43 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht
+Z44 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht
 l0
 L32
 VBa85hLd76Mi@<E?5l??JN2
 !s100 CCA2o<]fB85D[Z915>IQL0
 R7
 32
-Z17 !s110 1479420949
+Z45 !s110 1479420949
 !i10b 1
-Z18 !s108 1479420949.070000
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht|
-Z20 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht|
+Z46 !s108 1479420949.070000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht|
+Z48 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/g31_Text_Address_Generator.vht|
 !i113 1
 R12
 R13
@@ -82,54 +246,138 @@ V@2=:bhf6;RJlYL@cBL;1N1
 !s100 9=lOU74nIGK4^YLhbMoHj3
 R7
 32
-R17
+R45
 !i10b 1
-R18
-R19
-R20
+R46
+R47
+R48
 !i113 1
 R12
 R13
-Eg31_vga
-Z21 w1477936531
-Z22 DPx3 lpm 14 lpm_components 0 22 4J@JVnz0@^T1iA`f^fRg21
+Eg31_text_generator
+Z49 w1480012996
 R1
 R2
 R3
 R4
-Z23 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd
-Z24 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd
+Z50 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Generator.vhd
+Z51 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Generator.vhd
 l0
-L15
-V4zfbHBC]f3WHndmdK3LL_2
-!s100 6R5XD]SGDNBi>;NP]Zg>81
+L13
+Vga_j6<MUzN?H68N^DjFMN1
+!s100 UfTQES@aOT`HChKeU>cTM2
 R7
 32
-R8
+R38
 !i10b 1
-Z25 !s108 1479420948.053000
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd|
-Z27 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd|
+Z52 !s108 1480028315.699000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Generator.vhd|
+Z54 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Generator.vhd|
 !i113 1
 R12
 R13
 Abdf_type
-R22
 R1
 R2
 R3
-DEx4 work 7 g31_vga 0 22 4zfbHBC]f3WHndmdK3LL_2
+DEx4 work 18 g31_text_generator 0 22 ga_j6<MUzN?H68N^DjFMN1
+l57
+L25
+VgHX`QHzfY:`1JFI;<F<Kg2
+!s100 onYcggLL>Nn6n7zbR1JDK1
+R7
+32
+R38
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R12
+R13
+Eg31_vga
+Z55 w1479951107
+R15
+R1
+R2
+R3
+R4
+Z56 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd
+Z57 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd
+l0
+L15
+Vl5A0_[9>Wg^L`7O_Q1Reo0
+!s100 ocIJkYb_H6=[`Ue7mECZl3
+R7
+32
+Z58 !s110 1480028316
+!i10b 1
+Z59 !s108 1480028316.210000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd|
+Z61 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R15
+R1
+R2
+R3
+Z62 DEx4 work 7 g31_vga 0 22 l5A0_[9>Wg^L`7O_Q1Reo0
 l36
 L27
-VIoBePh:hlmcOP<?j1PmcV3
-!s100 n?SYC[NZ=?T;O6L^QEPWM0
+Z63 VB34^Ol@8VbiZ;8RI029oT0
+Z64 !s100 I?AzmZ7=VAX=adD]Gg8ml0
+R7
+32
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 1
+R12
+R13
+Eg31_vga_generator
+Z65 w1480013103
+R15
+R1
+R2
+R3
+R4
+Z66 8C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA_Generator.vhd
+Z67 FC:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA_Generator.vhd
+l0
+L15
+V<H5mXo<WS7KH]SC3XHlcf2
+!s100 [M7J6`hnISoHmW5omoLO93
 R7
 32
 R8
 !i10b 1
-R25
-R26
-R27
+Z68 !s108 1480028313.205000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA_Generator.vhd|
+Z70 !s107 C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA_Generator.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R15
+R1
+R2
+R3
+DEx4 work 17 g31_vga_generator 0 22 <H5mXo<WS7KH]SC3XHlcf2
+l141
+L32
+V3=99j:^SD=m7ZnXQ;BUX91
+!s100 kYi`TL:B2WCo_dc<<RjHE1
+R7
+32
+R8
+!i10b 1
+R68
+R69
+R70
 !i113 1
 R12
 R13
