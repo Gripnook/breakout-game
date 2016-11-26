@@ -26,12 +26,12 @@ end g31_VGA;
 
 architecture bdf_type of g31_VGA is
 
-signal clear_x, clear_y : std_logic;
-signal count_x : std_logic_vector(10 downto 0);
-signal count_x_int : integer;
-signal count_y : std_logic_vector( 9 downto 0);
-signal count_y_int : integer;
-signal count_en_y : std_logic;
+	signal clear_x, clear_y : std_logic;
+	signal count_x : std_logic_vector(10 downto 0);
+	signal count_x_int : integer;
+	signal count_y : std_logic_vector( 9 downto 0);
+	signal count_y_int : integer;
+	signal count_en_y : std_logic;
 
 begin
 

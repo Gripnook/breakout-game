@@ -25,46 +25,55 @@ end g31_Text_Generator;
 
 architecture bdf_type of g31_Text_Generator is
 
-function to_bcd (bin : std_logic_vector(15 downto 0)) return std_logic_vector is
-	variable i : integer := 0;
-	variable j : integer := 1;
-	variable bcd :  std_logic_vector(19 downto 0) := (others => '0');
-	variable bint : std_logic_vector(15 downto 0) := bin;
+	function to_bcd (bin : std_logic_vector(15 downto 0)) return std_logic_vector is
+		variable i : integer := 0;
+		variable j : integer := 1;
+		variable bcd :  std_logic_vector(19 downto 0) := (others => '0');
+		variable bint : std_logic_vector(15 downto 0) := bin;
 
-	begin
-	for i in 0 to 15 loop
-		bcd(19 downto 1) := bcd(18 downto 0); -- shift the bcd bits
-		bcd(0) := bint(15);
-		
-		bint(15 downto 1) := bint(14 downto 0); -- shift the input bits
-		bint(0) := '0';
-		
-		for j in 1 to 5 loop -- for each bcd digit add 3 if it is greater than 4
-			if (i < 15 and bcd ((4*j-1) downto (4*j-4)) > "0100") then
-				bcd((4*j-1) downto (4*j-4)) := std_logic_vector(unsigned(bcd((4*j-1) downto (4*j-4))) + "0011");
-			end if;
+		begin
+		for i in 0 to 15 loop
+			bcd(19 downto 1) := bcd(18 downto 0); -- shift the bcd bits
+			bcd(0) := bint(15);
+			
+			bint(15 downto 1) := bint(14 downto 0); -- shift the input bits
+			bint(0) := '0';
+			
+			for j in 1 to 5 loop -- for each bcd digit add 3 if it is greater than 4
+				if (i < 15 and bcd ((4*j-1) downto (4*j-4)) > "0100") then
+					bcd((4*j-1) downto (4*j-4)) := std_logic_vector(unsigned(bcd((4*j-1) downto (4*j-4))) + "0011");
+				end if;
+			end loop;
 		end loop;
-	end loop;
-	return bcd;
-end to_bcd;
+		return bcd;
+	end to_bcd;
 
-function bcd_to_ascii (bcd : std_logic_vector(3 downto 0)) return std_logic_vector is
-	variable ascii : std_logic_vector(6 downto 0) := (others => '0');
-	begin
-	ascii := std_logic_vector(("000" & unsigned(bcd)) + "0110000"); -- add the character 0 in ascii
-	return ascii;
-end bcd_to_ascii;
+	function bcd_to_ascii (bcd : std_logic_vector(3 downto 0)) return std_logic_vector is
+		variable ascii : std_logic_vector(6 downto 0) := (others => '0');
+		begin
+		ascii := std_logic_vector(("000" & unsigned(bcd)) + "0110000"); -- add the character 0 in ascii
+		return ascii;
+	end bcd_to_ascii;
 
-constant message0 : std_logic_vector(79 downto 0) := x"20202020202020202020";
-constant message1 : std_logic_vector(79 downto 0) := x"202053544152543f2020"; -- START?
-constant message2 : std_logic_vector(79 downto 0) := x"434f4e54494e55453f20"; -- CONTINUE?
-constant message3 : std_logic_vector(79 downto 0) := x"47414d45204f56455221"; -- GAME OVER!
-constant message4 : std_logic_vector(79 downto 0) := x"202057494e4e45522120"; -- WINNER!
+	constant message0 : std_logic_vector(79 downto 0) := x"20202020202020202020";
+	constant message1 : std_logic_vector(79 downto 0) := x"202053544152543f2020"; -- START?
+	constant message2 : std_logic_vector(79 downto 0) := x"434f4e54494e55453f20"; -- CONTINUE?
+	constant message3 : std_logic_vector(79 downto 0) := x"47414d45204f56455221"; -- GAME OVER!
+	constant message4 : std_logic_vector(79 downto 0) := x"202057494e4e45522120"; -- WINNER!
+	constant message5 : std_logic_vector(79 downto 0) := x"2020524553554d453f20"; -- RESUME?
+	
+	signal message : std_logic_vector(79 downto 0);
 
 begin
-	text_gen : process (text_col, text_row)
-	variable relative_col : integer;
-	variable message : std_logic_vector(79 downto 0);
+	with message_id select
+		message <= message1 when "001",
+					  message2 when "010",
+					  message3 when "011",
+					  message4 when "100",
+					  message5 when "101",
+					  message0 when others;
+
+	text_gen : process (text_col, text_row, score, level, life, message)
 	begin
 		ascii <= "0100000";
 		rgb <= x"000000";
@@ -167,20 +176,6 @@ begin
 					-- do nothing
 			end case;
 		elsif (to_integer(unsigned(text_row)) = 8) then
-			case message_id is
-				when "000" =>
-					message := message0;
-				when "001" =>
-					message := message1;
-				when "010" =>
-					message := message2;
-				when "011" =>
-					message := message3;
-				when "100" =>
-					message := message4;
-				when others =>
-					message := message0;
-			end case;
 			case to_integer(unsigned(text_col)) is
 				when 20 =>
 					ascii <= message(78 downto 72);

@@ -221,7 +221,6 @@ set_global_assignment -name VHDL_FILE g31_Text_Generator.vhd
 set_global_assignment -name VHDL_FILE g31_VGA.vhd
 set_global_assignment -name VHDL_FILE g31_Text_Address_Generator.vhd
 set_global_assignment -name VHDL_FILE g31_Breakout_Game.vhd
-set_global_assignment -name VHDL_FILE g31_Game_Address_Generator.vhd
 set_global_assignment -name VHDL_FILE g31_VGA_Generator.vhd
 set_location_assignment PIN_A11 -to clock_vga
 set_location_assignment PIN_B11 -to hsync
@@ -254,7 +253,16 @@ set_location_assignment PIN_AA14 -to rst_n
 set_location_assignment PIN_AF14 -to clock
 set_location_assignment PIN_W15 -to paddle_right_n
 set_location_assignment PIN_Y16 -to paddle_left_n
-set_location_assignment PIN_AE12 -to cheats
+set_location_assignment PIN_AD10 -to cheats
 set_location_assignment PIN_AA15 -to continue_n
+set_global_assignment -name VHDL_FILE g31_Block_Generator.vhd
+set_global_assignment -name VHDL_FILE g31_Ball_Generator.vhd
+set_global_assignment -name VHDL_FILE g31_Wall_Generator.vhd
+set_global_assignment -name VHDL_FILE g31_Paddle_Generator.vhd
+set_global_assignment -name VHDL_FILE g31_Update_Blocks.vhd
+set_global_assignment -name VHDL_FILE g31_Update_Ball.vhd
+set_global_assignment -name VHDL_FILE g31_Update_Paddle.vhd
+set_global_assignment -name VHDL_FILE g31_Update_Wall.vhd
+set_location_assignment PIN_AE12 -to pause
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/g31_VGA_auto_stripped.stp
