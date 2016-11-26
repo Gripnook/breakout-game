@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g31_BlockerGame
-Sat Nov 26 15:45:00 2016
+Sat Nov 26 15:51:52 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -71,7 +71,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov 26 15:45:00 2016      ;
+; Analysis & Synthesis Status     ; Successful - Sat Nov 26 15:51:51 2016      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; g31_BlockerGame                            ;
 ; Top-level Entity Name           ; g31_Breakout_Game                          ;
@@ -295,14 +295,14 @@ agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 1423        ;
+; Estimate of Logic utilization (ALMs needed) ; 1425        ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 1937        ;
+; Combinational ALUT usage for logic          ; 1940        ;
 ;     -- 7 input functions                    ; 34          ;
 ;     -- 6 input functions                    ; 707         ;
 ;     -- 5 input functions                    ; 385         ;
 ;     -- 4 input functions                    ; 183         ;
-;     -- <=3 input functions                  ; 628         ;
+;     -- <=3 input functions                  ; 631         ;
 ;                                             ;             ;
 ; Dedicated logic registers                   ; 1035        ;
 ;                                             ;             ;
@@ -314,7 +314,7 @@ agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 665         ;
-; Total fan-out                               ; 12985       ;
+; Total fan-out                               ; 12995       ;
 ; Average fan-out                             ; 4.20        ;
 +---------------------------------------------+-------------+
 
@@ -324,7 +324,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                     ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g31_Breakout_Game                                                                                      ; 1937 (89)         ; 1035 (34)    ; 73728             ; 3          ; 34   ; 0            ; |g31_Breakout_Game                                                                                                                                                                                                                                                                                                                                      ; work         ;
+; |g31_Breakout_Game                                                                                      ; 1940 (92)         ; 1035 (34)    ; 73728             ; 3          ; 34   ; 0            ; |g31_Breakout_Game                                                                                                                                                                                                                                                                                                                                      ; work         ;
 ;    |g31_Update_Ball:Update_Ball|                                                                        ; 97 (39)           ; 58 (2)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball                                                                                                                                                                                                                                                                                                          ; work         ;
 ;       |lpm_counter:counter_ball_col_update|                                                             ; 18 (0)            ; 18 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col_update                                                                                                                                                                                                                                                                      ; work         ;
 ;          |cntr_79i:auto_generated|                                                                      ; 18 (18)           ; 18 (18)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col_update|cntr_79i:auto_generated                                                                                                                                                                                                                                              ; work         ;
@@ -569,7 +569,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; life[2]                                                                                                                                                                                                                                                  ; 8       ;
 ; life[0]                                                                                                                                                                                                                                                  ; 10      ;
 ; enable                                                                                                                                                                                                                                                   ; 12      ;
-; level[0]                                                                                                                                                                                                                                                 ; 8       ;
+; level[0]                                                                                                                                                                                                                                                 ; 11      ;
 ; message_id[0]                                                                                                                                                                                                                                            ; 2       ;
 ; g31_Update_Paddle:Update_Paddle|col_period_buffer[1]                                                                                                                                                                                                     ; 1       ;
 ; g31_Update_Paddle:Update_Paddle|row_period_buffer[1]                                                                                                                                                                                                     ; 1       ;
@@ -1121,7 +1121,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 26                          ;
 ;     SCLR              ; 68                          ;
 ;     plain             ; 15                          ;
-; arriav_lcell_comb     ; 1570                        ;
+; arriav_lcell_comb     ; 1573                        ;
 ;     arith             ; 291                         ;
 ;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 229                         ;
@@ -1131,11 +1131,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         5 data inputs ; 16                          ;
 ;     extend            ; 32                          ;
 ;         7 data inputs ; 32                          ;
-;     normal            ; 1236                        ;
+;     normal            ; 1239                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 54                          ;
-;         3 data inputs ; 122                         ;
+;         2 data inputs ; 55                          ;
+;         3 data inputs ; 124                         ;
 ;         4 data inputs ; 134                         ;
 ;         5 data inputs ; 295                         ;
 ;         6 data inputs ; 627                         ;
@@ -1147,7 +1147,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 21.50                       ;
-; Average LUT depth     ; 11.33                       ;
+; Average LUT depth     ; 11.32                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1263,7 +1263,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Sat Nov 26 15:44:21 2016
+    Info: Processing started: Sat Nov 26 15:51:12 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g31_BlockerGame -c g31_BlockerGame
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file fontrom.vhd
@@ -1485,7 +1485,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
-Info (11172): 2016.11.26.15:44:42 Progress: Loading sld7e7cfcae/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2016.11.26.15:51:33 Progress: Loading sld7e7cfcae/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1538,16 +1538,16 @@ Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 85 of its 89 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 4 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2621 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2624 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 2543 logic cells
+    Info (21061): Implemented 2546 logic cells
     Info (21064): Implemented 36 RAM segments
     Info (21062): Implemented 3 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
     Info: Peak virtual memory: 844 megabytes
-    Info: Processing ended: Sat Nov 26 15:45:00 2016
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:01:12
+    Info: Processing ended: Sat Nov 26 15:51:52 2016
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:01:13
 
 

@@ -238,9 +238,9 @@ begin
 	col_bounce <= col_bounce_blocks or col_bounce_paddle or col_bounce_wall;
 	row_bounce <= row_bounce_blocks or row_bounce_paddle or row_bounce_wall;
 	
-	-- period = relative_period * (15 - level)
-	col_period <= std_logic_vector(to_unsigned(to_integer(unsigned(col_period_base)) * (15 - to_integer(unsigned(level))), 8));
-	row_period <= std_logic_vector(to_unsigned(to_integer(unsigned(row_period_base)) * (15 - to_integer(unsigned(level))), 8));
+	-- period = relative_period * (16 - level)
+	col_period <= std_logic_vector(to_unsigned(to_integer(unsigned(col_period_base)) * (16 - to_integer(unsigned(level))), 8));
+	row_period <= std_logic_vector(to_unsigned(to_integer(unsigned(row_period_base)) * (16 - to_integer(unsigned(level))), 8));
 	
 	Update_Score : process (clock)
 	begin

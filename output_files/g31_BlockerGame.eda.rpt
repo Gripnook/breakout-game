@@ -1,5 +1,5 @@
 EDA Netlist Writer report for g31_BlockerGame
-Sat Nov 26 15:47:05 2016
+Sat Nov 26 15:53:57 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Nov 26 15:47:05 2016 ;
+; EDA Netlist Writer Status ; Successful - Sat Nov 26 15:53:57 2016 ;
 ; Revision Name             ; g31_BlockerGame                       ;
 ; Top-level Entity Name     ; g31_Breakout_Game                     ;
 ; Family                    ; Cyclone V                             ;
@@ -82,14 +82,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Sat Nov 26 15:47:02 2016
+    Info: Processing started: Sat Nov 26 15:53:55 2016
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off g31_BlockerGame -c g31_BlockerGame
 Warning (10905): Generated the EDA functional simulation files although EDA timing simulation option is chosen.
 Info (204019): Generated file g31_BlockerGame.vho in folder "C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 730 megabytes
-    Info: Processing ended: Sat Nov 26 15:47:05 2016
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 729 megabytes
+    Info: Processing ended: Sat Nov 26 15:53:57 2016
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 
 
