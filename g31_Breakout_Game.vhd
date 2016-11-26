@@ -52,8 +52,10 @@ architecture bdf_type of g31_Breakout_Game is
 	signal col_bounce, col_bounce_blocks, col_bounce_paddle, col_bounce_wall : std_logic;
 	signal row_bounce, row_bounce_blocks, row_bounce_paddle, row_bounce_wall : std_logic;
 	signal score_gained : std_logic_vector(15 downto 0);
-	signal col_period : std_logic_vector(3 downto 0);
-	signal row_period : std_logic_vector(3 downto 0);
+	signal col_period_base : std_logic_vector(3 downto 0);
+	signal row_period_base : std_logic_vector(3 downto 0);
+	signal col_period : std_logic_vector(7 downto 0);
+	signal row_period : std_logic_vector(7 downto 0);
 	signal ball_lost : std_logic;
 	
 	signal enable : std_logic := '1';
@@ -110,8 +112,8 @@ architecture bdf_type of g31_Breakout_Game is
 			cheats         : in  std_logic; -- enables super speed
 			col_bounce     : in  std_logic; -- the ball has hit something in the col direction
 			row_bounce     : in  std_logic; -- the ball has hit something in the row direction
-			col_period     : in  std_logic_vector(3 downto 0); -- relative period of the ball in the col direction
-			row_period     : in  std_logic_vector(3 downto 0); -- relative period of the ball in the row direction
+			col_period     : in  std_logic_vector(7 downto 0); -- relative period of the ball in the col direction
+			row_period     : in  std_logic_vector(7 downto 0); -- relative period of the ball in the row direction
 			ball_col       : out std_logic_vector(9 downto 0); -- ball col address 0 to 799
 			ball_row       : out std_logic_vector(9 downto 0); -- ball row address 0 to 599
 			ball_col_up    : out std_logic; -- direction of ball_col
@@ -175,6 +177,23 @@ begin
 	
 	enable_pause <= enable and not pause;
 	
+	Update_Enable : process (clock)
+	begin
+		if (rising_edge(clock)) then
+			if (pause = '0') then
+				if (enable = '0' and (continue_n = '0' or (rst = '1' and not (message_id = "001")))) then
+					enable <= '1';
+				else
+					if (startup = '1' or rst = '1' or next_level = '1' or game_over = '1' or winner = '1') then
+						enable <= '0';
+					end if;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	rst <= not rst_n;
+	
 	rst_score <= startup or rst or winner_delayed or game_over_delayed;
 	rst_level <= startup or rst or winner_delayed or game_over_delayed;
 	rst_life <= startup or rst or winner_delayed or game_over_delayed;
@@ -212,12 +231,16 @@ begin
 									ball_col_up => ball_col_up, ball_row_up => ball_row_up);
 	Update_Paddle : g31_Update_Paddle port map (clock => clock, rst => rst_paddle, enable => enable_pause, ball_col => ball_col, ball_row => ball_row,
 									ball_col_up => ball_col_up, ball_row_up => ball_row_up, paddle_right_n => paddle_right_n, paddle_left_n => paddle_left_n,
-									paddle_col => paddle_col, col_bounce => col_bounce_paddle, row_bounce => row_bounce_paddle, col_period => col_period, row_period => row_period);
+									paddle_col => paddle_col, col_bounce => col_bounce_paddle, row_bounce => row_bounce_paddle, col_period => col_period_base, row_period => row_period_base);
 	Update_Wall : g31_Update_Wall port map (clock => clock, rst => rst_wall, enable => enable_pause, cheats => cheats, ball_col => ball_col, ball_row => ball_row,
 									ball_col_up => ball_col_up, ball_row_up => ball_row_up, col_bounce => col_bounce_wall, row_bounce => row_bounce_wall, ball_lost => ball_lost);
 	
 	col_bounce <= col_bounce_blocks or col_bounce_paddle or col_bounce_wall;
 	row_bounce <= row_bounce_blocks or row_bounce_paddle or row_bounce_wall;
+	
+	-- period = relative_period * (15 - level)
+	col_period <= std_logic_vector(to_unsigned(to_integer(unsigned(col_period_base)) * (15 - to_integer(unsigned(level))), 8));
+	row_period <= std_logic_vector(to_unsigned(to_integer(unsigned(row_period_base)) * (15 - to_integer(unsigned(level))), 8));
 	
 	Update_Score : process (clock)
 	begin
@@ -302,22 +325,5 @@ begin
 		generic map (lpm_width => 3)
 		port map (clock => clock, sclr => enable_pause, data => message_id, q => message_id_displayed);
 	
-	Update_Enable : process (clock)
-	begin
-		if (rising_edge(clock)) then
-			if (pause = '0') then
-				if (enable = '0' and (continue_n = '0' or (rst = '1' and not (message_id = "001")))) then
-					enable <= '1';
-				else
-					if (startup = '1' or rst = '1' or next_level = '1' or game_over = '1' or winner = '1') then
-						enable <= '0';
-					end if;
-				end if;
-			end if;
-		end if;
-	end process;
-	
-	rst <= not rst_n;
-
 end bdf_type;
 

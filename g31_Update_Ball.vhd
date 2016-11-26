@@ -20,8 +20,8 @@ entity g31_Update_Ball is
 		cheats         : in  std_logic; -- enables super speed
 		col_bounce     : in  std_logic; -- the ball has hit something in the col direction
 		row_bounce     : in  std_logic; -- the ball has hit something in the row direction
-		col_period     : in  std_logic_vector(3 downto 0); -- relative period of the ball in the col direction
-		row_period     : in  std_logic_vector(3 downto 0); -- relative period of the ball in the row direction
+		col_period     : in  std_logic_vector(7 downto 0); -- relative period of the ball in the col direction
+		row_period     : in  std_logic_vector(7 downto 0); -- relative period of the ball in the row direction
 		ball_col       : out std_logic_vector(9 downto 0); -- ball col address 0 to 799
 		ball_row       : out std_logic_vector(9 downto 0); -- ball row address 0 to 599
 		ball_col_up    : out std_logic; -- direction of ball_col
@@ -54,10 +54,14 @@ begin
 	ball_col_up <= ball_col_up_buffer;
 	ball_row_up <= ball_row_up_buffer;
 
-	ball_col_update_period <= col_period & (13 downto 0 => '1') when (cheats = '0') else -- period = (col_period + 1) * 327.68 us
-									  "0000" & col_period & (9 downto 0 => '1'); -- 16 times the speed with cheats
-	ball_row_update_period <= row_period & (13 downto 0 => '1') when (cheats = '0') else -- period = (row_period + 1) * 327.68 us
-									  "0000" & row_period & (9 downto 0 => '1'); -- 16 times the speed with cheats
+	ball_col_update_period <= std_logic_vector(unsigned(col_period) - to_unsigned(1, 8)) & 
+										(9 downto 0 => '1') when (cheats = '0') else -- period = col_period * 20.48 us
+									  "0000" & std_logic_vector(unsigned(col_period) - to_unsigned(1, 8)) & 
+										(5 downto 0 => '1'); -- 16 times the speed with cheats
+	ball_row_update_period <= std_logic_vector(unsigned(row_period) - to_unsigned(1, 8)) & 
+										(9 downto 0 => '1') when (cheats = '0') else -- period = row_period * 20.48 us
+									  "0000" & std_logic_vector(unsigned(row_period) - to_unsigned(1, 8)) & 
+										(5 downto 0 => '1'); -- 16 times the speed with cheats
 
 	counter_ball_col_update : lpm_counter
 			generic map (lpm_width => 18)

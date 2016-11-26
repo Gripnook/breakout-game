@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g31_BlockerGame
-Fri Nov 25 22:00:48 2016
+Sat Nov 26 15:45:00 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -71,17 +71,17 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Nov 25 22:00:48 2016      ;
+; Analysis & Synthesis Status     ; Successful - Sat Nov 26 15:45:00 2016      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; g31_BlockerGame                            ;
 ; Top-level Entity Name           ; g31_Breakout_Game                          ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 1036                                       ;
+; Total registers                 ; 1035                                       ;
 ; Total pins                      ; 34                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 73,728                                     ;
-; Total DSP Blocks                ; 1                                          ;
+; Total DSP Blocks                ; 3                                          ;
 ; Total HSSI RX PCSs              ; 0                                          ;
 ; Total HSSI PMA RX Deserializers ; 0                                          ;
 ; Total HSSI TX PCSs              ; 0                                          ;
@@ -295,27 +295,27 @@ agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 1414        ;
+; Estimate of Logic utilization (ALMs needed) ; 1423        ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 1919        ;
-;     -- 7 input functions                    ; 35          ;
-;     -- 6 input functions                    ; 706         ;
-;     -- 5 input functions                    ; 380         ;
-;     -- 4 input functions                    ; 182         ;
-;     -- <=3 input functions                  ; 616         ;
+; Combinational ALUT usage for logic          ; 1937        ;
+;     -- 7 input functions                    ; 34          ;
+;     -- 6 input functions                    ; 707         ;
+;     -- 5 input functions                    ; 385         ;
+;     -- 4 input functions                    ; 183         ;
+;     -- <=3 input functions                  ; 628         ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 1036        ;
+; Dedicated logic registers                   ; 1035        ;
 ;                                             ;             ;
 ; I/O pins                                    ; 34          ;
 ; Total MLAB memory bits                      ; 0           ;
 ; Total block memory bits                     ; 73728       ;
 ;                                             ;             ;
-; Total DSP Blocks                            ; 1           ;
+; Total DSP Blocks                            ; 3           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 666         ;
-; Total fan-out                               ; 12927       ;
-; Average fan-out                             ; 4.21        ;
+; Maximum fan-out                             ; 665         ;
+; Total fan-out                               ; 12985       ;
+; Average fan-out                             ; 4.20        ;
 +---------------------------------------------+-------------+
 
 
@@ -324,8 +324,8 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                     ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g31_Breakout_Game                                                                                      ; 1919 (89)         ; 1036 (34)    ; 73728             ; 1          ; 34   ; 0            ; |g31_Breakout_Game                                                                                                                                                                                                                                                                                                                                      ; work         ;
-;    |g31_Update_Ball:Update_Ball|                                                                        ; 77 (19)           ; 58 (2)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball                                                                                                                                                                                                                                                                                                          ; work         ;
+; |g31_Breakout_Game                                                                                      ; 1937 (89)         ; 1035 (34)    ; 73728             ; 3          ; 34   ; 0            ; |g31_Breakout_Game                                                                                                                                                                                                                                                                                                                                      ; work         ;
+;    |g31_Update_Ball:Update_Ball|                                                                        ; 97 (39)           ; 58 (2)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball                                                                                                                                                                                                                                                                                                          ; work         ;
 ;       |lpm_counter:counter_ball_col_update|                                                             ; 18 (0)            ; 18 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col_update                                                                                                                                                                                                                                                                      ; work         ;
 ;          |cntr_79i:auto_generated|                                                                      ; 18 (18)           ; 18 (18)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col_update|cntr_79i:auto_generated                                                                                                                                                                                                                                              ; work         ;
 ;       |lpm_counter:counter_ball_col|                                                                    ; 11 (0)            ; 10 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col                                                                                                                                                                                                                                                                             ; work         ;
@@ -335,7 +335,7 @@ agreement for further details.
 ;       |lpm_counter:counter_ball_row|                                                                    ; 11 (0)            ; 10 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_row                                                                                                                                                                                                                                                                             ; work         ;
 ;          |cntr_44k:auto_generated|                                                                      ; 11 (11)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_row|cntr_44k:auto_generated                                                                                                                                                                                                                                                     ; work         ;
 ;    |g31_Update_Blocks:Update_Blocks|                                                                    ; 852 (852)         ; 68 (68)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks                                                                                                                                                                                                                                                                                                      ; work         ;
-;    |g31_Update_Paddle:Update_Paddle|                                                                    ; 153 (135)         ; 35 (17)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle                                                                                                                                                                                                                                                                                                      ; work         ;
+;    |g31_Update_Paddle:Update_Paddle|                                                                    ; 151 (133)         ; 34 (16)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle                                                                                                                                                                                                                                                                                                      ; work         ;
 ;       |lpm_counter:counter_paddle|                                                                      ; 18 (0)            ; 18 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|lpm_counter:counter_paddle                                                                                                                                                                                                                                                                           ; work         ;
 ;          |cntr_79i:auto_generated|                                                                      ; 18 (18)           ; 18 (18)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|lpm_counter:counter_paddle|cntr_79i:auto_generated                                                                                                                                                                                                                                                   ; work         ;
 ;    |g31_Update_Wall:Update_Wall|                                                                        ; 20 (20)           ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Wall:Update_Wall                                                                                                                                                                                                                                                                                                          ; work         ;
@@ -445,10 +445,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+-------------+
 ; Statistic                       ; Number Used ;
 +---------------------------------+-------------+
+; Independent 9x9                 ; 2           ;
 ; Independent 18x18 plus 36       ; 1           ;
-; Total number of DSP blocks      ; 1           ;
+; Total number of DSP blocks      ; 3           ;
 ;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 1           ;
+; Fixed Point Unsigned Multiplier ; 3           ;
 +---------------------------------+-------------+
 
 
@@ -474,10 +475,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[17..23]     ; Merged with g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[16] ;
 ; g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[8,9,11..14] ; Merged with g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[10] ;
 ; g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[1..7]       ; Merged with g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[0]  ;
-; g31_Update_Paddle:Update_Paddle|row_period[1]                ; Merged with g31_Update_Paddle:Update_Paddle|col_period[1]        ;
-; g31_Update_Paddle:Update_Paddle|row_period[0]                ; Merged with g31_Update_Paddle:Update_Paddle|col_period[0]        ;
-; g31_Update_Paddle:Update_Paddle|col_period[0]                ; Stuck at VCC due to stuck port data_in                           ;
-; Total Number of Removed Registers = 33                       ;                                                                  ;
+; g31_Update_Paddle:Update_Paddle|row_period_buffer[0]         ; Merged with g31_Update_Paddle:Update_Paddle|col_period_buffer[0] ;
+; g31_Update_Paddle:Update_Paddle|row_period_buffer[3]         ; Merged with g31_Update_Paddle:Update_Paddle|col_period_buffer[3] ;
+; g31_Update_Paddle:Update_Paddle|col_period_buffer[0]         ; Stuck at GND due to stuck port data_in                           ;
+; g31_Update_Paddle:Update_Paddle|col_period_buffer[3]         ; Stuck at VCC due to stuck port data_in                           ;
+; Total Number of Removed Registers = 34                       ;                                                                  ;
 +--------------------------------------------------------------+------------------------------------------------------------------+
 
 
@@ -486,12 +488,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1036  ;
+; Total registers                              ; 1035  ;
 ; Number of registers using Synchronous Clear  ; 213   ;
 ; Number of registers using Synchronous Load   ; 187   ;
 ; Number of registers using Asynchronous Clear ; 288   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 581   ;
+; Number of registers using Clock Enable       ; 580   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -566,11 +568,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; g31_Update_Paddle:Update_Paddle|paddle_col_buffer[4]                                                                                                                                                                                                     ; 6       ;
 ; life[2]                                                                                                                                                                                                                                                  ; 8       ;
 ; life[0]                                                                                                                                                                                                                                                  ; 10      ;
-; enable                                                                                                                                                                                                                                                   ; 11      ;
-; g31_Update_Paddle:Update_Paddle|col_period[3]                                                                                                                                                                                                            ; 2       ;
-; g31_Update_Paddle:Update_Paddle|row_period[3]                                                                                                                                                                                                            ; 2       ;
-; level[0]                                                                                                                                                                                                                                                 ; 6       ;
+; enable                                                                                                                                                                                                                                                   ; 12      ;
+; level[0]                                                                                                                                                                                                                                                 ; 8       ;
 ; message_id[0]                                                                                                                                                                                                                                            ; 2       ;
+; g31_Update_Paddle:Update_Paddle|col_period_buffer[1]                                                                                                                                                                                                     ; 1       ;
+; g31_Update_Paddle:Update_Paddle|row_period_buffer[1]                                                                                                                                                                                                     ; 1       ;
 ; sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|tdo            ; 1       ;
 ; sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
 ; sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 3       ;
@@ -607,17 +609,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|next_level                                           ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|life_lost                                            ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |g31_Breakout_Game|level[2]                                             ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|paddle_col_buffer[2] ;
-; 11:1               ; 3 bits    ; 21 LEs        ; 15 LEs               ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|row_period[2]        ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|life[0]                                              ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|paddle_col_buffer[1] ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 15 LEs               ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|col_period_buffer[2] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|life[2]                                              ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|paddle_col_buffer[4] ;
-; 11:1               ; 3 bits    ; 21 LEs        ; 15 LEs               ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|col_period[3]        ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 15 LEs               ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|col_period_buffer[1] ;
 ; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; No name available in netlist                                            ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index1[0]      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index2[3]      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index3[5]      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index4[5]      ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|b[0]                 ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index1[5]      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index2[0]      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index3[1]      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index4[1]      ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|b[7]                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|points_per_block     ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|points_per_block     ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|points_per_block     ;
@@ -1113,39 +1115,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 261                         ;
-;     ENA               ; 126                         ;
+; arriav_ff             ; 260                         ;
+;     ENA               ; 125                         ;
 ;     ENA SCLR          ; 26                          ;
 ;     ENA SLD           ; 26                          ;
 ;     SCLR              ; 68                          ;
 ;     plain             ; 15                          ;
-; arriav_lcell_comb     ; 1552                        ;
-;     arith             ; 275                         ;
+; arriav_lcell_comb     ; 1570                        ;
+;     arith             ; 291                         ;
 ;         0 data inputs ; 3                           ;
-;         1 data inputs ; 213                         ;
+;         1 data inputs ; 229                         ;
 ;         2 data inputs ; 29                          ;
 ;         3 data inputs ; 4                           ;
 ;         4 data inputs ; 10                          ;
 ;         5 data inputs ; 16                          ;
-;     extend            ; 33                          ;
-;         7 data inputs ; 33                          ;
-;     normal            ; 1233                        ;
+;     extend            ; 32                          ;
+;         7 data inputs ; 32                          ;
+;     normal            ; 1236                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 59                          ;
-;         3 data inputs ; 121                         ;
-;         4 data inputs ; 133                         ;
-;         5 data inputs ; 290                         ;
-;         6 data inputs ; 626                         ;
+;         2 data inputs ; 54                          ;
+;         3 data inputs ; 122                         ;
+;         4 data inputs ; 134                         ;
+;         5 data inputs ; 295                         ;
+;         6 data inputs ; 627                         ;
 ;     shared            ; 11                          ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 10                          ;
-; arriav_mac            ; 1                           ;
+; arriav_mac            ; 3                           ;
 ; boundary_port         ; 34                          ;
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 21.50                       ;
-; Average LUT depth     ; 11.49                       ;
+; Average LUT depth     ; 11.33                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1261,7 +1263,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Fri Nov 25 22:00:07 2016
+    Info: Processing started: Sat Nov 26 15:44:21 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g31_BlockerGame -c g31_BlockerGame
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file fontrom.vhd
@@ -1483,7 +1485,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
-Info (11172): 2016.11.25.22:00:29 Progress: Loading sld7e7cfcae/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2016.11.26.15:44:42 Progress: Loading sld7e7cfcae/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1536,16 +1538,16 @@ Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 85 of its 89 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 4 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2601 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2621 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 2525 logic cells
+    Info (21061): Implemented 2543 logic cells
     Info (21064): Implemented 36 RAM segments
-    Info (21062): Implemented 1 DSP elements
+    Info (21062): Implemented 3 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 846 megabytes
-    Info: Processing ended: Fri Nov 25 22:00:48 2016
-    Info: Elapsed time: 00:00:41
-    Info: Total CPU time (on all processors): 00:01:16
+    Info: Peak virtual memory: 844 megabytes
+    Info: Processing ended: Sat Nov 26 15:45:00 2016
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:01:12
 
 
