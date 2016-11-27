@@ -1,0 +1,18 @@
+
+State Machine - |g31_Breakout_Game|game_state
+Name game_state.s_game_won game_state.s_game_over game_state.s_level_cleared game_state.s_reset game_state.s_paused game_state.s_playing 
+game_state.s_playing 0 0 0 0 0 0 
+game_state.s_paused 0 0 0 0 1 1 
+game_state.s_reset 0 0 0 1 0 1 
+game_state.s_level_cleared 0 0 1 0 0 1 
+game_state.s_game_over 0 1 0 0 0 1 
+game_state.s_game_won 1 0 0 0 0 1 
+
+State Machine - |g31_Breakout_Game|game_state_internal
+Name game_state_internal.s_game_won game_state_internal.s_game_over game_state_internal.s_level_cleared game_state_internal.s_reset game_state_internal.s_playing game_state_internal.s_paused 
+game_state_internal.s_paused 0 0 0 0 0 0 
+game_state_internal.s_playing 0 0 0 0 1 1 
+game_state_internal.s_reset 0 0 0 1 0 1 
+game_state_internal.s_level_cleared 0 0 1 0 0 1 
+game_state_internal.s_game_over 0 1 0 0 0 1 
+game_state_internal.s_game_won 1 0 0 0 0 1 

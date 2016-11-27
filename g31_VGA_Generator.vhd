@@ -11,6 +11,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 library LPM;
 use LPM.LPM_COMPONENTS.ALL;
+use WORK.g31_Game_States.ALL;
 
 entity g31_VGA_Generator is
 	port (
@@ -22,7 +23,7 @@ entity g31_VGA_Generator is
 		ball_row   : in  std_logic_vector( 9 downto 0); -- ball row address 0 to 599
 		paddle_col : in  std_logic_vector( 9 downto 0); -- paddle col address 0 to 799
 		blocks     : in  std_logic_vector(59 downto 0); -- blocks present or not bitmask
-		message_id : in  std_logic_vector( 2 downto 0); -- message to display to the player
+		game_state : in  t_game_state; -- current game state
 		r, g, b    : out std_logic_vector( 7 downto 0); -- 8-bit color output
 		hsync      : out std_logic; -- horizontal sync signal
 		vsync      : out std_logic; -- vertical sync signal
@@ -82,7 +83,7 @@ architecture bdf_type of g31_VGA_Generator is
 			score      : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
 			level      : in  std_logic_vector( 2 downto 0); -- level 0 to 7
 			life       : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
-			message_id : in  std_logic_vector( 2 downto 0); -- message to display to the player
+			game_state : in  t_game_state; -- current game state
 			rgb        : out std_logic_vector(23 downto 0); -- 24-bit color to display
 			ascii      : out std_logic_vector( 6 downto 0)  -- ascii code of the character to display
 		);
@@ -152,7 +153,7 @@ begin
 	Text_Address_Generator : g31_Text_Address_Generator port map (column => column, row => row,
 									text_col => text_col, text_row => text_row, font_col => font_col, font_row => font_row);
 	Text_Generator : g31_Text_Generator port map (text_col => text_col, text_row => text_row,
-									score => score, level => level, life => life, message_id => message_id,
+									score => score, level => level, life => life, game_state => game_state,
 									rgb => text_rgb, ascii => ascii);
 	CharacterROM : fontROM port map(clkA => clock, char_code => ascii,
 									font_row => font_row_delayed, font_col => font_col_delayed,

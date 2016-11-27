@@ -9,17 +9,18 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use WORK.g31_Game_States.ALL;
 
 entity g31_Text_Generator is
 	port (
-		text_col    : in  std_logic_vector( 5 downto 0); -- character column 0 to 49
-		text_row    : in  std_logic_vector( 4 downto 0); -- character row 0 to 18
-		score       : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
-		level       : in  std_logic_vector( 2 downto 0); -- level 0 to 7
-		life        : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
-		message_id  : in  std_logic_vector( 2 downto 0); -- message to display to the player
-		rgb         : out std_logic_vector(23 downto 0); -- 24-bit color to display
-		ascii       : out std_logic_vector( 6 downto 0)  -- ascii code of the character to display
+		text_col   : in  std_logic_vector( 5 downto 0); -- character column 0 to 49
+		text_row   : in  std_logic_vector( 4 downto 0); -- character row 0 to 18
+		score      : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
+		level      : in  std_logic_vector( 2 downto 0); -- level 0 to 7
+		life       : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
+		game_state : in  t_game_state; -- current game state
+		rgb        : out std_logic_vector(23 downto 0); -- 24-bit color to display
+		ascii      : out std_logic_vector( 6 downto 0)  -- ascii code of the character to display
 	);
 end g31_Text_Generator;
 
@@ -65,12 +66,12 @@ architecture bdf_type of g31_Text_Generator is
 	signal message : std_logic_vector(79 downto 0);
 
 begin
-	with message_id select
-		message <= message1 when "001",
-					  message2 when "010",
-					  message3 when "011",
-					  message4 when "100",
-					  message5 when "101",
+	with game_state select
+		message <= message1 when s_reset,
+					  message2 when s_level_cleared,
+					  message3 when s_game_over,
+					  message4 when s_game_won,
+					  message5 when s_paused,
 					  message0 when others;
 
 	text_gen : process (text_col, text_row, score, level, life, message)

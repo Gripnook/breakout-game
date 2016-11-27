@@ -118,7 +118,7 @@ begin
 								col_period_buffer <= PERIOD_DEFAULT;
 								row_period_buffer <= PERIOD_DEFAULT;
 							elsif (ball_col_relative >= 48 and ball_col_relative <= 59) then
-								col_bounce_buffer <= not ball_col_up;
+								col_bounce_buffer <= ball_col_up;
 								row_bounce_buffer <= '1';
 								col_period_buffer <= PERIOD_DEFAULT_HIGH;
 								row_period_buffer <= PERIOD_DEFAULT_LOW;
@@ -127,7 +127,7 @@ begin
 								col_period_buffer <= PERIOD_DEFAULT;
 								row_period_buffer <= PERIOD_DEFAULT;
 							elsif (ball_col_relative >= 61 and ball_col_relative <= 72) then
-								col_bounce_buffer <= ball_col_up;
+								col_bounce_buffer <= not ball_col_up;
 								row_bounce_buffer <= '1';
 								col_period_buffer <= PERIOD_DEFAULT_HIGH;
 								row_period_buffer <= PERIOD_DEFAULT_LOW;
