@@ -33,9 +33,10 @@ architecture bdf_type of g31_Breakout_Game is
 
 	signal startup : std_logic := '0';
 	signal game_started : std_logic := '0';
+	signal set_game_started : std_logic := '0';
 	
 	signal startup_timer_clear : std_logic := '0';
-	signal startup_timer_counter : std_logic_vector(25 downto 0) := (others => '0');
+	signal startup_timer_counter : std_logic_vector(13 downto 0) := (others => '0');
 	signal startup_pulse_enable : std_logic := '0';
 	signal startup_pulse_counter : std_logic_vector(1 downto 0) := (others => '0');
 	
@@ -166,24 +167,25 @@ architecture bdf_type of g31_Breakout_Game is
 
 begin
 
-	-- generates two 1s pulses to initialize the game properly
+	-- generates two 0.25 ms pulses to initialize the game properly
 	counter_startup_timer : lpm_counter
-			generic map (lpm_width => 26)
+			generic map (lpm_width => 14)
 			port map (clock => clock, sclr => startup_timer_clear, q => startup_timer_counter);
 	counter_startup_pulses : lpm_counter
 			generic map (lpm_width => 2)
 			port map (clock => clock, cnt_en => startup_pulse_enable, q => startup_pulse_counter);
 	
-	startup_timer_clear <= '1' when startup_timer_counter = "10111110101111000001111111" else '0';
+	startup_timer_clear <= '1' when startup_timer_counter = "11000011010011" else '0';
 	startup_pulse_enable <= startup_timer_clear and (not game_started);
 	
 	Initialize_Game : process (clock)
 	begin
 		if (rising_edge(clock)) then
+			set_game_started <= '0';
 			if (startup_pulse_enable = '1') then
 				if (startup_pulse_counter = "11") then
 					startup <= '0';
-					game_started <= '1';
+					set_game_started <= '1';
 				else
 					startup <= not startup;
 				end if;
@@ -194,14 +196,18 @@ begin
 	pause <= pause_in and (not startup);
 	enable <= (not enable_rst) and (not pause);
 	
-	Rst_Latch : process (clock, rst_n)
+	Reg_Game_Started : process (clock, rst_n)
 	begin
 		if (rst_n = '0') then
-			rst <= '1';
+			game_started <= '0';
 		elsif (rising_edge(clock)) then
-			rst <= startup;
+			if (set_game_started = '1') then
+				game_started <= '1';
+			end if;
 		end if;
 	end process;
+	
+	rst <= startup;
 	
 	Continue_Latch : process (clock, continue_n)
 	begin
