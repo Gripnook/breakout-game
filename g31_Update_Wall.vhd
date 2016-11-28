@@ -30,7 +30,7 @@ end g31_Update_Wall;
 
 architecture bdf_type of g31_Update_Wall is
 
-	signal col_bounce_buffer, row_bounce_buffer, ball_lost_buffer : std_logic := '0';
+	signal col_bounce_buffer, row_bounce_buffer, ball_lost_buffer : std_logic;
 
 	signal ball_col_next : unsigned(9 downto 0);
 	signal ball_row_next : unsigned(9 downto 0);

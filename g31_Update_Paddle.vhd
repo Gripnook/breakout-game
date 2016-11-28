@@ -38,10 +38,12 @@ architecture bdf_type of g31_Update_Paddle is
 	constant PERIOD_DEFAULT_HIGH : std_logic_vector(3 downto 0) := "1110";
 	constant PERIOD_DEFAULT_LOW : std_logic_vector(3 downto 0) := "1000";
 	
-	signal paddle_col_buffer : std_logic_vector(9 downto 0) := PADDLE_COL_DEFAULT;
-	signal col_bounce_buffer, row_bounce_buffer : std_logic := '0';
-	signal col_period_buffer : std_logic_vector(3 downto 0) := PERIOD_DEFAULT;
-	signal row_period_buffer : std_logic_vector(3 downto 0) := PERIOD_DEFAULT;
+	signal paddle_col_buffer : std_logic_vector(9 downto 0);
+	signal col_bounce_buffer, row_bounce_buffer : std_logic;
+	signal col_period_buffer : std_logic_vector(3 downto 0);
+	signal row_period_buffer : std_logic_vector(3 downto 0);
+	
+	signal paddle_right, paddle_left : std_logic;
 	
 	signal paddle_counter : std_logic_vector(17 downto 0);
 	signal clear_paddle_counter : std_logic;
@@ -58,6 +60,28 @@ begin
 	col_period <= col_period_buffer;
 	row_period <= row_period_buffer;
 	
+	Paddle_Right_Latch : process (clock, paddle_right_n)
+	begin
+		if (paddle_right_n = '0') then
+			paddle_right <= '1';
+		elsif (rising_edge(clock)) then
+			if (clear_paddle_counter = '1') then
+				paddle_right <= '0';
+			end if;
+		end if;
+	end process;
+
+	Paddle_Left_Latch : process (clock, paddle_left_n)
+	begin
+		if (paddle_left_n = '0') then
+			paddle_left <= '1';
+		elsif (rising_edge(clock)) then
+			if (clear_paddle_counter = '1') then
+				paddle_left <= '0';
+			end if;
+		end if;
+	end process;
+	
 	counter_paddle : lpm_counter
 			generic map (lpm_width => 18)
 			port map (clock => clock, sclr => clear_paddle_counter, q => paddle_counter);
@@ -72,11 +96,11 @@ begin
 				if (rst = '1') then
 					paddle_col_buffer <= PADDLE_COL_DEFAULT;
 				elsif (clear_paddle_counter = '1') then
-					if (paddle_right_n = '0' and paddle_left_n = '0') then
+					if (paddle_right = '1' and paddle_left = '1') then
 						-- do nothing
-					elsif (paddle_right_n = '0' and unsigned(paddle_col_buffer) + 127 < 784) then
+					elsif (paddle_right = '1' and unsigned(paddle_col_buffer) + 127 < 784) then
 						paddle_col_buffer <= std_logic_vector(unsigned(paddle_col_buffer) + to_unsigned(1, 10));
-					elsif (paddle_left_n = '0' and unsigned(paddle_col_buffer) >= 16) then
+					elsif (paddle_left = '1' and unsigned(paddle_col_buffer) >= 16) then
 						paddle_col_buffer <= std_logic_vector(unsigned(paddle_col_buffer) - to_unsigned(1, 10));
 					end if;
 				end if;

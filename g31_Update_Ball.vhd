@@ -34,20 +34,16 @@ architecture bdf_type of g31_Update_Ball is
 	constant BALL_COL_DEFAULT : std_logic_vector(9 downto 0) := "0110001100"; -- 396
 	constant BALL_ROW_DEFAULT : std_logic_vector(9 downto 0) := "1000001000"; -- 520
 
-	signal ball_col_buffer : std_logic_vector(9 downto 0) := BALL_COL_DEFAULT;
-	signal ball_row_buffer : std_logic_vector(9 downto 0) := BALL_ROW_DEFAULT;
-	signal ball_col_up_buffer, ball_row_up_buffer : std_logic := '0';
+	signal ball_col_buffer : std_logic_vector(9 downto 0);
+	signal ball_row_buffer : std_logic_vector(9 downto 0);
+	signal ball_col_up_buffer, ball_row_up_buffer : std_logic;
 	
 	signal ball_col_update_period, ball_row_update_period : std_logic_vector(17 downto 0);
 	signal clear_ball_col_update, clear_ball_row_update : std_logic;
 	signal ball_col_update_counter, ball_row_update_counter : std_logic_vector(17 downto 0);
 	signal enable_ball_col, enable_ball_row : std_logic;
-
-	signal enabled_rst : std_logic;
 	
 begin
-
-	enabled_rst <= enable and rst;
 
 	ball_col <= ball_col_buffer;
 	ball_row <= ball_row_buffer;
@@ -75,18 +71,40 @@ begin
 	clear_ball_row_update <= '1' when ball_row_update_counter = ball_row_update_period else 
 		not enable;
 
-	counter_ball_col : lpm_counter
-			generic map (lpm_width => 10)
-			port map (clock => clock, sload => enabled_rst, data => BALL_COL_DEFAULT,
-				cnt_en => enable_ball_col, updown => ball_col_up_buffer, q => ball_col_buffer);
-	enable_ball_col <= clear_ball_col_update and enable;
-
-	counter_ball_row : lpm_counter
-			generic map (lpm_width => 10)
-			port map (clock => clock, sload => enabled_rst, data => BALL_ROW_DEFAULT,
-				cnt_en => enable_ball_row, updown => ball_row_up_buffer, q => ball_row_buffer);
-	enable_ball_row <= clear_ball_row_update and enable;
-
+	Counter_Ball_Col : process (clock)
+	begin
+		if (rising_edge(clock)) then
+			if (enable = '1') then
+				if (rst = '1') then
+					ball_col_buffer <= BALL_COL_DEFAULT;
+				elsif (clear_ball_col_update = '1') then
+					if (ball_col_up_buffer = '0') then
+						ball_col_buffer <= std_logic_vector(unsigned(ball_col_buffer) - to_unsigned(1, 10));
+					else
+						ball_col_buffer <= std_logic_vector(unsigned(ball_col_buffer) + to_unsigned(1, 10));
+					end if;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	Counter_Ball_Row : process (clock)
+	begin
+		if (rising_edge(clock)) then
+			if (enable = '1') then
+				if (rst = '1') then
+					ball_row_buffer <= BALL_ROW_DEFAULT;
+				elsif (clear_ball_row_update = '1') then
+					if (ball_row_up_buffer = '0') then
+						ball_row_buffer <= std_logic_vector(unsigned(ball_row_buffer) - to_unsigned(1, 10));
+					else
+						ball_row_buffer <= std_logic_vector(unsigned(ball_row_buffer) + to_unsigned(1, 10));
+					end if;
+				end if;
+			end if;
+		end if;
+	end process;
+	
 	Bounce_Ball : process (clock)
 	begin
 		if (rising_edge(clock)) then

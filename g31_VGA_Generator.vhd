@@ -11,18 +11,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 library LPM;
 use LPM.LPM_COMPONENTS.ALL;
-use WORK.g31_Game_States.ALL;
+use WORK.g31_Game_Types.ALL;
 
 entity g31_VGA_Generator is
 	port (
 		clock      : in  std_logic; -- 50MHz
 		score      : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
-		level      : in  std_logic_vector( 2 downto 0); -- level 0 to 7
+		level      : in  std_logic_vector( 2 downto 0); -- level 1 to 7
 		life       : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
 		ball_col   : in  std_logic_vector( 9 downto 0); -- ball col address 0 to 799
 		ball_row   : in  std_logic_vector( 9 downto 0); -- ball row address 0 to 599
 		paddle_col : in  std_logic_vector( 9 downto 0); -- paddle col address 0 to 799
-		blocks     : in  std_logic_vector(59 downto 0); -- blocks present or not bitmask
+		blocks     : in  t_block_array; -- block array
 		game_state : in  t_game_state; -- current game state
 		r, g, b    : out std_logic_vector( 7 downto 0); -- 8-bit color output
 		hsync      : out std_logic; -- horizontal sync signal
@@ -81,7 +81,7 @@ architecture bdf_type of g31_VGA_Generator is
 			text_col   : in  std_logic_vector( 5 downto 0); -- character column 0 to 49
 			text_row   : in  std_logic_vector( 4 downto 0); -- character row 0 to 18
 			score      : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
-			level      : in  std_logic_vector( 2 downto 0); -- level 0 to 7
+			level      : in  std_logic_vector( 2 downto 0); -- level 1 to 7
 			life       : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
 			game_state : in  t_game_state; -- current game state
 			rgb        : out std_logic_vector(23 downto 0); -- 24-bit color to display
@@ -127,7 +127,7 @@ architecture bdf_type of g31_VGA_Generator is
 		port (
 			column   : in  unsigned(9 downto 0); -- column 0 to 799
 			row      : in  unsigned(9 downto 0); -- row 0 to 599
-			blocks   : in  std_logic_vector(59 downto 0); -- blocks present or not bitmask
+			blocks   : in  t_block_array; -- block array
 			rgb      : out std_logic_vector(23 downto 0); -- 24-bit color to display
 			show_bit : out std_logic -- should the pixel be colored or not
 		);

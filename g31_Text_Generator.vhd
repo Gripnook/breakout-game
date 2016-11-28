@@ -9,14 +9,14 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use WORK.g31_Game_States.ALL;
+use WORK.g31_Game_Types.ALL;
 
 entity g31_Text_Generator is
 	port (
 		text_col   : in  std_logic_vector( 5 downto 0); -- character column 0 to 49
 		text_row   : in  std_logic_vector( 4 downto 0); -- character row 0 to 18
 		score      : in  std_logic_vector(15 downto 0); -- score 0 to 65,535
-		level      : in  std_logic_vector( 2 downto 0); -- level 0 to 7
+		level      : in  std_logic_vector( 2 downto 0); -- level 1 to 7
 		life       : in  std_logic_vector( 2 downto 0); -- lives left 0 to 7
 		game_state : in  t_game_state; -- current game state
 		rgb        : out std_logic_vector(23 downto 0); -- 24-bit color to display
@@ -176,7 +176,7 @@ begin
 				when others =>
 					-- do nothing
 			end case;
-		elsif (to_integer(unsigned(text_row)) = 8) then
+		elsif (to_integer(unsigned(text_row)) = 12) then
 			case to_integer(unsigned(text_col)) is
 				when 20 =>
 					ascii <= message(78 downto 72);

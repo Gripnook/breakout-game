@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g31_BlockerGame
-Sun Nov 27 15:19:15 2016
+Mon Nov 28 00:46:26 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -25,27 +25,26 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
  17. Multiplexer Restructuring Statistics (Restructuring Performed)
  18. Source assignments for sld_signaltap:auto_signaltap_0
  19. Source assignments for g31_VGA_Generator:VGA_Generator|fontROM:CharacterROM|altsyncram:ROM_rtl_0|altsyncram_5qd1:auto_generated
- 20. Parameter Settings for User Entity Instance: LPM_COUNTER:counter_game_start
- 21. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|LPM_COUNTER:counter_x
- 22. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|LPM_COUNTER:counter_y
- 23. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|fontROM:CharacterROM
- 24. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|LPM_FF:reg1
- 25. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|LPM_FF:reg2
- 26. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|LPM_FF:reg3
- 27. Parameter Settings for User Entity Instance: g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col_update
- 28. Parameter Settings for User Entity Instance: g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_row_update
- 29. Parameter Settings for User Entity Instance: g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col
- 30. Parameter Settings for User Entity Instance: g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_row
- 31. Parameter Settings for User Entity Instance: g31_Update_Paddle:Update_Paddle|LPM_COUNTER:counter_paddle
- 32. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 33. Parameter Settings for Inferred Entity Instance: g31_VGA_Generator:VGA_Generator|fontROM:CharacterROM|altsyncram:ROM_rtl_0
- 34. altsyncram Parameter Settings by Entity Instance
- 35. Port Connectivity Checks: "g31_VGA_Generator:VGA_Generator|g31_VGA:VGA"
- 36. SignalTap II Logic Analyzer Settings
- 37. Post-Synthesis Netlist Statistics for Top Partition
- 38. Elapsed Time Per Partition
- 39. Connections to In-System Debugging Instance "auto_signaltap_0"
- 40. Analysis & Synthesis Messages
+ 20. Parameter Settings for User Entity Instance: LPM_COUNTER:counter_startup_timer
+ 21. Parameter Settings for User Entity Instance: LPM_COUNTER:counter_startup_pulses
+ 22. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|LPM_COUNTER:counter_x
+ 23. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|LPM_COUNTER:counter_y
+ 24. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|fontROM:CharacterROM
+ 25. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|LPM_FF:reg1
+ 26. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|LPM_FF:reg2
+ 27. Parameter Settings for User Entity Instance: g31_VGA_Generator:VGA_Generator|LPM_FF:reg3
+ 28. Parameter Settings for User Entity Instance: g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col_update
+ 29. Parameter Settings for User Entity Instance: g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_row_update
+ 30. Parameter Settings for User Entity Instance: g31_Update_Paddle:Update_Paddle|LPM_COUNTER:counter_paddle
+ 31. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 32. Parameter Settings for Inferred Entity Instance: g31_VGA_Generator:VGA_Generator|fontROM:CharacterROM|altsyncram:ROM_rtl_0
+ 33. altsyncram Parameter Settings by Entity Instance
+ 34. Port Connectivity Checks: "g31_VGA_Generator:VGA_Generator|g31_VGA:VGA"
+ 35. SignalTap II Logic Analyzer Settings
+ 36. Post-Synthesis Netlist Statistics for Top Partition
+ 37. Elapsed Time Per Partition
+ 38. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 39. Analysis & Synthesis Messages
 
 
 
@@ -72,13 +71,13 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Nov 27 15:19:14 2016      ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 28 00:46:26 2016      ;
 ; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                   ; g31_BlockerGame                            ;
 ; Top-level Entity Name           ; g31_Breakout_Game                          ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 1040                                       ;
+; Total registers                 ; 1201                                       ;
 ; Total pins                      ; 34                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 73,728                                     ;
@@ -203,6 +202,8 @@ agreement for further details.
 +--------------------------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                             ; Library     ;
 +--------------------------------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; g31_Game_Types.vhd                                                 ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Game_Types.vhd                                                 ;             ;
+; g31_Block_ROM.vhd                                                  ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Block_ROM.vhd                                                  ;             ;
 ; fontROM.vhd                                                        ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/fontROM.vhd                                                        ;             ;
 ; g31_Text_Generator.vhd                                             ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Text_Generator.vhd                                             ;             ;
 ; g31_VGA.vhd                                                        ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_VGA.vhd                                                        ;             ;
@@ -217,7 +218,6 @@ agreement for further details.
 ; g31_Update_Ball.vhd                                                ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Update_Ball.vhd                                                ;             ;
 ; g31_Update_Paddle.vhd                                              ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Update_Paddle.vhd                                              ;             ;
 ; g31_Update_Wall.vhd                                                ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Update_Wall.vhd                                                ;             ;
-; g31_Game_States.vhd                                                ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Game_States.vhd                                                ;             ;
 ; lpm_counter.tdf                                                    ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_counter.tdf                                                                           ;             ;
 ; lpm_constant.inc                                                   ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_constant.inc                                                                          ;             ;
 ; lpm_decode.inc                                                     ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_decode.inc                                                                            ;             ;
@@ -228,12 +228,12 @@ agreement for further details.
 ; dffeea.inc                                                         ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/dffeea.inc                                                                                ;             ;
 ; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                                   ;             ;
 ; aglobal150.inc                                                     ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/aglobal150.inc                                                                            ;             ;
-; db/cntr_3fi.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/cntr_3fi.tdf                                                    ;             ;
+; db/cntr_u8i.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/cntr_u8i.tdf                                                    ;             ;
+; db/cntr_bdi.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/cntr_bdi.tdf                                                    ;             ;
 ; db/cntr_o8i.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/cntr_o8i.tdf                                                    ;             ;
 ; db/cntr_eti.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/cntr_eti.tdf                                                    ;             ;
 ; lpm_ff.tdf                                                         ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_ff.tdf                                                                                ;             ;
 ; db/cntr_79i.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/cntr_79i.tdf                                                    ;             ;
-; db/cntr_44k.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/cntr_44k.tdf                                                    ;             ;
 ; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/sld_signaltap.vhd                                                                         ;             ;
 ; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                                ; c:/altera/15.0/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                                                    ;             ;
 ; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                                ; c:/altera/15.0/quartus/libraries/megafunctions/sld_ela_control.vhd                                                                       ;             ;
@@ -282,7 +282,6 @@ agreement for further details.
 ; db/altsyncram_5qd1.tdf                                             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/altsyncram_5qd1.tdf                                             ;             ;
 ; db/g31_BlockerGame.ram0_fontROM_16852496.hdl.mif                   ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/g31_BlockerGame.ram0_fontROM_16852496.hdl.mif                   ;             ;
 ; g31_Game_Address_Generator.vhd                                     ; yes             ; User VHDL File                                        ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/g31_Game_Address_Generator.vhd                                     ;             ;
-; db/cntr_u8i.tdf                                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Andrei Purcarus/Documents/University/ECSE323/g31_BlockerGame/db/cntr_u8i.tdf                                                    ;             ;
 ; lpm_divide.tdf                                                     ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/lpm_divide.tdf                                                                            ;             ;
 ; abs_divider.inc                                                    ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/abs_divider.inc                                                                           ;             ;
 ; sign_div_unsign.inc                                                ; yes             ; Megafunction                                          ; c:/altera/15.0/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                       ;             ;
@@ -297,16 +296,16 @@ agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 1420        ;
+; Estimate of Logic utilization (ALMs needed) ; 2223        ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 1939        ;
-;     -- 7 input functions                    ; 39          ;
-;     -- 6 input functions                    ; 693         ;
-;     -- 5 input functions                    ; 373         ;
-;     -- 4 input functions                    ; 188         ;
-;     -- <=3 input functions                  ; 646         ;
+; Combinational ALUT usage for logic          ; 2913        ;
+;     -- 7 input functions                    ; 26          ;
+;     -- 6 input functions                    ; 1337        ;
+;     -- 5 input functions                    ; 325         ;
+;     -- 4 input functions                    ; 359         ;
+;     -- <=3 input functions                  ; 866         ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 1040        ;
+; Dedicated logic registers                   ; 1201        ;
 ;                                             ;             ;
 ; I/O pins                                    ; 34          ;
 ; Total MLAB memory bits                      ; 0           ;
@@ -315,9 +314,9 @@ agreement for further details.
 ; Total DSP Blocks                            ; 3           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 670         ;
-; Total fan-out                               ; 12942       ;
-; Average fan-out                             ; 4.18        ;
+; Maximum fan-out                             ; 831         ;
+; Total fan-out                               ; 18225       ;
+; Average fan-out                             ; 4.31        ;
 +---------------------------------------------+-------------+
 
 
@@ -326,30 +325,27 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                     ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g31_Breakout_Game                                                                                      ; 1939 (98)         ; 1040 (42)    ; 73728             ; 3          ; 34   ; 0            ; |g31_Breakout_Game                                                                                                                                                                                                                                                                                                                                      ; work         ;
-;    |g31_Update_Ball:Update_Ball|                                                                        ; 95 (37)           ; 58 (2)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball                                                                                                                                                                                                                                                                                                          ; work         ;
+; |g31_Breakout_Game                                                                                      ; 2913 (171)        ; 1201 (44)    ; 73728             ; 3          ; 34   ; 0            ; |g31_Breakout_Game                                                                                                                                                                                                                                                                                                                                      ; work         ;
+;    |g31_Update_Ball:Update_Ball|                                                                        ; 94 (58)           ; 58 (22)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball                                                                                                                                                                                                                                                                                                          ; work         ;
 ;       |lpm_counter:counter_ball_col_update|                                                             ; 18 (0)            ; 18 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col_update                                                                                                                                                                                                                                                                      ; work         ;
 ;          |cntr_79i:auto_generated|                                                                      ; 18 (18)           ; 18 (18)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col_update|cntr_79i:auto_generated                                                                                                                                                                                                                                              ; work         ;
-;       |lpm_counter:counter_ball_col|                                                                    ; 11 (0)            ; 10 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col                                                                                                                                                                                                                                                                             ; work         ;
-;          |cntr_44k:auto_generated|                                                                      ; 11 (11)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_col|cntr_44k:auto_generated                                                                                                                                                                                                                                                     ; work         ;
 ;       |lpm_counter:counter_ball_row_update|                                                             ; 18 (0)            ; 18 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_row_update                                                                                                                                                                                                                                                                      ; work         ;
 ;          |cntr_79i:auto_generated|                                                                      ; 18 (18)           ; 18 (18)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_row_update|cntr_79i:auto_generated                                                                                                                                                                                                                                              ; work         ;
-;       |lpm_counter:counter_ball_row|                                                                    ; 11 (0)            ; 10 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_row                                                                                                                                                                                                                                                                             ; work         ;
-;          |cntr_44k:auto_generated|                                                                      ; 11 (11)           ; 10 (10)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|lpm_counter:counter_ball_row|cntr_44k:auto_generated                                                                                                                                                                                                                                                     ; work         ;
-;    |g31_Update_Blocks:Update_Blocks|                                                                    ; 851 (851)         ; 68 (68)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks                                                                                                                                                                                                                                                                                                      ; work         ;
-;    |g31_Update_Paddle:Update_Paddle|                                                                    ; 144 (126)         ; 34 (16)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle                                                                                                                                                                                                                                                                                                      ; work         ;
+;    |g31_Update_Blocks:Update_Blocks|                                                                    ; 1669 (1667)       ; 225 (225)    ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks                                                                                                                                                                                                                                                                                                      ; work         ;
+;       |g31_Block_ROM:Block_ROM|                                                                         ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|g31_Block_ROM:Block_ROM                                                                                                                                                                                                                                                                              ; work         ;
+;    |g31_Update_Paddle:Update_Paddle|                                                                    ; 127 (109)         ; 36 (18)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle                                                                                                                                                                                                                                                                                                      ; work         ;
 ;       |lpm_counter:counter_paddle|                                                                      ; 18 (0)            ; 18 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|lpm_counter:counter_paddle                                                                                                                                                                                                                                                                           ; work         ;
 ;          |cntr_79i:auto_generated|                                                                      ; 18 (18)           ; 18 (18)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|lpm_counter:counter_paddle|cntr_79i:auto_generated                                                                                                                                                                                                                                                   ; work         ;
-;    |g31_Update_Wall:Update_Wall|                                                                        ; 19 (19)           ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Wall:Update_Wall                                                                                                                                                                                                                                                                                                          ; work         ;
-;    |g31_VGA_Generator:VGA_Generator|                                                                    ; 338 (17)          ; 32 (0)       ; 16384             ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator                                                                                                                                                                                                                                                                                                      ; work         ;
+;    |g31_Update_Wall:Update_Wall|                                                                        ; 17 (17)           ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_Update_Wall:Update_Wall                                                                                                                                                                                                                                                                                                          ; work         ;
+;    |g31_VGA_Generator:VGA_Generator|                                                                    ; 441 (49)          ; 32 (0)       ; 16384             ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator                                                                                                                                                                                                                                                                                                      ; work         ;
 ;       |fontROM:CharacterROM|                                                                            ; 2 (2)             ; 0 (0)        ; 16384             ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|fontROM:CharacterROM                                                                                                                                                                                                                                                                                 ; work         ;
 ;          |altsyncram:ROM_rtl_0|                                                                         ; 0 (0)             ; 0 (0)        ; 16384             ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|fontROM:CharacterROM|altsyncram:ROM_rtl_0                                                                                                                                                                                                                                                            ; work         ;
 ;             |altsyncram_5qd1:auto_generated|                                                            ; 0 (0)             ; 0 (0)        ; 16384             ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|fontROM:CharacterROM|altsyncram:ROM_rtl_0|altsyncram_5qd1:auto_generated                                                                                                                                                                                                                             ; work         ;
-;       |g31_Ball_Generator:Ball_Generator|                                                               ; 41 (41)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Ball_Generator:Ball_Generator                                                                                                                                                                                                                                                                    ; work         ;
-;       |g31_Block_Generator:Block_Generator|                                                             ; 50 (50)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Block_Generator:Block_Generator                                                                                                                                                                                                                                                                  ; work         ;
-;       |g31_Paddle_Generator:Paddle_Generator|                                                           ; 10 (10)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Paddle_Generator:Paddle_Generator                                                                                                                                                                                                                                                                ; work         ;
-;       |g31_Text_Generator:Text_Generator|                                                               ; 139 (139)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Text_Generator:Text_Generator                                                                                                                                                                                                                                                                    ; work         ;
-;       |g31_VGA:VGA|                                                                                     ; 77 (55)           ; 21 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_VGA:VGA                                                                                                                                                                                                                                                                                          ; work         ;
+;       |g31_Ball_Generator:Ball_Generator|                                                               ; 46 (46)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Ball_Generator:Ball_Generator                                                                                                                                                                                                                                                                    ; work         ;
+;       |g31_Block_Generator:Block_Generator|                                                             ; 107 (107)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Block_Generator:Block_Generator                                                                                                                                                                                                                                                                  ; work         ;
+;       |g31_Paddle_Generator:Paddle_Generator|                                                           ; 11 (11)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Paddle_Generator:Paddle_Generator                                                                                                                                                                                                                                                                ; work         ;
+;       |g31_Text_Generator:Text_Generator|                                                               ; 148 (148)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Text_Generator:Text_Generator                                                                                                                                                                                                                                                                    ; work         ;
+;       |g31_VGA:VGA|                                                                                     ; 76 (54)           ; 21 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_VGA:VGA                                                                                                                                                                                                                                                                                          ; work         ;
 ;          |lpm_counter:counter_x|                                                                        ; 11 (0)            ; 11 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|lpm_counter:counter_x                                                                                                                                                                                                                                                                    ; work         ;
 ;             |cntr_o8i:auto_generated|                                                                   ; 11 (11)           ; 11 (11)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|lpm_counter:counter_x|cntr_o8i:auto_generated                                                                                                                                                                                                                                            ; work         ;
 ;          |lpm_counter:counter_y|                                                                        ; 11 (0)            ; 10 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|lpm_counter:counter_y                                                                                                                                                                                                                                                                    ; work         ;
@@ -358,8 +354,10 @@ agreement for further details.
 ;       |lpm_ff:reg1|                                                                                     ; 0 (0)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|lpm_ff:reg1                                                                                                                                                                                                                                                                                          ; work         ;
 ;       |lpm_ff:reg2|                                                                                     ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|lpm_ff:reg2                                                                                                                                                                                                                                                                                          ; work         ;
 ;       |lpm_ff:reg3|                                                                                     ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|lpm_ff:reg3                                                                                                                                                                                                                                                                                          ; work         ;
-;    |lpm_counter:counter_game_start|                                                                     ; 28 (0)            ; 28 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|lpm_counter:counter_game_start                                                                                                                                                                                                                                                                                                       ; work         ;
-;       |cntr_3fi:auto_generated|                                                                         ; 28 (28)           ; 28 (28)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|lpm_counter:counter_game_start|cntr_3fi:auto_generated                                                                                                                                                                                                                                                                               ; work         ;
+;    |lpm_counter:counter_startup_pulses|                                                                 ; 2 (0)             ; 2 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|lpm_counter:counter_startup_pulses                                                                                                                                                                                                                                                                                                   ; work         ;
+;       |cntr_bdi:auto_generated|                                                                         ; 2 (2)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|lpm_counter:counter_startup_pulses|cntr_bdi:auto_generated                                                                                                                                                                                                                                                                           ; work         ;
+;    |lpm_counter:counter_startup_timer|                                                                  ; 26 (0)            ; 26 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|lpm_counter:counter_startup_timer                                                                                                                                                                                                                                                                                                    ; work         ;
+;       |cntr_u8i:auto_generated|                                                                         ; 26 (26)           ; 26 (26)      ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|lpm_counter:counter_startup_timer|cntr_u8i:auto_generated                                                                                                                                                                                                                                                                            ; work         ;
 ;    |sld_hub:auto_hub|                                                                                   ; 97 (1)            ; 90 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                     ; altera_sld   ;
 ;       |alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|     ; 96 (0)            ; 90 (0)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric                                                                                                                                                                                                                         ; alt_sld_fab  ;
 ;          |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                          ; 96 (1)            ; 90 (5)       ; 0                 ; 0          ; 0    ; 0            ; |g31_Breakout_Game|sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                                                                                     ; alt_sld_fab  ;
@@ -502,7 +500,7 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------------+------------------------------------------------------------------+
 ; Register name                                                ; Reason for Removal                                               ;
 +--------------------------------------------------------------+------------------------------------------------------------------+
-; g31_Update_Blocks:Update_Blocks|score_gained[6..15]          ; Stuck at GND due to stuck port data_in                           ;
+; g31_Update_Blocks:Update_Blocks|score_gained[4..15]          ; Stuck at GND due to stuck port data_in                           ;
 ; g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[17..23]     ; Merged with g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[16] ;
 ; g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[8,9,11..14] ; Merged with g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[10] ;
 ; g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[1..7]       ; Merged with g31_VGA_Generator:VGA_Generator|lpm_ff:reg3|dffs[0]  ;
@@ -510,8 +508,15 @@ Encoding Type:  One-Hot
 ; g31_Update_Paddle:Update_Paddle|row_period_buffer[3]         ; Merged with g31_Update_Paddle:Update_Paddle|col_period_buffer[3] ;
 ; g31_Update_Paddle:Update_Paddle|col_period_buffer[0]         ; Stuck at GND due to stuck port data_in                           ;
 ; g31_Update_Paddle:Update_Paddle|col_period_buffer[3]         ; Stuck at VCC due to stuck port data_in                           ;
+; g31_Update_Blocks:Update_Blocks|score_gained[3]              ; Stuck at GND due to stuck port data_in                           ;
+; g31_Update_Blocks:Update_Blocks|blocks_buffer[13][1]         ; Stuck at GND due to stuck port data_in                           ;
+; g31_Update_Blocks:Update_Blocks|blocks_buffer[22][1]         ; Stuck at GND due to stuck port data_in                           ;
+; g31_Update_Blocks:Update_Blocks|blocks_buffer[24][1]         ; Stuck at GND due to stuck port data_in                           ;
+; g31_Update_Blocks:Update_Blocks|blocks_buffer[35][1]         ; Stuck at GND due to stuck port data_in                           ;
+; g31_Update_Blocks:Update_Blocks|blocks_buffer[84][1]         ; Stuck at GND due to stuck port data_in                           ;
+; g31_Update_Blocks:Update_Blocks|blocks_buffer[95][1]         ; Stuck at GND due to stuck port data_in                           ;
 ; game_state_internal.s_playing                                ; Stuck at GND due to stuck port data_in                           ;
-; Total Number of Removed Registers = 35                       ;                                                                  ;
+; Total Number of Removed Registers = 44                       ;                                                                  ;
 +--------------------------------------------------------------+------------------------------------------------------------------+
 
 
@@ -520,12 +525,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1040  ;
-; Number of registers using Synchronous Clear  ; 210   ;
-; Number of registers using Synchronous Load   ; 187   ;
-; Number of registers using Asynchronous Clear ; 288   ;
+; Total registers                              ; 1201  ;
+; Number of registers using Synchronous Clear  ; 260   ;
+; Number of registers using Synchronous Load   ; 217   ;
+; Number of registers using Asynchronous Clear ; 292   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 579   ;
+; Number of registers using Clock Enable       ; 678   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -535,74 +540,11 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                                                                                                                        ; Fan out ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[0]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[1]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[2]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[3]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[4]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[5]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[6]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[7]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[8]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[9]                                                                                                                                                                                                         ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[10]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[11]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[12]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[13]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[14]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[15]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[16]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[17]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[18]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[19]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[20]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[21]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[22]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[23]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[24]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[25]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[26]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[27]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[28]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[29]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[30]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[31]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[32]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[33]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[34]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[35]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[36]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[37]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[38]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[39]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[40]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[41]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[42]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[43]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[44]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[45]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[46]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[47]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[56]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[57]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[58]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[59]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[48]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[49]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[50]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[51]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[52]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[53]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[54]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Blocks:Update_Blocks|blocks_buffer[55]                                                                                                                                                                                                        ; 9       ;
-; g31_Update_Paddle:Update_Paddle|paddle_col_buffer[8]                                                                                                                                                                                                     ; 7       ;
-; g31_Update_Paddle:Update_Paddle|paddle_col_buffer[6]                                                                                                                                                                                                     ; 7       ;
-; g31_Update_Paddle:Update_Paddle|paddle_col_buffer[4]                                                                                                                                                                                                     ; 6       ;
-; life[0]                                                                                                                                                                                                                                                  ; 12      ;
-; life[2]                                                                                                                                                                                                                                                  ; 10      ;
-; level[0]                                                                                                                                                                                                                                                 ; 11      ;
-; g31_Update_Paddle:Update_Paddle|col_period_buffer[1]                                                                                                                                                                                                     ; 1       ;
-; g31_Update_Paddle:Update_Paddle|row_period_buffer[1]                                                                                                                                                                                                     ; 1       ;
+; rst                                                                                                                                                                                                                                                      ; 8       ;
+; g31_Update_Blocks:Update_Blocks|enable_delayed                                                                                                                                                                                                           ; 7       ;
+; g31_Update_Paddle:Update_Paddle|paddle_right                                                                                                                                                                                                             ; 11      ;
+; g31_Update_Paddle:Update_Paddle|paddle_left                                                                                                                                                                                                              ; 2       ;
+; continue                                                                                                                                                                                                                                                 ; 1       ;
 ; sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|tdo            ; 1       ;
 ; sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
 ; sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 3       ;
@@ -618,7 +560,7 @@ Encoding Type:  One-Hot
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[3]                                                                            ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[4]                                                                            ; 1       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[5]                                                                            ; 1       ;
-; Total number of inverted registers = 83                                                                                                                                                                                                                  ;         ;
+; Total number of inverted registers = 20                                                                                                                                                                                                                  ;         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -631,32 +573,48 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------+----------------------------------------------------------------+------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|level_cleared                                                           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|game_over                                                               ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |g31_Breakout_Game|level[1]                                                                ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|paddle_col_buffer[9]                    ;
-; 11:1               ; 3 bits    ; 21 LEs        ; 15 LEs               ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|row_period_buffer[2]                    ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|life[2]                                                                 ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|paddle_col_buffer[4]                    ;
-; 11:1               ; 3 bits    ; 21 LEs        ; 15 LEs               ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|col_period_buffer[1]                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Text_Generator:Text_Generator|Mux16 ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; No name available in netlist                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index1[5]                         ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index2[1]                         ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index3[5]                         ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index4[5]                         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|b[7]                                    ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|points_per_block                        ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|points_per_block                        ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|points_per_block                        ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|score_accumulator                       ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|game_state_internal                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|ball_col_buffer[8]                                       ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|ball_col_buffer[4]                                       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|ball_row_buffer[3]                                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |g31_Breakout_Game|g31_Update_Ball:Update_Ball|ball_row_buffer[0]                                       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|game_won                                                                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|game_over                                                                            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |g31_Breakout_Game|level[1]                                                                             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |g31_Breakout_Game|life[0]                                                                              ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|paddle_col_buffer[6]                                 ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|paddle_col_buffer[2]                                 ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|score_gained[0]                                      ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 15 LEs               ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|col_period_buffer[1]                                 ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 15 LEs               ; 6 LEs                  ; Yes        ; |g31_Breakout_Game|g31_Update_Paddle:Update_Paddle|col_period_buffer[0]                                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Text_Generator:Text_Generator|Mux16              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Block_Generator:Block_Generator|block_rgb_double ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|score_accumulator                                    ;
+; 4:1                ; 48 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; No name available in netlist                                                                            ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index1[5]                                      ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index2[5]                                      ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index3[6]                                      ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|block_index4[6]                                      ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Block_Generator:Block_Generator|block_rgb_single ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|game_state_internal                                                                  ;
+; 96:1               ; 2 bits    ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g31_Block_Generator:Block_Generator|Mux0             ;
+; 96:1               ; 2 bits    ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|Mux9                                                 ;
+; 96:1               ; 2 bits    ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|Mux11                                                ;
+; 96:1               ; 2 bits    ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|Mux12                                                ;
+; 96:1               ; 2 bits    ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|Mux15                                                ;
+; 96:1               ; 2 bits    ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|Mux5                                                 ;
+; 96:1               ; 2 bits    ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|Mux6                                                 ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g[7]                                                 ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g[0]                                                 ;
+; 12:1               ; 3 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|g[6]                                                 ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_VGA_Generator:VGA_Generator|r[5]                                                 ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|Mux1                                                 ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |g31_Breakout_Game|g31_Update_Blocks:Update_Blocks|Mux3                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -677,30 +635,57 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+-------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_COUNTER:counter_game_start ;
-+------------------------+-------------------+--------------------------------+
-; Parameter Name         ; Value             ; Type                           ;
-+------------------------+-------------------+--------------------------------+
-; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                     ;
-; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                   ;
-; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                   ;
-; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                 ;
-; LPM_WIDTH              ; 28                ; Signed Integer                 ;
-; LPM_DIRECTION          ; DEFAULT           ; Untyped                        ;
-; LPM_MODULUS            ; 0                 ; Signed Integer                 ;
-; LPM_AVALUE             ; UNUSED            ; Untyped                        ;
-; LPM_SVALUE             ; UNUSED            ; Untyped                        ;
-; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                        ;
-; DEVICE_FAMILY          ; Cyclone V         ; Untyped                        ;
-; CARRY_CHAIN            ; MANUAL            ; Untyped                        ;
-; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH             ;
-; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK             ;
-; CARRY_CNT_EN           ; SMART             ; Untyped                        ;
-; LABWIDE_SCLR           ; ON                ; Untyped                        ;
-; USE_NEW_VERSION        ; TRUE              ; Untyped                        ;
-; CBXI_PARAMETER         ; cntr_3fi          ; Untyped                        ;
-+------------------------+-------------------+--------------------------------+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_COUNTER:counter_startup_timer ;
++------------------------+-------------------+-----------------------------------+
+; Parameter Name         ; Value             ; Type                              ;
++------------------------+-------------------+-----------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                    ;
+; LPM_WIDTH              ; 26                ; Signed Integer                    ;
+; LPM_DIRECTION          ; DEFAULT           ; Untyped                           ;
+; LPM_MODULUS            ; 0                 ; Signed Integer                    ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                           ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                           ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                           ;
+; DEVICE_FAMILY          ; Cyclone V         ; Untyped                           ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                           ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                           ;
+; LABWIDE_SCLR           ; ON                ; Untyped                           ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                           ;
+; CBXI_PARAMETER         ; cntr_u8i          ; Untyped                           ;
++------------------------+-------------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_COUNTER:counter_startup_pulses ;
++------------------------+-------------------+------------------------------------+
+; Parameter Name         ; Value             ; Type                               ;
++------------------------+-------------------+------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                     ;
+; LPM_WIDTH              ; 2                 ; Signed Integer                     ;
+; LPM_DIRECTION          ; DEFAULT           ; Untyped                            ;
+; LPM_MODULUS            ; 0                 ; Signed Integer                     ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                            ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                            ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                            ;
+; DEVICE_FAMILY          ; Cyclone V         ; Untyped                            ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                            ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                 ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                 ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                            ;
+; LABWIDE_SCLR           ; ON                ; Untyped                            ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                            ;
+; CBXI_PARAMETER         ; cntr_bdi          ; Untyped                            ;
++------------------------+-------------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -877,60 +862,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; USE_NEW_VERSION        ; TRUE              ; Untyped                                                         ;
 ; CBXI_PARAMETER         ; cntr_79i          ; Untyped                                                         ;
 +------------------------+-------------------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col ;
-+------------------------+-------------------+----------------------------------------------------------+
-; Parameter Name         ; Value             ; Type                                                     ;
-+------------------------+-------------------+----------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                               ;
-; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                             ;
-; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                             ;
-; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                                           ;
-; LPM_WIDTH              ; 10                ; Signed Integer                                           ;
-; LPM_DIRECTION          ; DEFAULT           ; Untyped                                                  ;
-; LPM_MODULUS            ; 0                 ; Signed Integer                                           ;
-; LPM_AVALUE             ; UNUSED            ; Untyped                                                  ;
-; LPM_SVALUE             ; UNUSED            ; Untyped                                                  ;
-; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                                  ;
-; DEVICE_FAMILY          ; Cyclone V         ; Untyped                                                  ;
-; CARRY_CHAIN            ; MANUAL            ; Untyped                                                  ;
-; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                                       ;
-; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                                       ;
-; CARRY_CNT_EN           ; SMART             ; Untyped                                                  ;
-; LABWIDE_SCLR           ; ON                ; Untyped                                                  ;
-; USE_NEW_VERSION        ; TRUE              ; Untyped                                                  ;
-; CBXI_PARAMETER         ; cntr_44k          ; Untyped                                                  ;
-+------------------------+-------------------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_row ;
-+------------------------+-------------------+----------------------------------------------------------+
-; Parameter Name         ; Value             ; Type                                                     ;
-+------------------------+-------------------+----------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                               ;
-; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                             ;
-; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                             ;
-; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                                           ;
-; LPM_WIDTH              ; 10                ; Signed Integer                                           ;
-; LPM_DIRECTION          ; DEFAULT           ; Untyped                                                  ;
-; LPM_MODULUS            ; 0                 ; Signed Integer                                           ;
-; LPM_AVALUE             ; UNUSED            ; Untyped                                                  ;
-; LPM_SVALUE             ; UNUSED            ; Untyped                                                  ;
-; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                                  ;
-; DEVICE_FAMILY          ; Cyclone V         ; Untyped                                                  ;
-; CARRY_CHAIN            ; MANUAL            ; Untyped                                                  ;
-; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                                       ;
-; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                                       ;
-; CARRY_CNT_EN           ; SMART             ; Untyped                                                  ;
-; LABWIDE_SCLR           ; ON                ; Untyped                                                  ;
-; USE_NEW_VERSION        ; TRUE              ; Untyped                                                  ;
-; CBXI_PARAMETER         ; cntr_44k          ; Untyped                                                  ;
-+------------------------+-------------------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1128,30 +1059,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 265                         ;
-;     ENA               ; 124                         ;
-;     ENA SCLR          ; 26                          ;
+; arriav_ff             ; 426                         ;
+;     CLR               ; 2                           ;
+;     ENA               ; 197                         ;
+;     ENA CLR           ; 2                           ;
+;     ENA SCLR          ; 48                          ;
+;     ENA SCLR SLD      ; 2                           ;
 ;     ENA SLD           ; 26                          ;
-;     SCLR              ; 65                          ;
-;     plain             ; 24                          ;
-; arriav_lcell_comb     ; 1572                        ;
-;     arith             ; 291                         ;
-;         0 data inputs ; 3                           ;
-;         1 data inputs ; 229                         ;
-;         2 data inputs ; 29                          ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 10                          ;
-;         5 data inputs ; 16                          ;
-;     extend            ; 37                          ;
-;         7 data inputs ; 37                          ;
-;     normal            ; 1233                        ;
+;     SCLR              ; 91                          ;
+;     SLD               ; 28                          ;
+;     plain             ; 30                          ;
+; arriav_lcell_comb     ; 2546                        ;
+;     arith             ; 283                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 70                          ;
-;         3 data inputs ; 124                         ;
-;         4 data inputs ; 139                         ;
-;         5 data inputs ; 283                         ;
-;         6 data inputs ; 613                         ;
+;         1 data inputs ; 235                         ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 15                          ;
+;     extend            ; 24                          ;
+;         7 data inputs ; 24                          ;
+;     normal            ; 2228                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 142                         ;
+;         3 data inputs ; 270                         ;
+;         4 data inputs ; 314                         ;
+;         5 data inputs ; 236                         ;
+;         6 data inputs ; 1257                        ;
 ;     shared            ; 11                          ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 10                          ;
@@ -1159,8 +1094,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 35                          ;
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 21.50                       ;
-; Average LUT depth     ; 11.22                       ;
+; Max LUT depth         ; 21.00                       ;
+; Average LUT depth     ; 12.36                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1169,7 +1104,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:14     ;
+; Top            ; 00:00:16     ;
 +----------------+--------------+
 
 
@@ -1190,49 +1125,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; B[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[0]~3                           ; N/A                                                                                                                                                            ;
 ; B[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[0]~3                           ; N/A                                                                                                                                                            ;
 ; B[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[0]~3                           ; N/A                                                                                                                                                            ;
-; B[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[0]~3                           ; N/A                                                                                                                                                            ;
-; B[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[0]~3                           ; N/A                                                                                                                                                            ;
-; B[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[7]~4                           ; N/A                                                                                                                                                            ;
-; B[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[7]~4                           ; N/A                                                                                                                                                            ;
+; B[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[6]~7                           ; N/A                                                                                                                                                            ;
+; B[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[6]~7                           ; N/A                                                                                                                                                            ;
+; B[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[7]~9                           ; N/A                                                                                                                                                            ;
+; B[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|b[7]~9                           ; N/A                                                                                                                                                            ;
 ; CLOCK                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clock                                                            ; N/A                                                                                                                                                            ;
 ; CLOCK_OUT            ; pre-synthesis ; missing   ; Top                            ; post-synthesis    ; GND                                                              ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
 ; CLOCK_OUT            ; pre-synthesis ; missing   ; Top                            ; post-synthesis    ; GND                                                              ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
-; G[0]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[0]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[1]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[1]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[2]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[2]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[3]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[3]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~1                           ; N/A                                                                                                                                                            ;
-; G[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[7]~2                           ; N/A                                                                                                                                                            ;
-; G[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[7]~2                           ; N/A                                                                                                                                                            ;
+; G[0]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~13                          ; N/A                                                                                                                                                            ;
+; G[0]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~13                          ; N/A                                                                                                                                                            ;
+; G[1]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~13                          ; N/A                                                                                                                                                            ;
+; G[1]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~13                          ; N/A                                                                                                                                                            ;
+; G[2]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~13                          ; N/A                                                                                                                                                            ;
+; G[2]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~13                          ; N/A                                                                                                                                                            ;
+; G[3]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~13                          ; N/A                                                                                                                                                            ;
+; G[3]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[0]~13                          ; N/A                                                                                                                                                            ;
+; G[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[4]~17                          ; N/A                                                                                                                                                            ;
+; G[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[4]~17                          ; N/A                                                                                                                                                            ;
+; G[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[5]~26                          ; N/A                                                                                                                                                            ;
+; G[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[5]~26                          ; N/A                                                                                                                                                            ;
+; G[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[6]~22                          ; N/A                                                                                                                                                            ;
+; G[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[6]~22                          ; N/A                                                                                                                                                            ;
+; G[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[7]~21                          ; N/A                                                                                                                                                            ;
+; G[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g[7]~21                          ; N/A                                                                                                                                                            ;
 ; HSYNC                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|LessThan8~1_wirecell ; N/A                                                                                                                                                            ;
 ; HSYNC                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|LessThan8~1_wirecell ; N/A                                                                                                                                                            ;
-; RST                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst                                                              ; N/A                                                                                                                                                            ;
-; RST                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst                                                              ; N/A                                                                                                                                                            ;
-; R[0]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[0]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[1]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[1]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[2]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[2]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[3]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[3]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~4                           ; N/A                                                                                                                                                            ;
-; R[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[7]~8                           ; N/A                                                                                                                                                            ;
-; R[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[7]~8                           ; N/A                                                                                                                                                            ;
+; RST                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst~_wirecell                                                    ; N/A                                                                                                                                                            ;
+; RST                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst~_wirecell                                                    ; N/A                                                                                                                                                            ;
+; R[0]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[0]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[1]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[1]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[2]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[2]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[3]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[3]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[4]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[0]~3                           ; N/A                                                                                                                                                            ;
+; R[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[5]~14                          ; N/A                                                                                                                                                            ;
+; R[5]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[5]~14                          ; N/A                                                                                                                                                            ;
+; R[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[6]~10                          ; N/A                                                                                                                                                            ;
+; R[6]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[6]~10                          ; N/A                                                                                                                                                            ;
+; R[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[7]~12                          ; N/A                                                                                                                                                            ;
+; R[7]                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|r[7]~12                          ; N/A                                                                                                                                                            ;
 ; VSYNC                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|LessThan9~1_wirecell ; N/A                                                                                                                                                            ;
 ; VSYNC                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; g31_VGA_Generator:VGA_Generator|g31_VGA:VGA|LessThan9~1_wirecell ; N/A                                                                                                                                                            ;
 ; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                              ; N/A                                                                                                                                                            ;
@@ -1276,9 +1211,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Sun Nov 27 15:18:32 2016
+    Info: Processing started: Mon Nov 28 00:45:40 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g31_BlockerGame -c g31_BlockerGame
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 1 design units, including 0 entities, in source file g31_game_types.vhd
+    Info (12022): Found design unit 1: g31_Game_Types
+Info (12021): Found 2 design units, including 1 entities, in source file g31_block_rom.vhd
+    Info (12022): Found design unit 1: g31_Block_ROM-bdf_type
+    Info (12023): Found entity 1: g31_Block_ROM
 Info (12021): Found 2 design units, including 1 entities, in source file fontrom.vhd
     Info (12022): Found design unit 1: fontROM-Behavioral
     Info (12023): Found entity 1: fontROM
@@ -1321,13 +1261,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file g31_upd
 Info (12021): Found 2 design units, including 1 entities, in source file g31_update_wall.vhd
     Info (12022): Found design unit 1: g31_Update_Wall-bdf_type
     Info (12023): Found entity 1: g31_Update_Wall
-Info (12021): Found 1 design units, including 0 entities, in source file g31_game_states.vhd
-    Info (12022): Found design unit 1: g31_Game_States
 Info (12127): Elaborating entity "g31_Breakout_Game" for the top level hierarchy
-Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "LPM_COUNTER:counter_game_start"
-Info (12130): Elaborated megafunction instantiation "LPM_COUNTER:counter_game_start"
-Info (12133): Instantiated megafunction "LPM_COUNTER:counter_game_start" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "28"
+Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "LPM_COUNTER:counter_startup_timer"
+Info (12130): Elaborated megafunction instantiation "LPM_COUNTER:counter_startup_timer"
+Info (12133): Instantiated megafunction "LPM_COUNTER:counter_startup_timer" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "26"
     Info (12134): Parameter "LPM_MODULUS" = "0"
     Info (12134): Parameter "LPM_DIRECTION" = "UNUSED"
     Info (12134): Parameter "LPM_AVALUE" = "UNUSED"
@@ -1336,9 +1274,24 @@ Info (12133): Instantiated megafunction "LPM_COUNTER:counter_game_start" with th
     Info (12134): Parameter "LPM_PVALUE" = "UNUSED"
     Info (12134): Parameter "LPM_TYPE" = "LPM_COUNTER"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_3fi.tdf
-    Info (12023): Found entity 1: cntr_3fi
-Info (12128): Elaborating entity "cntr_3fi" for hierarchy "LPM_COUNTER:counter_game_start|cntr_3fi:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_u8i.tdf
+    Info (12023): Found entity 1: cntr_u8i
+Info (12128): Elaborating entity "cntr_u8i" for hierarchy "LPM_COUNTER:counter_startup_timer|cntr_u8i:auto_generated"
+Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "LPM_COUNTER:counter_startup_pulses"
+Info (12130): Elaborated megafunction instantiation "LPM_COUNTER:counter_startup_pulses"
+Info (12133): Instantiated megafunction "LPM_COUNTER:counter_startup_pulses" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "2"
+    Info (12134): Parameter "LPM_MODULUS" = "0"
+    Info (12134): Parameter "LPM_DIRECTION" = "UNUSED"
+    Info (12134): Parameter "LPM_AVALUE" = "UNUSED"
+    Info (12134): Parameter "LPM_SVALUE" = "UNUSED"
+    Info (12134): Parameter "LPM_PORT_UPDOWN" = "PORT_CONNECTIVITY"
+    Info (12134): Parameter "LPM_PVALUE" = "UNUSED"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_COUNTER"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_bdi.tdf
+    Info (12023): Found entity 1: cntr_bdi
+Info (12128): Elaborating entity "cntr_bdi" for hierarchy "LPM_COUNTER:counter_startup_pulses|cntr_bdi:auto_generated"
 Info (12128): Elaborating entity "g31_VGA_Generator" for hierarchy "g31_VGA_Generator:VGA_Generator"
 Warning (10492): VHDL Process Statement warning at g31_VGA_Generator.vhd(179): signal "text_rgb_delayed" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at g31_VGA_Generator.vhd(180): signal "text_rgb_delayed" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1424,7 +1377,7 @@ Info (12133): Instantiated megafunction "g31_VGA_Generator:VGA_Generator|LPM_FF:
     Info (12134): Parameter "LPM_TYPE" = "LPM_FF"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12128): Elaborating entity "g31_Update_Blocks" for hierarchy "g31_Update_Blocks:Update_Blocks"
-Warning (10492): VHDL Process Statement warning at g31_Update_Blocks.vhd(144): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "g31_Block_ROM" for hierarchy "g31_Update_Blocks:Update_Blocks|g31_Block_ROM:Block_ROM"
 Info (12128): Elaborating entity "g31_Update_Ball" for hierarchy "g31_Update_Ball:Update_Ball"
 Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col_update"
 Info (12130): Elaborated megafunction instantiation "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col_update"
@@ -1441,33 +1394,6 @@ Info (12133): Instantiated megafunction "g31_Update_Ball:Update_Ball|LPM_COUNTER
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_79i.tdf
     Info (12023): Found entity 1: cntr_79i
 Info (12128): Elaborating entity "cntr_79i" for hierarchy "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col_update|cntr_79i:auto_generated"
-Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col"
-Info (12130): Elaborated megafunction instantiation "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col"
-Info (12133): Instantiated megafunction "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "10"
-    Info (12134): Parameter "LPM_MODULUS" = "0"
-    Info (12134): Parameter "LPM_DIRECTION" = "UNUSED"
-    Info (12134): Parameter "LPM_AVALUE" = "UNUSED"
-    Info (12134): Parameter "LPM_SVALUE" = "UNUSED"
-    Info (12134): Parameter "LPM_PORT_UPDOWN" = "PORT_CONNECTIVITY"
-    Info (12134): Parameter "LPM_PVALUE" = "UNUSED"
-    Info (12134): Parameter "LPM_TYPE" = "LPM_COUNTER"
-    Info (12134): Parameter "LPM_HINT" = "UNUSED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_44k.tdf
-    Info (12023): Found entity 1: cntr_44k
-Info (12128): Elaborating entity "cntr_44k" for hierarchy "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_col|cntr_44k:auto_generated"
-Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_row"
-Info (12130): Elaborated megafunction instantiation "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_row"
-Info (12133): Instantiated megafunction "g31_Update_Ball:Update_Ball|LPM_COUNTER:counter_ball_row" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "10"
-    Info (12134): Parameter "LPM_MODULUS" = "0"
-    Info (12134): Parameter "LPM_DIRECTION" = "UNUSED"
-    Info (12134): Parameter "LPM_AVALUE" = "UNUSED"
-    Info (12134): Parameter "LPM_SVALUE" = "UNUSED"
-    Info (12134): Parameter "LPM_PORT_UPDOWN" = "PORT_CONNECTIVITY"
-    Info (12134): Parameter "LPM_PVALUE" = "UNUSED"
-    Info (12134): Parameter "LPM_TYPE" = "LPM_COUNTER"
-    Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12128): Elaborating entity "g31_Update_Paddle" for hierarchy "g31_Update_Paddle:Update_Paddle"
 Info (12128): Elaborating entity "g31_Update_Wall" for hierarchy "g31_Update_Wall:Update_Wall"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_q784.tdf
@@ -1490,7 +1416,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
-Info (11172): 2016.11.27.15:18:53 Progress: Loading sld7e7cfcae/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2016.11.28.00:46:02 Progress: Loading sld7e7cfcae/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1543,16 +1469,16 @@ Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 87 of its 89 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 2 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2621 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3636 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 2543 logic cells
+    Info (21061): Implemented 3558 logic cells
     Info (21064): Implemented 36 RAM segments
     Info (21062): Implemented 3 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 845 megabytes
-    Info: Processing ended: Sun Nov 27 15:19:15 2016
-    Info: Elapsed time: 00:00:43
-    Info: Total CPU time (on all processors): 00:01:14
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 850 megabytes
+    Info: Processing ended: Mon Nov 28 00:46:27 2016
+    Info: Elapsed time: 00:00:47
+    Info: Total CPU time (on all processors): 00:01:22
 
 
