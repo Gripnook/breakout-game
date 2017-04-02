@@ -166,7 +166,8 @@ begin
 	Paddle_Generator : g31_Paddle_Generator port map (column => column, row => row, paddle_col => paddle_col,
 									rgb => paddle_rgb, show_bit => paddle_show_bit);
 
-	Output_RGB : process (blanking, text_show_bit, wall_show_bit, ball_show_bit, blocks_show_bit, paddle_show_bit)
+	Output_RGB : process (blanking, text_show_bit, wall_show_bit, ball_show_bit, blocks_show_bit, paddle_show_bit,
+						text_rgb_delayed, wall_rgb, ball_rgb, blocks_rgb, paddle_rgb)
 	begin
 		r <= x"00";
 		g <= x"00";
