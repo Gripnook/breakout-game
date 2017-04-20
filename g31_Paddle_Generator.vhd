@@ -17,7 +17,7 @@ end g31_Paddle_Generator;
 architecture bdf_type of g31_Paddle_Generator is
 begin
 
-	Display_Wall : process (column, row, paddle_col)
+	Display_Paddle : process (column, row, paddle_col)
 	begin
 		show_bit <= '0';
 		rgb <= x"000000";
