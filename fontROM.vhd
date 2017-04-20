@@ -1,4 +1,3 @@
-
 -- ROM with synchonous read (inferring Block RAM)
 -- character ROM
 --   - 8-by-16 (8-by-2^4) font
@@ -31,7 +30,7 @@ entity fontROM is
 		dataWidth: integer := 8
 	);
 	port(
-		clkA: in std_logic;
+		clkA : in std_logic;
 		char_code : in std_logic_vector(6 downto 0); -- 7-bit ASCII character code
 		font_row : in std_logic_vector(3 downto 0); -- 0-15 row address in single character
 		font_col : in std_logic_vector(2 downto 0); -- 0-7 column address in single character

@@ -1,11 +1,3 @@
---
--- entity name: g31_Text_Address_Generator
---
--- Copyright (C) 2016 g31
--- Version 1.0
--- Author: Andrei Purcarus, Vlastimil Lacina
--- Date: November 7th, 2016
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;

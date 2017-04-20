@@ -1,11 +1,3 @@
---
--- entity name: g31_VGA_Generator
---
--- Copyright (C) 2016 g31
--- Version 1.0
--- Author: Andrei Purcarus, Vlastimil Lacina
--- Date: November 23rd, 2016
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -95,7 +87,7 @@ architecture bdf_type of g31_VGA_Generator is
 			dataWidth: integer := 8
 		);
 		port(
-			clkA: in std_logic;
+			clkA : in std_logic;
 			char_code : in std_logic_vector(6 downto 0); -- 7-bit ASCII character code
 			font_row : in std_logic_vector(3 downto 0); -- 0-15 row address in single character
 			font_col : in std_logic_vector(2 downto 0); -- 0-7 column address in single character
